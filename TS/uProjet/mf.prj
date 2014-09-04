@@ -1,0 +1,20 @@
+[Project ID]
+Signature=UE Proj: v.1
+[Project Information]
+Use Relative Directory=1
+Relative to Project File=1
+Include Sub Directories=1
+Project Tagfile=
+Project Wordfile=
+Filter=
+Create Tagfile=0
+[Files]
+0=..\TestCodeGen\mf.rt\LG_Maker.java
+1=..\TestCodeGen\mf.rt\MF_oFactory.java
+2=..\TestCodeGen\mf.rt\MF_Pattern.java
+3=..\TestCodeGen\mf.rt\MF_sFactory.java
+4=..\TestCodeGen\mf.rt\MF_tFinder.java
+5=..\TestCodeGen\mf.rt\MF_tStati.java
+6=..\TestCodeGen\mf.rt\MF_tUI.java
+7=..\TestCodeGen\mf.rt\snum.txt
+8=..\TestCodeGen\mf.rt\got.txt

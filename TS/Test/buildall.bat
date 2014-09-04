@@ -1,0 +1,23 @@
+del /s *.bak *.class
+javac *.java
+javac .\Test10\*.java
+javac .\Test11\*.java
+javac .\Test12\*.java
+javac .\Test13\*.java
+javac .\Test14\*.java
+javac .\Test2\*.java
+javac .\Test3\*.java
+javac .\Test3-1\*.java
+javac .\Test4\*.java
+javac .\Test5\*.java
+javac .\Test6\*.java
+javac .\Test6-1\*.java
+javac .\Test6-2\*.java
+javac .\Test7\*.java
+javac .\Test8\*.java
+javac .\Test9\*.java
+javac .\TestSin\*.java
+javac .\TestX\*.java
+javac .\五檔\*.java
+javac .\每個卷商買賣金額(凱基)\*.java
+javac .\TestX\Curve\*.java

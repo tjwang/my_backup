@@ -1,0 +1,3 @@
+select sum(a.totalAmount*1000)/sum(a.totalAmount*1000/b.avgIndex)
+from pinoutsum as a ,pavgIndex as b 
+where type='B' and  a.date = b.date order by a.date;

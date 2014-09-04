@@ -1,0 +1,1 @@
+select date , 0 as time,  as f1  from pindexs_offical where   date > '20050101' and time='1330' group by date order by date;

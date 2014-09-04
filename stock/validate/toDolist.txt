@@ -1,0 +1,21 @@
+1.validator
+2.輸入一個數列,給週期,和百分比數。
+  輸出這個數列中，所有符合此條件的頭底。
+
+3.
+   (1)輸入兩個數列[Line], A為source, B為destination  
+   (2)輸入檢視關係
+       source pattern
+       des pattern
+       mapping range
+   
+   (3)輸出 檢視樣本數, 合格數, 百分比
+   
+   
+4. 
+   MultiPattern 
+   MultiLine check;
+   Line Group
+   Mapper;
+
+   

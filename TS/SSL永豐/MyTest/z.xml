@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="Big5"?>
+<FutureAmMem>
+<Contract>TX110</Contract>
+<Name>臺指期110</Name>
+<NameEN>TX110</NameEN>
+<Precision>2</Precision>
+<Bid1>8263.000</Bid1>
+<BidVol1>14</BidVol1>
+<Ask1>8265.000</Ask1>
+<AskVol1>8</AskVol1>
+<Price>8263.000</Price>
+<Change>-7.000</Change>
+<Range>0.5804111245465538089480048368</Range>
+<HighEnd>8848.000</HighEnd>
+<LowEnd>7692.000</LowEnd>
+<TtlVol>13697</TtlVol>
+<Open>8230.000</Open>
+<High>8268.000</High>
+<Low>8220.000</Low>
+<Settlement>8270.000</Settlement>
+<Time>091117</Time>
+</FutureAmMem>

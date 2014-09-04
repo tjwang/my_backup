@@ -1,0 +1,728 @@
+<NewDataSet>
+	<FutureAmMem diffgr:id="FutureAmMem1" msdata:rowOrder="0">
+		<Contract>TX</Contract>
+		<NameEN>TX</NameEN>
+		<Precision>2</Precision>
+		<Price>7906.650</Price>
+		<Change>19.710</Change>
+		<Range>0.443771602167634088759392109</Range>
+		<Open>7925.260</Open>
+		<High>7941.650</High>
+		<Low>7906.650</Low>
+		<Settlement>7886.940</Settlement>
+		<Time>133316</Time>
+	</FutureAmMem>
+	<FutureAmMem diffgr:id="FutureAmMem2" msdata:rowOrder="1">
+		<Contract>TX023</Contract>
+		<Name>?∫Ê???23</Name>
+		<NameEN>TX023</NameEN>
+		<Precision>2</Precision>
+		<Bid1>7900.000</Bid1>
+		<BidVol1>56</BidVol1>
+		<Ask1>7903.000</Ask1>
+		<AskVol1>61</AskVol1>
+		<Price>7900.000</Price>
+		<Change>-1.000</Change>
+		<Range>0.7720541703581825085432223769</Range>
+		<HighEnd>8454.000</HighEnd>
+		<LowEnd>7348.000</LowEnd>
+		<TtlVol>72234</TtlVol>
+		<Open>7916.000</Open>
+		<High>7952.000</High>
+		<Low>7891.000</Low>
+		<Settlement>7901.000</Settlement>
+		<Time>134459</Time>
+		<OI>55226</OI>
+	</FutureAmMem>
+	<FutureAmMem diffgr:id="FutureAmMem3" msdata:rowOrder="2">
+		<Contract>TX033</Contract>
+		<Name>?∫Ê???33</Name>
+		<NameEN>TX033</NameEN>
+		<Precision>2</Precision>
+		<Bid1>7891.000</Bid1>
+		<BidVol1>2</BidVol1>
+		<Ask1>7894.000</Ask1>
+		<AskVol1>62</AskVol1>
+		<Price>7892.000</Price>
+		<Change>1.000</Change>
+		<Range>0.7476872386262831073374730706</Range>
+		<HighEnd>8443.000</HighEnd>
+		<LowEnd>7339.000</LowEnd>
+		<TtlVol>3400</TtlVol>
+		<Open>7920.000</Open>
+		<High>7940.000</High>
+		<Low>7881.000</Low>
+		<Settlement>7891.000</Settlement>
+		<Time>134457</Time>
+		<OI>7991</OI>
+	</FutureAmMem>
+	<FutureAmMem diffgr:id="FutureAmMem4" msdata:rowOrder="3">
+		<Contract>TX063</Contract>
+		<Name>?∫Ê???63</Name>
+		<NameEN>TX063</NameEN>
+		<Precision>2</Precision>
+		<Bid1>7853.000</Bid1>
+		<BidVol1>4</BidVol1>
+		<Ask1>7858.000</Ask1>
+		<AskVol1>29</AskVol1>
+		<Price>7854.000</Price>
+		<Change>1.000</Change>
+		<Range>0.68763529861199541576467592</Range>
+		<HighEnd>8402.000</HighEnd>
+		<LowEnd>7304.000</LowEnd>
+		<TtlVol>90</TtlVol>
+		<Open>7847.000</Open>
+		<High>7900.000</High>
+		<Low>7846.000</Low>
+		<Settlement>7853.000</Settlement>
+		<Time>134436</Time>
+		<OI>1417</OI>
+	</FutureAmMem>
+	<FutureAmMem diffgr:id="FutureAmMem5" msdata:rowOrder="4">
+		<Contract>TX093</Contract>
+		<Name>?∫Ê???93</Name>
+		<NameEN>TX093</NameEN>
+		<Precision>2</Precision>
+		<Bid1>7620.000</Bid1>
+		<BidVol1>1</BidVol1>
+		<Ask1>7621.000</Ask1>
+		<AskVol1>3</AskVol1>
+		<Price>7623.000</Price>
+		<Change>3.000</Change>
+		<Range>0.6430446194225721784776902887</Range>
+		<HighEnd>8153.000</HighEnd>
+		<LowEnd>7087.000</LowEnd>
+		<TtlVol>67</TtlVol>
+		<Open>7644.000</Open>
+		<High>7665.000</High>
+		<Low>7616.000</Low>
+		<Settlement>7620.000</Settlement>
+		<Time>134426</Time>
+		<OI>766</OI>
+	</FutureAmMem>
+	<FutureAmMem diffgr:id="FutureAmMem6" msdata:rowOrder="5">
+		<Contract>TX123</Contract>
+		<Name>?∫Ê???23</Name>
+		<NameEN>TX123</NameEN>
+		<Precision>2</Precision>
+		<Bid1>7588.000</Bid1>
+		<BidVol1>1</BidVol1>
+		<Ask1>7592.000</Ask1>
+		<AskVol1>3</AskVol1>
+		<Price>7594.000</Price>
+		<Change>6.000</Change>
+		<Range>0.5930416447021613073273589879</Range>
+		<HighEnd>8119.000</HighEnd>
+		<LowEnd>7057.000</LowEnd>
+		<TtlVol>45</TtlVol>
+		<Open>7615.000</Open>
+		<High>7634.000</High>
+		<Low>7589.000</Low>
+		<Settlement>7588.000</Settlement>
+		<Time>134200</Time>
+		<OI>225</OI>
+	</FutureAmMem>
+	<FutureAmMem diffgr:id="FutureAmMem7" msdata:rowOrder="6">
+		<Contract>TF</Contract>
+	<Name>?ëË???/Name><NameEN>TF</NameEN>
+	<Precision>2</Precision>
+	<Price>917.260</Price>
+	<Change>8.200</Change>
+	<Range>2.0944712120212087210965172816</Range>
+	<Open>920.850</Open>
+	<High>935.590</High>
+	<Low>916.550</Low>
+	<Settlement>909.060</Settlement>
+	<Time>133316</Time>
+</FutureAmMem>
+<FutureAmMem diffgr:id="FutureAmMem8" msdata:rowOrder="7">
+	<Contract>TF023</Contract>
+	<Name>?ëË???23</Name>
+	<NameEN>TF023</NameEN>
+	<Precision>2</Precision>
+	<Bid1>919.000</Bid1>
+	<BidVol1>1</BidVol1>
+	<Ask1>920.000</Ask1>
+	<AskVol1>7</AskVol1>
+	<Price>919.000</Price>
+	<Change>8.400</Change>
+	<Range>2.240281133318690972984845157</Range>
+	<HighEnd>974.200</HighEnd>
+	<LowEnd>847.000</LowEnd>
+	<TtlVol>8809</TtlVol>
+	<Open>919.000</Open>
+	<High>935.600</High>
+	<Low>915.200</Low>
+	<Settlement>910.600</Settlement>
+	<Time>134456</Time>
+	<OI>5031</OI>
+</FutureAmMem>
+<FutureAmMem diffgr:id="FutureAmMem9" msdata:rowOrder="8">
+	<Contract>TF033</Contract>
+	<Name>?ëË???33</Name>
+	<NameEN>TF033</NameEN>
+	<Precision>2</Precision>
+	<Bid1>918.800</Bid1>
+	<BidVol1>1</BidVol1>
+	<Ask1>919.600</Ask1>
+	<AskVol1>1</AskVol1>
+	<Price>919.000</Price>
+	<Change>8.200</Change>
+	<Range>2.217830478700043917435221783</Range>
+	<HighEnd>974.400</HighEnd>
+	<LowEnd>847.200</LowEnd>
+	<TtlVol>803</TtlVol>
+	<Open>914.800</Open>
+	<High>935.000</High>
+	<Low>914.800</Low>
+	<Settlement>910.800</Settlement>
+	<Time>134458</Time>
+	<OI>952</OI>
+</FutureAmMem>
+<FutureAmMem diffgr:id="FutureAmMem10" msdata:rowOrder="9">
+	<Contract>TF063</Contract>
+	<Name>?ëË???63</Name>
+	<NameEN>TF063</NameEN>
+	<Precision>2</Precision>
+	<Bid1>916.200</Bid1>
+	<BidVol1>1</BidVol1>
+	<Ask1>918.000</Ask1>
+	<AskVol1>1</AskVol1>
+	<Price>917.600</Price>
+	<Change>8.200</Change>
+	<Range>1.2755663074554651418517703981</Range>
+	<HighEnd>973.000</HighEnd>
+	<LowEnd>845.800</LowEnd>
+	<TtlVol>8</TtlVol>
+	<Open>917.400</Open>
+	<High>929.000</High>
+	<Low>917.400</Low>
+	<Settlement>909.400</Settlement>
+	<Time>134323</Time>
+	<OI>12</OI>
+</FutureAmMem>
+<FutureAmMem diffgr:id="FutureAmMem11" msdata:rowOrder="10">
+	<Contract>TF093</Contract>
+	<Name>?ëË???93</Name>
+	<NameEN>TF093</NameEN>
+	<Precision>2</Precision>
+	<Bid1>902.400</Bid1>
+	<BidVol1>1</BidVol1>
+	<Ask1>909.000</Ask1>
+	<AskVol1>1</AskVol1>
+	<HighEnd>959.200</HighEnd>
+	<LowEnd>834.000</LowEnd>
+	<Settlement>896.600</Settlement>
+	<Time />
+	<OI>11</OI>
+</FutureAmMem>
+<FutureAmMem diffgr:id="FutureAmMem12" msdata:rowOrder="11">
+	<Contract>TF123</Contract>
+	<Name>?ëË???23</Name>
+	<NameEN>TF123</NameEN>
+	<Precision>2</Precision>
+	<Bid1>898.400</Bid1>
+	<BidVol1>1</BidVol1>
+	<Ask1>907.600</Ask1>
+	<AskVol1>1</AskVol1>
+	<HighEnd>954.800</HighEnd>
+	<LowEnd>830.000</LowEnd>
+	<Settlement>892.400</Settlement>
+	<Time />
+</FutureAmMem>
+<FutureAmMem diffgr:id="FutureAmMem13" msdata:rowOrder="12">
+	<Contract>TE</Contract>
+<Name>?ªÂ???/Name><NameEN>TE</NameEN>
+<Precision>2</Precision>
+<Price>293.220</Price>
+<Change>1.430</Change>
+<Range>0.6717159601082970629562356489</Range>
+<Open>292.740</Open>
+<High>294.070</High>
+<Low>292.110</Low>
+<Settlement>291.790</Settlement>
+<Time>133316</Time>
+</FutureAmMem>
+<FutureAmMem diffgr:id="FutureAmMem14" msdata:rowOrder="13">
+	<Contract>TE023</Contract>
+	<Name>?ªÂ???23</Name>
+	<NameEN>TE023</NameEN>
+	<Precision>2</Precision>
+	<Bid1>292.400</Bid1>
+	<BidVol1>4</BidVol1>
+	<Ask1>292.700</Ask1>
+	<AskVol1>2</AskVol1>
+	<Price>292.400</Price>
+	<Change>0.550</Change>
+	<Range>0.7880760664725029981154702758</Range>
+	<HighEnd>312.250</HighEnd>
+	<LowEnd>271.450</LowEnd>
+	<TtlVol>3573</TtlVol>
+	<Open>292.450</Open>
+	<High>294.200</High>
+	<Low>291.900</Low>
+	<Settlement>291.850</Settlement>
+	<Time>134459</Time>
+	<OI>3193</OI>
+</FutureAmMem>
+<FutureAmMem diffgr:id="FutureAmMem15" msdata:rowOrder="14">
+	<Contract>TE033</Contract>
+	<Name>?ªÂ???33</Name>
+	<NameEN>TE033</NameEN>
+	<Precision>2</Precision>
+	<Bid1>292.100</Bid1>
+	<BidVol1>1</BidVol1>
+	<Ask1>292.400</Ask1>
+	<AskVol1>2</AskVol1>
+	<Price>292.400</Price>
+	<Change>1.050</Change>
+	<Range>0.7379440535438476059721983868</Range>
+	<HighEnd>311.700</HighEnd>
+	<LowEnd>271.000</LowEnd>
+	<TtlVol>262</TtlVol>
+	<Open>292.350</Open>
+	<High>293.700</High>
+	<Low>291.550</Low>
+	<Settlement>291.350</Settlement>
+	<Time>134426</Time>
+	<OI>303</OI>
+</FutureAmMem>
+<FutureAmMem diffgr:id="FutureAmMem16" msdata:rowOrder="15">
+	<Contract>TE063</Contract>
+	<Name>?ªÂ???63</Name>
+	<NameEN>TE063</NameEN>
+	<Precision>2</Precision>
+	<Bid1>289.150</Bid1>
+	<BidVol1>1</BidVol1>
+	<Ask1>291.300</Ask1>
+	<AskVol1>1</AskVol1>
+	<HighEnd>310.000</HighEnd>
+	<LowEnd>269.500</LowEnd>
+	<Settlement>289.750</Settlement>
+	<Time />
+	<OI>5</OI>
+</FutureAmMem>
+<FutureAmMem diffgr:id="FutureAmMem17" msdata:rowOrder="16">
+	<Contract>TE093</Contract>
+	<Name>?ªÂ???93</Name>
+	<NameEN>TE093</NameEN>
+	<Precision>2</Precision>
+	<Bid1>280.750</Bid1>
+	<BidVol1>1</BidVol1>
+	<Ask1>285.350</Ask1>
+	<AskVol1>1</AskVol1>
+	<HighEnd>304.050</HighEnd>
+	<LowEnd>264.350</LowEnd>
+	<Settlement>284.200</Settlement>
+	<Time />
+	<OI>9</OI>
+</FutureAmMem>
+<FutureAmMem diffgr:id="FutureAmMem18" msdata:rowOrder="17">
+	<Contract>TE123</Contract>
+	<Name>?ªÂ???23</Name>
+	<NameEN>TE123</NameEN>
+	<Precision>2</Precision>
+	<Bid1>278.100</Bid1>
+	<BidVol1>1</BidVol1>
+	<Ask1>284.800</Ask1>
+	<AskVol1>1</AskVol1>
+	<HighEnd>298.200</HighEnd>
+	<LowEnd>259.200</LowEnd>
+	<Settlement>278.700</Settlement>
+	<Time />
+</FutureAmMem>
+<FutureAmMem diffgr:id="FutureAmMem19" msdata:rowOrder="18">
+	<Contract>T5F023</Contract>
+	<Name>?∫Ê?50??23</Name>
+	<NameEN>T5F023</NameEN>
+	<Precision>2</Precision>
+	<Bid1>5482.000</Bid1>
+	<BidVol1>3</BidVol1>
+	<Ask1>5618.000</Ask1>
+	<AskVol1>3</AskVol1>
+	<HighEnd>5901.000</HighEnd>
+	<LowEnd>5129.000</LowEnd>
+	<Settlement>5515.000</Settlement>
+	<Time />
+	<OI>1</OI>
+</FutureAmMem>
+<FutureAmMem diffgr:id="FutureAmMem20" msdata:rowOrder="19">
+	<Contract>T5F033</Contract>
+	<Name>?∫Ê?50??33</Name>
+	<NameEN>T5F033</NameEN>
+	<Precision>2</Precision>
+	<Bid1>5311.000</Bid1>
+	<BidVol1>3</BidVol1>
+	<Ask1>5689.000</Ask1>
+	<AskVol1>3</AskVol1>
+	<HighEnd>5891.000</HighEnd>
+	<LowEnd>5121.000</LowEnd>
+	<Settlement>5506.000</Settlement>
+	<Time />
+</FutureAmMem>
+<FutureAmMem diffgr:id="FutureAmMem21" msdata:rowOrder="20">
+	<Contract>T5F063</Contract>
+	<Name>?∫Ê?50??63</Name>
+	<NameEN>T5F063</NameEN>
+	<Precision>2</Precision>
+	<Bid1>5210.000</Bid1>
+	<BidVol1>2</BidVol1>
+	<Ask1>5690.000</Ask1>
+	<AskVol1>2</AskVol1>
+	<HighEnd>5776.000</HighEnd>
+	<LowEnd>5022.000</LowEnd>
+	<Settlement>5399.000</Settlement>
+	<Time />
+</FutureAmMem>
+<FutureAmMem diffgr:id="FutureAmMem22" msdata:rowOrder="21">
+	<Contract>T5F093</Contract>
+	<Name>?∫Ê?50??93</Name>
+	<NameEN>T5F093</NameEN>
+	<Precision>2</Precision>
+	<Bid1>5110.000</Bid1>
+	<BidVol1>2</BidVol1>
+	<Ask1>5640.000</Ask1>
+	<AskVol1>2</AskVol1>
+	<HighEnd>5779.000</HighEnd>
+	<LowEnd>5023.000</LowEnd>
+	<Settlement>5401.000</Settlement>
+	<Time />
+</FutureAmMem>
+<FutureAmMem diffgr:id="FutureAmMem23" msdata:rowOrder="22">
+	<Contract>T5F123</Contract>
+	<Name>?∫Ê?50??23</Name>
+	<NameEN>T5F123</NameEN>
+	<Precision>2</Precision>
+	<Bid1>4880.000</Bid1>
+	<BidVol1>2</BidVol1>
+	<Ask1>5570.000</Ask1>
+	<AskVol1>2</AskVol1>
+	<HighEnd>5574.000</HighEnd>
+	<LowEnd>4846.000</LowEnd>
+	<Settlement>5210.000</Settlement>
+	<Time />
+</FutureAmMem>
+<FutureAmMem diffgr:id="FutureAmMem24" msdata:rowOrder="23">
+	<Contract>MTX</Contract>
+	<Name>Â∞èËá∫?áÁèæ</Name>
+	<NameEN>MTX</NameEN>
+	<Precision>2</Precision>
+	<Price>7906.650</Price>
+	<Change>19.710</Change>
+	<Range>0.443771602167634088759392109</Range>
+	<Open>7925.260</Open>
+	<High>7941.650</High>
+	<Low>7906.650</Low>
+	<Settlement>7886.940</Settlement>
+	<Time>133316</Time>
+</FutureAmMem>
+<FutureAmMem diffgr:id="FutureAmMem25" msdata:rowOrder="24">
+	<Contract>MTX023</Contract>
+	<Name>Â∞èËá∫?áÊ?023</Name>
+	<NameEN>MTX023</NameEN>
+	<Precision>2</Precision>
+	<Bid1>7900.000</Bid1>
+	<BidVol1>72</BidVol1>
+	<Ask1>7904.000</Ask1>
+	<AskVol1>60</AskVol1>
+	<Price>7900.000</Price>
+	<Change>-1.000</Change>
+	<Range>0.7720541703581825085432223769</Range>
+	<HighEnd>8454.000</HighEnd>
+	<LowEnd>7348.000</LowEnd>
+	<TtlVol>38333</TtlVol>
+	<Open>7920.000</Open>
+	<High>7952.000</High>
+	<Low>7891.000</Low>
+	<Settlement>7901.000</Settlement>
+	<Time>134459</Time>
+	<OI>21134</OI>
+</FutureAmMem>
+<FutureAmMem diffgr:id="FutureAmMem26" msdata:rowOrder="25">
+	<Contract>MTX033</Contract>
+	<Name>Â∞èËá∫?áÊ?033</Name>
+	<NameEN>MTX033</NameEN>
+	<Precision>2</Precision>
+	<Bid1>7891.000</Bid1>
+	<BidVol1>8</BidVol1>
+	<Ask1>7894.000</Ask1>
+	<AskVol1>8</AskVol1>
+	<Price>7891.000</Price>
+	<Change>0.000</Change>
+	<Range>0.7350145735648206817893803067</Range>
+	<HighEnd>8443.000</HighEnd>
+	<LowEnd>7339.000</LowEnd>
+	<TtlVol>4950</TtlVol>
+	<Open>7914.000</Open>
+	<High>7940.000</High>
+	<Low>7882.000</Low>
+	<Settlement>7891.000</Settlement>
+	<Time>134458</Time>
+	<OI>7843</OI>
+</FutureAmMem>
+<FutureAmMem diffgr:id="FutureAmMem27" msdata:rowOrder="26">
+	<Contract>MTX063</Contract>
+	<Name>Â∞èËá∫?áÊ?063</Name>
+	<NameEN>MTX063</NameEN>
+	<Precision>2</Precision>
+	<Bid1>7855.000</Bid1>
+	<BidVol1>1</BidVol1>
+	<Ask1>7858.000</Ask1>
+	<AskVol1>3</AskVol1>
+	<Price>7855.000</Price>
+	<Change>2.000</Change>
+	<Range>0.6621673245893289188845027378</Range>
+	<HighEnd>8402.000</HighEnd>
+	<LowEnd>7304.000</LowEnd>
+	<TtlVol>339</TtlVol>
+	<Open>7855.000</Open>
+	<High>7900.000</High>
+	<Low>7848.000</Low>
+	<Settlement>7853.000</Settlement>
+	<Time>134455</Time>
+	<OI>1386</OI>
+</FutureAmMem>
+<FutureAmMem diffgr:id="FutureAmMem28" msdata:rowOrder="27">
+	<Contract>MTX093</Contract>
+	<Name>Â∞èËá∫?áÊ?093</Name>
+	<NameEN>MTX093</NameEN>
+	<Precision>2</Precision>
+	<Bid1>7618.000</Bid1>
+	<BidVol1>1</BidVol1>
+	<Ask1>7623.000</Ask1>
+	<AskVol1>2</AskVol1>
+	<Price>7622.000</Price>
+	<Change>2.000</Change>
+	<Range>0.6955380577427821522309711286</Range>
+	<HighEnd>8153.000</HighEnd>
+	<LowEnd>7087.000</LowEnd>
+	<TtlVol>248</TtlVol>
+	<Open>7648.000</Open>
+	<High>7667.000</High>
+	<Low>7614.000</Low>
+	<Settlement>7620.000</Settlement>
+	<Time>134452</Time>
+	<OI>1592</OI>
+</FutureAmMem>
+<FutureAmMem diffgr:id="FutureAmMem29" msdata:rowOrder="28">
+	<Contract>MTX123</Contract>
+	<Name>Â∞èËá∫?áÊ?123</Name>
+	<NameEN>MTX123</NameEN>
+	<Precision>2</Precision>
+	<Bid1>7586.000</Bid1>
+	<BidVol1>14</BidVol1>
+	<Ask1>7594.000</Ask1>
+	<AskVol1>9</AskVol1>
+	<Price>7588.000</Price>
+	<Change>0.000</Change>
+	<Range>0.6589351607801792303637322088</Range>
+	<HighEnd>8119.000</HighEnd>
+	<LowEnd>7057.000</LowEnd>
+	<TtlVol>154</TtlVol>
+	<Open>7629.000</Open>
+	<High>7635.000</High>
+	<Low>7585.000</Low>
+	<Settlement>7588.000</Settlement>
+	<Time>134451</Time>
+	<OI>435</OI>
+</FutureAmMem>
+<FutureAmMem diffgr:id="FutureAmMem30" msdata:rowOrder="29">
+	<Contract>XIF</Contract>
+	<Name>?ûÈ??ªÁèæ</Name>
+	<NameEN>XIF</NameEN>
+	<Precision>2</Precision>
+	<Price>10812.900</Price>
+	<Change>-34.000</Change>
+	<Range>0.7808682665093252450008758263</Range>
+	<Open>10890.900</Open>
+	<High>10897.600</High>
+	<Low>10812.900</Low>
+	<Settlement>10846.900</Settlement>
+	<Time>133316</Time>
+</FutureAmMem>
+<FutureAmMem diffgr:id="FutureAmMem31" msdata:rowOrder="30">
+	<Contract>XIF023</Contract>
+	<Name>?ûÈ??ªÊ?023</Name>
+	<NameEN>XIF023</NameEN>
+	<Precision>0</Precision>
+	<Bid1>10808.000</Bid1>
+	<BidVol1>10</BidVol1>
+	<Ask1>10819.000</Ask1>
+	<AskVol1>3</AskVol1>
+	<Price>10811.000</Price>
+	<Change>-74.000</Change>
+	<Range>1.2861736334405144694533762058</Range>
+	<HighEnd>11646.000</HighEnd>
+	<LowEnd>10124.000</LowEnd>
+	<TtlVol>239</TtlVol>
+	<Open>10930.000</Open>
+	<High>10942.000</High>
+	<Low>10802.000</Low>
+	<Settlement>10885.000</Settlement>
+	<Time>134452</Time>
+	<OI>640</OI>
+</FutureAmMem>
+<FutureAmMem diffgr:id="FutureAmMem32" msdata:rowOrder="31">
+	<Contract>XIF033</Contract>
+	<Name>?ûÈ??ªÊ?033</Name>
+	<NameEN>XIF033</NameEN>
+	<Precision>0</Precision>
+	<Bid1>10793.000</Bid1>
+	<BidVol1>1</BidVol1>
+	<Ask1>10804.000</Ask1>
+	<AskVol1>6</AskVol1>
+	<Price>10789.000</Price>
+	<Change>-79.000</Change>
+	<Range>1.1593669488406330511593669488</Range>
+	<HighEnd>11628.000</HighEnd>
+	<LowEnd>10108.000</LowEnd>
+	<TtlVol>60</TtlVol>
+	<Open>10885.000</Open>
+	<High>10914.000</High>
+	<Low>10788.000</Low>
+	<Settlement>10868.000</Settlement>
+	<Time>133116</Time>
+	<OI>77</OI>
+</FutureAmMem>
+<FutureAmMem diffgr:id="FutureAmMem33" msdata:rowOrder="32">
+	<Contract>XIF063</Contract>
+	<Name>?ûÈ??ªÊ?063</Name>
+	<NameEN>XIF063</NameEN>
+	<Precision>0</Precision>
+	<Bid1>10719.000</Bid1>
+	<BidVol1>1</BidVol1>
+	<Ask1>10786.000</Ask1>
+	<AskVol1>1</AskVol1>
+	<HighEnd>11551.000</HighEnd>
+	<LowEnd>10041.000</LowEnd>
+	<Settlement>10796.000</Settlement>
+	<Time />
+	<OI>2</OI>
+</FutureAmMem>
+<FutureAmMem diffgr:id="FutureAmMem34" msdata:rowOrder="33">
+	<Contract>XIF093</Contract>
+	<Name>?ûÈ??ªÊ?093</Name>
+	<NameEN>XIF093</NameEN>
+	<Precision>0</Precision>
+	<Bid1>10393.000</Bid1>
+	<BidVol1>1</BidVol1>
+	<Ask1>10566.000</Ask1>
+	<AskVol1>1</AskVol1>
+	<HighEnd>11274.000</HighEnd>
+	<LowEnd>9800.000</LowEnd>
+	<Settlement>10537.000</Settlement>
+	<Time />
+	<OI>2</OI>
+</FutureAmMem>
+<FutureAmMem diffgr:id="FutureAmMem35" msdata:rowOrder="34">
+	<Contract>XIF123</Contract>
+	<Name>?ûÈ??ªÊ?123</Name>
+	<NameEN>XIF123</NameEN>
+	<Precision>0</Precision>
+	<Bid1>10334.000</Bid1>
+	<BidVol1>1</BidVol1>
+	<Ask1>10546.000</Ask1>
+	<AskVol1>1</AskVol1>
+	<HighEnd>11148.000</HighEnd>
+	<LowEnd>9690.000</LowEnd>
+	<Settlement>10419.000</Settlement>
+	<Time />
+</FutureAmMem>
+<FutureAmMem diffgr:id="FutureAmMem36" msdata:rowOrder="35">
+	<Contract>GTF</Contract>
+<Name>Ê´ÉË≤∑??/Name><NameEN>GTF</NameEN>
+<Precision>2</Precision>
+<Price>106.400</Price>
+<Change>-0.380</Change>
+<Range>0.730473871511519011050758569</Range>
+<Open>106.970</Open>
+<High>107.180</High>
+<Low>106.400</Low>
+<Settlement>106.780</Settlement>
+<Time>133401</Time>
+</FutureAmMem>
+<FutureAmMem diffgr:id="FutureAmMem37" msdata:rowOrder="36">
+	<Contract>GTF023</Contract>
+	<Name>Ê´ÉË≤∑??23</Name>
+	<NameEN>GTF023</NameEN>
+	<Precision>2</Precision>
+	<Bid1>105.800</Bid1>
+	<BidVol1>1</BidVol1>
+	<Ask1>107.700</Ask1>
+	<AskVol1>1</AskVol1>
+	<Price>106.550</Price>
+	<Change>-0.250</Change>
+	<Range>0</Range>
+	<HighEnd>114.250</HighEnd>
+	<LowEnd>99.350</LowEnd>
+	<TtlVol>1</TtlVol>
+	<Open>106.550</Open>
+	<High>106.550</High>
+	<Low>106.550</Low>
+	<Settlement>106.800</Settlement>
+	<Time>133445</Time>
+	<OI>104</OI>
+</FutureAmMem>
+<FutureAmMem diffgr:id="FutureAmMem38" msdata:rowOrder="37">
+	<Contract>GTF033</Contract>
+	<Name>Ê´ÉË≤∑??33</Name>
+	<NameEN>GTF033</NameEN>
+	<Precision>2</Precision>
+	<Bid1>106.000</Bid1>
+	<BidVol1>1</BidVol1>
+	<Ask1>107.500</Ask1>
+	<AskVol1>1</AskVol1>
+	<Price>106.550</Price>
+	<Change>-0.050</Change>
+	<Range>0.5628517823639774859287054409</Range>
+	<HighEnd>114.050</HighEnd>
+	<LowEnd>99.150</LowEnd>
+	<TtlVol>12</TtlVol>
+	<Open>106.700</Open>
+	<High>106.900</High>
+	<Low>106.300</Low>
+	<Settlement>106.600</Settlement>
+	<Time>134322</Time>
+	<OI>27</OI>
+</FutureAmMem>
+<FutureAmMem diffgr:id="FutureAmMem39" msdata:rowOrder="38">
+	<Contract>GTF063</Contract>
+	<Name>Ê´ÉË≤∑??63</Name>
+	<NameEN>GTF063</NameEN>
+	<Precision>2</Precision>
+	<Bid1>104.500</Bid1>
+	<BidVol1>1</BidVol1>
+	<Ask1>107.800</Ask1>
+	<AskVol1>1</AskVol1>
+	<HighEnd>113.000</HighEnd>
+	<LowEnd>98.300</LowEnd>
+	<Settlement>105.650</Settlement>
+	<Time />
+</FutureAmMem>
+<FutureAmMem diffgr:id="FutureAmMem40" msdata:rowOrder="39">
+	<Contract>GTF093</Contract>
+	<Name>Ê´ÉË≤∑??93</Name>
+	<NameEN>GTF093</NameEN>
+	<Precision>2</Precision>
+	<Bid1>98.650</Bid1>
+	<BidVol1>1</BidVol1>
+	<Ask1>108.950</Ask1>
+	<AskVol1>1</AskVol1>
+	<HighEnd>110.650</HighEnd>
+	<LowEnd>96.250</LowEnd>
+	<Settlement>103.450</Settlement>
+	<Time />
+</FutureAmMem>
+<FutureAmMem diffgr:id="FutureAmMem41" msdata:rowOrder="40">
+	<Contract>GTF123</Contract>
+	<Name>Ê´ÉË≤∑??23</Name>
+	<NameEN>GTF123</NameEN>
+	<Precision>2</Precision>
+	<Bid1>97.550</Bid1>
+	<BidVol1>1</BidVol1>
+	<HighEnd>109.300</HighEnd>
+	<LowEnd>95.000</LowEnd>
+	<Settlement>102.150</Settlement>
+	<Time />
+</FutureAmMem>
+</NewDataSet>

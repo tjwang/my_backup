@@ -1,0 +1,10 @@
+/* Last_Update:20110616 */
+.btn {border-style:outset; margin:0 0 0 0px; font-family:"Arial, 新細明體";
+      height:22px; padding:2 2 0 2px; font-size:12px; text-align:center; color:black;}
+.btn_over {border-style:inset; margin:0 0 0 0px; font-family:"Arial, 新細明體";
+      height:22px; padding:2 2 0 2px; font-size:12px; text-align:center; color:black;}
+.redbtn {border-style:outset; margin:0 0 0 0px; font-family:"Arial, 新細明體";
+      height:22px; padding:2 2 0 2px; font-size:12px; text-align:center; color:black;}
+.redbtn_over {border-style:inset; margin:0 0 0 0px; font-family:"Arial, 新細明體";
+      height:22px; padding:2 2 0 2px; font-size:12px; text-align:center; color:black;}
+

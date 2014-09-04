@@ -1,0 +1,60 @@
+1. Τ砞﹚把计
+   cycle 1: C1 [1M ~ 3M]
+   cycle 2: C2 [1W ~ 4W]
+   cycle 3: C3 [1m ~ 15m]
+   
+2. ミ穝Table tx_sta
+     snum,
+     date,
+     time,
+     v1~6
+     s1~6
+     sd1~6
+     ds1~6
+     b1~6
+     bd1~6
+     db1~6
+     open
+     close
+     high
+     low
+
+2.1 
+   ㄏノ–らlogFactory ъTX㎝TX0xx戈,  C3把计,砞pattern眔pattern line.
+  рpattern line柑value 璸衡table tx_sta–record.
+  
+2.2
+  糶Factory C2把计,tx_staрC2﹚竡range戈ъㄓ暗Θ参璸戈
+  v1~6,衡Θユ秖. 参璸Θユ秖range,单禯だΘ20单だ.
+  s1~6, sd1~6,  ds1~6,衡〆芥秖. 参璸〆芥秖range,单禯だΘ20单だ.
+  b1~6, bd1~6,  db1~6,衡〆禦秖. 参璸〆禦秖range,单禯だΘ20单だ.
+  s1~6, sd1~6,  ds1~6,b1~6, bd1~6,  db1~6衡〆禦芥畉. 参璸〆芥芥畉range,单禯だΘ20单だ.
+  open, close 衡基畉,  参璸基畉range,单禯だΘ20单だ.
+  high, low 衡碩,  参璸碩range,单禯だΘ20单だ.
+  high,   参璸基range,单禯だΘ20单だ.
+  low,   参璸基range,单禯だΘ20单だ.
+    
+2.3
+  2.3.1
+     ㄌ沮参璸ㄓ禯穝皌倒–tx_sta record穝
+   
+        v, next_v Θユ秖
+        s, next_s 〆禦
+        b, next_b 〆芥
+        bs, next_bs 〆禦芥畉
+        d, next_d
+        m, next_m 
+        h, next_h
+        l, next_l
+  2.3.2
+     魁v程record, s程record, b程record, bs程record, m程蔼record
+       high程蔼record, low程record
+      
+2.4
+  ㄌ沮瓃禯, 璸衡参璸癸莱
+  v<->next_v,   s<->v,   b<->v,  bs<->v,  m<->v,  m<->d, v<->m, bs<->d
+  s<->next_s,   s<->next_v   s<->next_bs
+  b<->next_b    b<->next_v
+  bs<->next_bs  bs<->next_v  
+  d<->next_d    d<->next_v
+  m<->next_m    m<->next_v    

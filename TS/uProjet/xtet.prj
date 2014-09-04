@@ -1,0 +1,19 @@
+[Project ID]
+Signature=UE Proj: v.1
+[Project Information]
+Use Relative Directory=1
+Relative to Project File=1
+Include Sub Directories=1
+Project Tagfile=
+Project Wordfile=
+Filter=
+Create Tagfile=0
+[Files]
+0=..\TestCodeGen\xtet.rt\LG_Maker.java
+1=..\TestCodeGen\xtet.rt\snum.txt
+2=..\TestCodeGen\xtet.rt\XTET_oFactory.java
+3=..\TestCodeGen\xtet.rt\XTET_Pattern.java
+4=..\TestCodeGen\xtet.rt\XTET_sFactory.java
+5=..\TestCodeGen\xtet.rt\XTET_tFinder.java
+6=..\TestCodeGen\xtet.rt\XTET_tStati.java
+7=..\TestCodeGen\xtet.rt\XTET_tUI.java

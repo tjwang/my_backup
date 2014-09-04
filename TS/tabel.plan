@@ -1,0 +1,213 @@
+ assetslaib             |-----------> 資產負債表 只有到2010/3季 --------->補齊
+ cmain                  |-----------> 每日百大股票---->補齊
+ cname                  |-----------> 貨幣代碼表 ---------> ok
+ crate_ntd              |-----------> 新台幣對各國貨幣 ---->  ok
+ crate_usd              |-----------> 美金對各國貨幣-------> ok
+ ds000                  |-----------> 監控股票代碼表 -------> ok [3個月更新一次]
+ ds000_200908           |-----------> 監控股票歷史代碼表 -------> ok [3個月更新一次]
+ ds000_201005           |
+ ds000_201007           |
+ ds000_201009           |
+ ds000_201011           |
+ ds000_201101           |
+ ds000_201104           |
+ ds000_201106           |
+ ds000_201110           |
+ ds000_201204           |
+ ds000_201206           |
+ ds000_201306           |
+ ds000_201310           |
+ ds000_201311           |
+ ds000attr              |-----------> 監控股票屬性表 -------> ok [3個月更新一次]
+ ds000attr_old          |
+ ds000attr_old201009    |
+ ds000attr_old201011    |
+ ds000attr_old201104    |
+ ds000attr_old201106    |
+ ds000attr_old201110    |
+ ds000attr_old201204    |
+ ds000attr_old201206    |
+ ds000attr_old201310    |
+ ds000info              |-----------> 監控股票獲利資訊表(form yahoo) -------> ok [3個月更新一次]
+ ds000info200908        |
+ ds000info200909        |
+ ds000info201004        |
+ ds000info201007        |
+ ds000info201009        |
+ ds000info201011        |
+ ds000info201104        |
+ ds000info201106        |
+ ds000info201110        |
+ ds000info201204        |
+ ds000info201206        |
+ ds000info201306        |
+ ds000info201310        |
+ ds000info201311        |
+ ds000infoold           |  ---------> unused[prepare to discard]
+ ds000old               |  ---------> unused[prepare to discard]
+ incomes                |  ---------> 個股每月營收---------> ok
+ incomestate            |  ---------> 個股每季獲利---------> imcomplete[2012/1Q need to do]
+ mmap                   |  ---------> 卷商代碼對應表[pmamount2 to pmamount]---------->ok
+ pamount                |  ---------> 各股每日成交資訊[to 2009/8/9] ----->instead of by pamountinfo7
+ pamountinfo            |  ---------> 各股每日成交資訊 1
+ pamountinfo2           |  ---------> 各股每日成交資訊 2 
+ pamountinfo3           |  ---------> 各股每日成交資訊 3 , 2和3大同小異可以砍掉一個
+ pamountinfo3_15m       |  ---------> unused[prepare to discard]
+ pamountinfo4           |  ---------> unused[prepare to discard]
+ pamountinfo4a          |  ---------> unused[prepare to discard]
+ pamountinfo5           |  ---------> 各股每日成交資訊 5
+ pamountinfo6           |  ---------> unused[prepare to discard]
+ pamountinfo7           |  ---------> 各股每日成交資訊 7
+ pamountnew             |  ---------> 各股每日每筆成交資訊[存近3個月]
+ pamountnew200909       |  h
+ pamountnew200910       |  h
+ pamountnew200911_12    |  h
+ pamountnew201001_04    |  h
+ pamountnew_201105      |  h
+ pamountnew_201109      |  h
+ pamountnew_201110      |  h
+ pamountnew_201204      |  h
+ pamountnew_201206      |  h
+ pamountnew_201306      |  h
+ pamountnew_201311      |  h
+ pamounts15m            |  ---------> unused[prepare to discard]
+ pamounts5m             |  ---------> unused[prepare to discard]
+ pamounttemp            |  ---------> 各股每日每筆成交資訊[存1日]
+ pamounttemp2           |
+ pamountws5m            |  discard
+ pavgindex              | * 每日大盤的平均點數[avgIndexP,avgIndexC, Amount, Product, Credits]
+ pavgindex_of           | * 每日大盤的平均點數[| avgIndexM | avgIndexV | avgIndexC | AmountM | AmountV      | AmountC | CreditsM | CreditsV | CreditsC]
+ pavgindex_old          |  discard
+ pcaverage              |  unused
+ pcp1                   | ---------> unused[prepare to discard]
+ pcp1_200809            | ---------> unused[prepare to discard]
+ pcp1_200810            | ---------> unused[prepare to discard]
+ pcp1_200811            | ---------> unused[prepare to discard]
+ pcp1_200812            | ---------> unused[prepare to discard]
+ pcp1_200902            | ---------> unused[prepare to discard]
+ pcp1_200903            | ---------> unused[prepare to discard]
+ pcp1_200904            | ---------> unused[prepare to discard]
+ pcp1_200905            | ---------> unused[prepare to discard]
+ pcp1_200906            | ---------> unused[prepare to discard]
+ pcp1_200907            | ---------> unused[prepare to discard]
+ pcp1_200908            | ---------> unused[prepare to discard]
+ pcp1_200909            | ---------> unused[prepare to discard]
+ pcp1_200910            | ---------> unused[prepare to discard]
+ pcp1_200911            | ---------> unused[prepare to discard]
+ pcp1_200912            | ---------> unused[prepare to discard]
+ pcp1_201001            | ---------> unused[prepare to discard]
+ pcp1_201002            | ---------> unused[prepare to discard]
+ pcp1_201003            | ---------> unused[prepare to discard]
+ pcp1_201004            | ---------> unused[prepare to discard]
+ pcp2                   | ---------> unused[prepare to discard]
+ pcp2_200810            | ---------> unused[prepare to discard]
+ pcp2_200811            | ---------> unused[prepare to discard]
+ pcp2_200812            | ---------> unused[prepare to discard]
+ pcp2_200902            | ---------> unused[prepare to discard]
+ pcp2_200903            | ---------> unused[prepare to discard]
+ pcp2_200904            | ---------> unused[prepare to discard]
+ pcp2_200905            | ---------> unused[prepare to discard]
+ pcp2_200906            | ---------> unused[prepare to discard]
+ pcp2_200907            | ---------> unused[prepare to discard]
+ pcp2_200908            | ---------> unused[prepare to discard]
+ pcp2_200909            | ---------> unused[prepare to discard]
+ pcp2_200910            | ---------> unused[prepare to discard]
+ pcp2_200911            | ---------> unused[prepare to discard]
+ pcp2_200912            | ---------> unused[prepare to discard]
+ pcp2_201001            | ---------> unused[prepare to discard]
+ pcp2_201002            | ---------> unused[prepare to discard]
+ pcp2_201003            | ---------> unused[prepare to discard]
+ pcp2_201004            | ---------> unused[prepare to discard]
+ pcp3                   | ---------> unused[prepare to discard]
+ pcp3_200811            | ---------> unused[prepare to discard]
+ pcp3_200812            | ---------> unused[prepare to discard]
+ pcp3_200902            | ---------> unused[prepare to discard]
+ pcp3_200903            | ---------> unused[prepare to discard]
+ pcp3_200904            | ---------> unused[prepare to discard]
+ pcp3_200905            | ---------> unused[prepare to discard]
+ pcp3_200906            | ---------> unused[prepare to discard]
+ pcp3_200907            | ---------> unused[prepare to discard]
+ pcp3_200908            | ---------> unused[prepare to discard]
+ pcp3_200909            | ---------> unused[prepare to discard]
+ pcp3_200910            | ---------> unused[prepare to discard]
+ pcp3_200911            | ---------> unused[prepare to discard]
+ pcp3_200912            | ---------> unused[prepare to discard]
+ pcp3_201001            | ---------> unused[prepare to discard]
+ pcp3_201002            | ---------> unused[prepare to discard]
+ pcp3_201003            | ---------> unused[prepare to discard]
+ pcp3_201004            | ---------> unused[prepare to discard]
+ pcpprice               | ---------> unused[prepare to discard]
+ pdayk                  | ---------> unused[prepare to discard]
+ pdeviation             | ---------> unused[prepare to discard]
+ pdeviationweek         | ---------> unused[prepare to discard]
+ pfamount               | ---------> 台指期每筆交易unused[prepare to discard]
+ pfive                  | ---------> unused ?
+ pfive_info             | ---------> unused ?
+ pfive_infoa            | ---------> unused ?
+ pfive_infod            | ---------> unused ?
+ pfiveraw               | --------> 最佳5檔資料[方便計算用]
+ picmap                 | ----------> 各種指數代碼表 unused
+ pidxdifrp_offical      | *-------->大盤每分點數成交量
+ pidxinfo3_of           |  -------> unused;
+ pidxrp_offical         | *-------->大盤每分點數成交量
+ pindexs_offical        | --------->各類指數每分點數;
+ pinoutsum              |  --------> 三大法人買賣超(yahoo)
+ pinoutsum2             |   --------> 三大法人買賣超(yahoo) old
+ pinoutsum_official     |   --------> 三大法人買賣超(證交所)
+ plast                  |   ---------> 個股每日K線資料[calulate]ok-------------->instead of by pamountinfo7
+ plast2                 |   ---------> 個股每日K線資料[yahoo]ok-------------->instead of by pamountinfo7
+ plato                  |   ---------> 六合彩號碼
+ pldayk                 |   ---------> 大盤指數[k線] ,每日,每分
+ pldayk_ofcl            |   ---------> 大盤指數[k線] ,每15秒 [only save last 5 years ?]
+ pldayksnum             |   ---------> 個股每日K線資料uncomplete to 20101103-------------->instead of by pamountinfo7
+ pldaykv                |   ---------> unused[prepare to discard]
+ pmamount               |   ---------> yahoo 主力進出的每日資料
+ pmamount2              |   ---------> 凱基 每個卷商每日對股票的進出
+ pmamount2009           |   ---------> yahoo 主力進出的每日資料的曆史資料
+ pmamount2info          |   ---------> 每個卷商每日的金錢進出(凱基)
+ pmamount3              |   ---------> unused
+ pmamountinfo           |   ---------> 每個卷商每日的金錢進出(yahoo)
+ pmamountinfo_week      |   ---------> 每個卷商對各股每週的金錢進出(yahoo)
+ pmamountinfo_week2     |   ---------> 每個卷商對各股每週的金錢進出(凱基)
+ pmamountinfo_week2_old |
+ pmamountm              |    ---------> yahoo 主力進出的每日資料<history> [unused]
+ pmamountmm             |   ---------> yahoo 每個卷商每日的金錢進出<history> [unused]
+ pmamountw              |    ---------> yahoo 主力進出的每週資料<history> [unused]
+ pmamountwm             |     ---------> yahoo 每個卷商每週的金錢進出<history> [unused]
+ pmargin                |    ---------> 證交所 融資卷餘額
+ pmarginm               |     ---------> 證交所 融資卷餘額<總額>[M(融資餘額,單位千元),C(融資餘額,單位張),S(融卷餘額,單位張)]
+ pmarginotc             |     ---------> 上櫃股票 融資卷餘額
+ pmcamount1             |  unused;
+ pmcamount2             |  unused;
+ pmet3                  |  unused;
+ pmk                    |  -------> yahoo 卷商每日進出 / 成交量
+ pmmamount              |  unused;
+ pmname                 |   -------> 卷商代碼表(yahoo)
+ pmname2                |  -------> 卷商代碼表(凱基)
+ pmname2_old            |
+ pmoney                 |  discard;
+ pmrate                 |  discard;
+ pmrate5                |  discard;
+ pmratem                |  discard
+ pmtcamount             |  unused
+ psnumindis             |  每日股票買進 [外資,投信,自營,其它]的比例
+ psnuminoutmoney        |   上市股票每日買賣 [外資,投信,自營]元
+ psnuminoutsum          |  上市股票每日買賣 [外資,投信,自營]張
+ psnumoutdis            |  每日股票賣出 [外資,投信,自營,其它]的比例 
+ ptest2minfo1           |
+ ptest2minfo2           |
+ ptest2minfo3           |
+ ptestinfo1             |
+ ptestinfo3             |
+ ptestminfo1            |
+ ptestminfo2            |
+ ptestminfo3            |
+ ptestminfo32           |
+ ptestminfo33           |
+ ptxdayk                |  ---------->期指每分K線(temp)
+ pwdayk                 |  ---------->世界指數的K線檔
+ pxfsum                 |  ---------->期指留倉
+ pxosum                 |  ---------->選擇權留倉
+ sbighave               |  ---------->大股東持有(uncomplete)
+ wldcode                |  ---------->世界指數的代碼表
+------------------------+

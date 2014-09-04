@@ -1,0 +1,13 @@
+[Project ID]
+Signature=UE Proj: v.1
+[Project Information]
+Use Relative Directory=1
+Relative to Project File=1
+[Files]
+0=..\TestCodeGen\m2.rt\LG_Maker.java
+1=..\TestCodeGen\m2.rt\M2_oFactory.java
+2=..\TestCodeGen\m2.rt\M2_Pattern.java
+3=..\TestCodeGen\m2.rt\M2_sFactory.java
+4=..\TestCodeGen\m2.rt\M2_tFinder.java
+5=..\TestCodeGen\m2.rt\M2_tStati.java
+6=..\TestCodeGen\m2.rt\M2_tUI.java

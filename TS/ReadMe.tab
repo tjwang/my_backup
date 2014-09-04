@@ -1,0 +1,148 @@
+ds000    << 股票索引檔
+ds000_200908
+ds000_201005
+ds000attr << 股票屬性檔
+ds000attr_old
+ds000info  << 股票基本資料檔
+ds000info200908
+ds000info200909
+ds000info201004
+ds000infoold
+ds000old
+mmap   << pmamount,pmamount2 卷商代碼對照表
+pamount  
+
+pamountinfo  << pamounttemp 第一類計算資料(均價,內外買成交量...)
+pamountinfo2 
+pamountinfo3  << 成交量/價差 (分漲跌)
+pamountinfo3_15m
+pamountinfo4
+pamountinfo4a
+pamountinfo5
+pamountinfo6
+
+pamountnew  << pchome抓的每支股票的成交明細
+pamountnew200909
+pamountnew200910
+pamountnew200911_12
+pamountnew201001_04
+
+pamounts15m
+pamounts5m
+pamounttemp << pamountnew的暫存檔
+pamounttemp2 << pamountnew的暫存檔2
+pamountws5m
+pavgindex  << 計算每日成交的平均點數
+pavgindex_of << 計算每日成交的平均點數(證交所)
+pavgindex_old
+pcaverage
+pcp1  << 選擇權收盤價 第一類計算值
+pcp1_日期  歷史檔
+pcp2  << 選擇權收盤價 第二類計算值
+pcp2_日期  歷史檔
+pcp3  << 選擇權收盤價 第三類計算值
+pcp3_日期   歷史檔
+pcpprice  << 雅虎每日的選擇權收盤價
+pdayk  
+pdeviation << 每日主力進出的標準差 (已不使用)
+pdeviationweek << 每周主力進出的標準差 (已不使用)
+pfive  << 最佳五檔
+picmap << pindexs_offical 各類指數的代號對應表
+pidxdifrp_offical 
+pidxinfo3_of << 以證交所指數計算出來 pamountinfo3
+pidxrp_offical << 證交所大盤每分的成交量，含委買委賣
+pindexs_offical << 證交所各類指數的每分指數
+pinoutsum   << 奇摩三大法人每日買賣超
+pinoutsum2  
+pinoutsum_official << 證交所三大法人每日買賣超
+plast  << 每支股票每日收盤資料 (以pchome計算得)
+plast2  << 每支股票每日收盤資料 yahoo
+pldayk  << 每日大盤K線含日線(snum=0001)和分線(snum=T000)
+pldayk_ofcl << 每支股票每日收盤資料 證交所(平日無抓)
+pldaykv
+pmamount  << yahoo 每日的主力進出(較不準確)
+pmamount2   << 凱基 的主力進出(1~2week抓一次) 較詳細準確
+pmamount2009  << pmamount 2009年的歷史檔
+pmamount2info << 算每個卷商每日買賣超的金額  (以pmamount2計算)
+pmamount3   << pmamount 暫存用
+pmamountinfo << 每個卷商每日買賣超的金額  (以pmamount計算)
+pmamountinfo_week << pmamount週報表
+pmamountinfo_week2 << pmamount2週報表
+pmamountm
+pmamountmm
+pmamountw
+pmamountwm
+pmargin  << 各股融資融卷
+pmarginm  << 大盤融資融卷
+pmcamount1
+pmcamount2
+pmet3
+pmk     << 每日的主力進出 / 成交量 , 並配合資本額算百分比
+pmmamount
+pmname  << 卷商代碼對照表 pmamount (yahoo)
+pmname2 << 卷商代碼對照表 pmamount2 (凱基)
+pmoney
+pmrate
+pmrate5
+pmratem
+pmtcamount
+psnumindis
+psnuminoutmoney << 各股三大法人買賣超的金額
+psnuminoutsum << 各股三大法人買賣超的張數
+psnumoutdis
+ptest2minfo1
+ptest2minfo2
+ptest2minfo3
+ptestinfo1
+ptestinfo3
+ptestminfo1
+ptestminfo2
+ptestminfo3
+ptestminfo32
+ptestminfo33
+
+================================================================================
+常用SQL
+13.
+select aa.*,mname from pmname2 as pmname,(select a.*, ds000.sname,a.t/ds000.capital as rr from ds000,( select  snum,mnum,sum(Amount) as t,sum(MoneyAmt) as mt , sum(MoneyAmt)/sum(Amount) as avt,avg(Rate) as avr
+ from pmamountinfo_week2 where date > '20100101'  and snum='3596' group by snum,mnum) as a where ds000.snum=a.snum) as aa
+ where pmname.mnum=aa.mnum order by rr desc;
+
+select aa.*,mname from pmname2 as pmname,(select a.*, ds000.sname,a.t/ds000.capital as rr from ds000,( select  snum,mnum,sum(Amount) as t,sum(MoneyAmt) as mt , sum(MoneyAmt)/sum(Amount) as avt,avg(Rate) as avr
+ from pmamountinfo_week2 where snum='9933' group by snum,mnum) as a where ds000.snum=a.snum) as aa
+ where pmname.mnum=aa.mnum order by rr desc;
+算某日起某資股票各卷商的買賣比率
+
+12.
+select *, a.t/ds000.capital as rr from ds000,( select  snum,mnum,sum(Amount) as t,sum(MoneyAmt) as mt , sum(MoneyAmt)/sum(Amount) as avt,avg(Rate) as avr
+ from pmamountinfo_week2 where date > '20100101' group by snum,mnum) as a,pmname2 as pmname where ds000.snum=a.snum and pmname.mnum=a.mnum and pmname.type='F' and capital > 10000 
+ order by rr desc limit 100;
+
+--幾號以後外資買超比率最大的股票..
+select *, a.t/ds000.capital as rr from ds000,( select  snum,mnum,sum(Amount) as t,sum(MoneyAmt) as mt , sum(MoneyAmt)/sum(Amount) as avt,avg(Rate) as avr
+ from pmamountinfo_week2 where date > '20100101' group by snum,mnum) as a,pmname2 as pmname where ds000.snum=a.snum and pmname.mnum=a.mnum and capital > 10000 
+ order by rr desc limit 100;
+
+--幾號以後買超比率最大的股票..
+
+
+16. 
+select * from 
+(select snum,mnum,count(*) as f from pmamount2 where date > 20090801 and sum > 0 group by snum,mnum order by f desc limit 100) as a,
+pmname2,
+ds000
+where pmname2.mnum = a.mnum and ds000.snum = a.snum order by f
+;
+--幾號以後某一卷商持續買超的天數排列..
+
+select a.snum,a.mnum,f,f/count(*),ds000.sname,pmname2.mname from pmamount2 as pmamount,
+(select snum,mnum,count(*) as f from pmamount2 as pmamount where date > 20090601 and sum > 0 group by snum,mnum order by f desc limit 200) as a,
+pmname2,
+ds000
+where pmamount.mnum = a.mnum and pmamount.snum = a.snum and date > 20090601 and pmname2.mnum = a.mnum and ds000.snum = a.snum group by snum,mnum,f order by 4 ;
+--幾號以後某一卷商持續買超的天數排列..加(買超天數/買賣天數)
+
+更多請看weekReview\reviewSql.txt
+
+=====================================================================
+Test 觀察各類計算出來數值和未來走勢的關聯...

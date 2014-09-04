@@ -1,0 +1,22 @@
+import java.io.*;
+import java.net.*;
+import java.util.*;
+import org.apache.commons.codec.binary.Base64;
+
+public class Test1 {
+ static public void main(String[] arg)throws Exception{
+     Base64 base64 = new Base64();
+     FileInputStream fin = new  FileInputStream("cc.txt");  
+     BufferedReader d    = new BufferedReader(new InputStreamReader(fin));
+     String s = d.readLine();
+     byte[] decodedata = base64.decode(s.getBytes());
+     s = new String(decodedata,"UTF-8");
+   //  s= s.replace("\\\u00FF\\", "\u0000").replace("\u00FF\u00FF", "\u00FF");
+   //  System.out.println(s);
+     FileOutputStream fout = new  FileOutputStream("cco2.txt");  
+     fout.write(decodedata);
+  //   System.out.println(URLDecoder.decode(s));
+ }
+
+
+}

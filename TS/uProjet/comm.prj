@@ -1,0 +1,22 @@
+[Project ID]
+Signature=UE Proj: v.1
+[Project Information]
+Use Relative Directory=1
+Relative to Project File=1
+Include Sub Directories=1
+Project Tagfile=
+Project Wordfile=
+Filter=
+Create Tagfile=0
+Project Directory=X:\Working\TS\uProjet
+[Files]
+0=..\Test\Test19\NMarkPattern.java
+1=..\Test\Test19\NMarkPatternX5.java
+2=..\Test\Test19\NWeekPattern.java
+3=..\Test\Test19\ReadMe.txt
+4=..\..\User\weekReview\reviewMain.txt
+5=..\..\User\weekReview\reviewSql.txt
+6=..\Test\Test19\snum.txt
+7=..\tabel.plan
+8=..\Test\Test19\TestX3.java
+9=..\Test\Test19\TestX6.java

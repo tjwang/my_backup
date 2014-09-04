@@ -1,0 +1,387 @@
+<html><head>
+<meta http-equiv='Content-Type' content='text/html; charset=big5' />
+<meta http-equiv='Content-Language' content='zh-tw' />
+<meta http-equiv='Cache-Control' content='no-cache, must-revalidate' />
+<meta http-equiv='Pragma' content='no-cache' />
+<meta http-equiv='Expires' content='-1' />
+<title>LOGIN</title>
+<!-- Last_Update:20110616 -->
+<!-- Licensed Materials - Property of Santek Computer Co. 正泓電腦股份有限公司版權所有 -->
+<link rel='stylesheet' type='text/css' href='sinopac.css' />
+<!-- [if !IE]> -->
+<link rel='stylesheet' type='text/css' href='sinopac_ns.css' />
+<!-- <![endif] -->
+<style type="text/css">
+  body {margin:0 0 0 0px; padding:30 0 0 0px; background-color:#92B1E0;}
+</style>
+<script src='no_display.js'></script>
+<script src='get_enter.js'></script>
+<script>
+twin=parent.twin;
+var cWin;
+var brokerWin;
+var capMode=null;
+
+function ld(form) {
+  if (document.cookie!=null && document.cookie!='') readCookie(form);
+  else set_init_focus(form);
+}
+
+function ul(form) {
+  set_init_focus(form);
+}
+
+function set_init_focus(form) {
+  form.LTYPE[0].click();
+  form.IDNO.focus();
+}
+
+function chkInput(form, mode) {
+  switch (mode) {
+    case 0:
+      form.BHNO.value="";
+      form.CSEQ.value="";
+      form.BHNO.disabled=true;
+      form.CSEQ.disabled=true;
+      form.BHNO.style.backgroundColor="#C8C8C8";
+      form.CSEQ.style.backgroundColor="#C8C8C8";
+      form.IDNO.disabled=false;
+      form.IDNO.style.backgroundColor="#FFFFFF";
+      form.IDNO.focus();
+      break
+    case 1:
+      form.IDNO.value="";
+      form.IDNO.disabled=true;
+      form.IDNO.style.backgroundColor="#C8C8C8";
+      form.BHNO.disabled=false;
+      form.CSEQ.disabled=false;
+      form.BHNO.style.backgroundColor="#FFFFFF";
+      form.CSEQ.style.backgroundColor="#FFFFFF";
+      form.BHNO.focus()
+      break;
+  }
+}
+
+function openURL(tURL, tWidth, tHeight, mode) {
+  var sWidth=screen.width;
+  var sHeight=screen.height;
+  if (mode!=null && mode!='') {
+    if (mode=='mid') {
+      var l=(sWidth-tWidth)/2, t=(sHeight-tHeight)/2;
+    }
+  } else {
+    var l=sWidth/2+100;
+    if ((l+tWidth)>sWidth) l=sWidth-tWidth;
+    var t=sHeight/2-tHeight;
+    if (t<0) t=200;
+  }
+  var styleStr="left="+l+"px, top="+t+"px, width="+tWidth+"px, height="+tHeight+"px, menubar=no, toolbar=no, location=no, scrollbars=yes, status=no, resizable=yes";
+  cWin=window.open(tURL, "", styleStr);
+  sWidth=""; sHeight=""; l=""; t=""; styleStr="";
+}
+
+function shwKeyPad() {
+  var w=388, h=245;
+  var l=300, t=460;
+  var winStr="/san_keypad2.htm";
+  if (window.showModalDialog) {
+    var styleStr="dialogLeft="+l+"px; dialogTop="+t+"px; dialogWidth="+w+"px; dialogHeight="+h+"px; scrolling=no; status=no; help=0";
+    return_value=window.showModalDialog(winStr, window, styleStr);
+  } else {
+    var styleStr="left="+l+"px,top="+t+"px,width="+w+"px,height="+h+"px,menubar=no,toolbar=no,location=no,scrollbars=yes,status=no,resizable=no";
+    keypadWin=window.open(winStr, "keypad", styleStr);
+  }
+  w=""; h=""; l=""; t=""; winStr=""; styleStr="";
+}
+
+function chkCaps(e) {
+  var k=e.which||e.keyCode||e.charCode||0;
+  if (!capMode) { //第一個字母用keypress做大小寫判斷
+    if (e.type=="keydown") return;
+    if (e.shiftKey) {
+      if (k>=97 && k<=122) chgCapView("on");
+      else if (k>=65 && k<=90) chgCapView("off");
+    } else {
+      if (k>=65 && k<=90) chgCapView("on");
+      else if (k>=97 && k<=122) chgCapView("off");
+    }
+  } else { //後面字母用keydown做判斷
+    if (k==20) {
+      switch (capMode) {
+        case "on":
+          chgCapView("off");
+          break;
+        case "off":
+          chgCapView("on");
+          break;
+      }
+    }
+  }
+  k="";
+}
+
+function chgCapView(mode) {
+  var dObj=document.getElementById("capsWarn");
+  switch (mode) {
+    case "on":
+      dObj.style.visibility="visible";
+      //dObj.style.fontWeight="bold";
+      //dObj.innerHTML="目前為大寫輸入!";
+      capMode="on";
+      break;
+    case "off":
+      dObj.style.visibility="hidden";
+      //dObj.style.fontWeight="";
+      //dObj.innerHTML="目前為小寫輸入!";
+      capMode="off";
+      break;
+  }
+  dObj="";
+}
+
+function SearchBroker(form) {
+  form.LTYPE[1].click();
+  form.BHNO.value="";
+  var l=screen.width/2+100, t=250;
+  var winStr="/secs/san_broker.htm";
+  if (window.showModalDialog) {
+    var styleStr="dialogLeft="+l+"px; dialogTop="+t+"px; dialogWidth=200px; dialogHeight=500px; scrolling=no; status=no; help=0";
+    return_value = window.showModalDialog(winStr, window, styleStr);
+    if (return_value==null || return_value=='' || return_value=='undefined') form.BHNO.focus();
+    else {
+      form.BHNO.value=return_value;
+      form.CSEQ.focus();
+    }
+  } else {
+    var styleStr="left="+l+"px,top="+t+"px,width=200px,height=500px,menubar=no,toolbar=no,location=no,scrollbars=yes,status=no,resizable=no";
+    brokerWin = window.open(winStr, "broker", styleStr);
+  }
+  l=""; t=""; winStr=""; styleStr="";
+}
+
+function send(form) {
+  alert('xx');
+  if (brokerWin && !brokerWin.closed) brokerWin.close();
+  alert('xx1');
+  if (cWin && !cWin.closed) cWin.close();
+   alert('xx2');
+ var login_msg="", login_type="";
+   alert('xx3');
+ if (form.LTYPE[0].checked) {
+    if (form.IDNO.value=='') login_msg="身份證字號";
+    else login_type="I";
+  } else {
+    if (form.CSEQ.value=='') login_msg="帳號";
+    else login_type="A";
+  }
+  alert('xx4');
+  if (form.VPWD.value=='' || form.VPWD.value.charAt(0)==' ') login_msg="密碼";
+  alert('xx5');
+  if (login_msg!='') alert(login_msg+"不可為空白!");
+  else {
+  alert('xx6');
+   // if (form.REC.checked) writeCookie(form, login_type);
+   // else releaseCookie();
+//   form.BRKID.value=twin.broker_id;
+   alert(form.BRKID.value);
+//    twin.pwd=form.VPWD.value;
+  alert(form.VPWD.value);
+    if (login_type=='A') {
+    //  twin.bhno=form.BHNO.value;
+      form.action="/scripts/cgirpc32.dll/RPCSVR"+twin.bhno+"_jsisgnon";
+    } else {
+      form.IDNO.value=form.IDNO.value.toUpperCase();
+ //     twin.IDNO=form.IDNO.value;
+      form.action="/scripts/cgirpc32.dll/jsisgnon";
+    }
+  alert(form.action);
+    form.VIDEO.value=((screen.width)?screen.width:"")+"*"+((screen.height)?screen.height:"");
+   alert(form.VIDEO.value);
+   form.MIR_VER.value=((navigator.appMinorVersion)?navigator.appMinorVersion:"");
+  alert(form.MIR_VER.value);
+    form.CHKFTHK.value=twin.flag_ft_act_data+twin.flag_hk_act_data;
+  alert(form.CHKFTHK.value);
+    form.submit();
+  }
+  login_msg=""; login_type="";
+}
+
+function frmReset(form) {
+  form.reset();
+  form.LTYPE[0].click();
+}
+
+window.onresize=chgPicPos;
+
+function chgPicPos() {
+  var tObj=document.getElementById("padBtn");
+  var l=(document.body.clientWidth/2)+130;
+  tObj.style.left=l;
+  tObj=""; l="";
+}
+
+function writeCookie(form, ltype) {
+  var now=new Date();
+  now=new Date(now.getTime()+31536000000);
+  setCookie("ltype", ltype, now);
+  setCookie("idno", form.IDNO.value, now);
+  setCookie("bhno", form.BHNO.value, now);
+  setCookie("cseq", form.CSEQ.value, now);
+  now="";
+}
+
+function readCookie(form) {
+  //alert(document.cookie);
+  //if (document.cookie!='') form.REC.checked=true;
+  dLen="";
+  var r_ltype=getCookie("ltype");
+  var r_idno=getCookie("idno");
+  var r_bhno=getCookie("bhno");
+  var r_cseq=getCookie("cseq");
+  switch (r_ltype) {
+    case "I":
+      form.LTYPE[0].click();
+      form.IDNO.value=r_idno;
+      form.VPWD.focus();
+      form.REC.checked=true;
+      break;
+    case "A":
+      form.LTYPE[1].click();
+      form.BHNO.value=r_bhno;
+      form.CSEQ.value=r_cseq;
+      form.VPWD.focus();
+      form.REC.checked=true;
+      break;
+    default:
+      set_init_focus(form);
+      break;
+  }
+  r_ltype=""; r_idno=""; r_bhno=""; r_cseq=""; dArray=""; dLen="";
+}
+
+function releaseCookie() {
+  delCookie("ltype");
+  delCookie("idno");
+  delCookie("bhno");
+  delCookie("cseq");
+}
+
+function setCookie(name,value,expiry) {
+  var nameString=name+" = "+value;
+  var expiryString=(expiry==null)?"":" ;expires = "+expiry.toGMTString();
+  document.cookie=nameString+expiryString;
+}
+
+function getCookie(name) {
+  var dataStr="";
+  if (dLen=='') getArray();
+  for (var i=0; i<dLen; i++) {
+    if (twin.trimString(dArray[i][0])==name) {
+      dataStr=unescape(dArray[i][1]); break;
+    }
+  }
+  i="";
+  return dataStr;
+}
+
+function getArray() {
+  var CookieStr=document.cookie;
+  dArray=CookieStr.split(";");
+  dLen=dArray.length;
+  for (var i=0; i<dLen; i++) dArray[i]=dArray[i].split("=");
+  CookieStr=""; i="";
+}
+
+function delCookie(name) {
+  var exp=new Date();
+  exp.setTime(exp.getTime()-1);
+  setCookie(name, "Delete Cookie", exp);
+}
+</script>
+</head>
+<!-- Licence for Santek Compute Co. -->
+<body onLoad="ld(document.forms[0]);">
+<form name=sgnonForm method=post>
+<input type=hidden name=VIDEO>
+<input type=hidden name=MIR_VER>
+<input type=hidden name=CHKFTHK>
+<input type=hidden name=BRKID>
+<table width=419 border=0 align=center cellpadding=0 cellspacing=0>
+  <tr><td colspan=2><img src="/secs/images/img_cha1.gif" width=419 height=31></td></tr>
+  <tr align=top><td colspan=2 background="/secs/images/img_cha4.gif"><img src="/secs/images/img_cha2.gif" width=105 height=45></td></tr>
+  <tr align=center><td colspan=2 background="/secs/images/img_cha4.gif">
+    <table width=419 border=0 cellpadding=0 cellspacing=0>
+      <tr valign=middle align=left>
+        <td width=28>&nbsp;</td>
+        <td width=32 align=right><input type=radio name=LTYPE value="I" checked tabindex=1 onClick="chkInput(this.form, 0);"></td>
+        <td width=164><img src="/secs/images/img_cha5.gif" width=153 height=34 onClick="document.forms[0].LTYPE[0].click();"></td>
+        <td width=32 align=right><input type=radio name=LTYPE value="A" tabindex=2 onClick="chkInput(this.form, 1);"></td>
+        <td width=101><img src="/secs/images/img_cha6.gif" width=101 height=34 onClick="document.forms[0].LTYPE[1].click();"></td>
+        <td width=46>&nbsp;</td>
+      </tr>
+    </table>
+    <table width=340 border=0 cellpadding=0 cellspacing=0>
+      <tr valign=middle height=45>
+        <td class=txt01 width=95>身份證字號 :</td>
+        <td width=105><input type=text style="width:105px;" name=IDNO maxlength=10 tabindex=3 onBlur="this.value=this.value.toUpperCase();"></td>
+        <td width=140><a href="Javascript:openURL('/secs/san_step_1.htm', 600, 500);" tabindex=10><img src="/secs/images/img_first17.gif" width=137 height=18 border=0></a></td>
+      </tr>
+      <tr valign=middle height=45>
+        <td class=txt01>券商代碼(4碼) :</td>
+        <td><input type=text style="width:60px;" name=BHNO maxlength=4 tabindex=4></td>
+        <td><a href="javascript:SearchBroker(document.forms[0])" tabindex=11><img src="/secs/images/img_first16.gif" width=137 height=18 border=0></a></td>
+      </tr>
+      <tr valign=middle height=45>
+        <td class=txt01>證券帳號(7碼) :</td>
+        <td><input type=text style="width:105px;" name=CSEQ maxlength=7 tabindex=5></td>
+        <td colspan=3><a href="Javascript:openURL('/secs/san_step_2.htm', 600, 500);" tabindex=12><img src="/secs/images/img_first18.gif" width=137 height=18 border=0></a></td>
+      </tr>
+      <tr valign=middle height=45>
+        <td class=txt01>密碼 :</td>
+        <td>
+          <input type=password style="width:105px;" name=VPWD maxlength=12 tabindex=6 onkeypress="chkCaps(event);" onkeydown="chkCaps(event);">
+        </td>
+        <td>
+          <a href="Javascript:openURL('/secs/san_errpasswd.htm', 600, 500);" tabindex=13><img src="/secs/images/img_first19.gif" width=137 height=18 border=0></a>
+          <script>
+            l=(document.body.clientWidth/2)+130;
+            document.write("<div id=padBtn style='z-index:99; position:absolute; left:"+l+"px; top:282px'><button class=btn style='width:30px;' title='開啟螢幕小鍵盤' onClick='shwKeyPad();return false;' onMouseover='twin.chgBtnView(this, \"over\");' onMouseout='twin.chgBtnView(this, \"out\");'><img src='/images/keyboard.gif' border=0></button></div>");
+          </script>
+        </td>
+      </tr>
+      <tr align=center><td colspan=3>
+        <label id=capsWarn style='font-size:9pt; color:#FF0000; font-weight:bold; visibility:hidden;'>請注意大寫鎖定已啟用</label>
+      </td></tr>
+      <tr align=center height=45>
+        <td class=txt01><input type=checkbox name=REC tabindex=7>記憶登入資料</td>
+        <td colspan=2 class=txt01 style="text-align:left; padding-left:10px;">
+          <input type=button class=redbtn name=CMD value="登錄" tabIndex=8 onClick="send(this.form);" onMouseover="twin.chgBtnView(this, 'over');" onMouseout="twin.chgBtnView(this, 'out');">&nbsp;
+          <input type=button class=btn name=RESET value="重填" tabIndex=9 onClick="frmReset(this.form);" onMouseover="twin.chgBtnView(this, 'over');" onMouseout="twin.chgBtnView(this, 'out');">
+        </td>
+      </tr>
+    </table>
+  </td></tr>
+  <tr><td colspan=2><img src="/secs/images/img_cha7.gif" width=419 height=10></td></tr>
+  <tr valign=middle><td colspan=2 background="/secs/images/img_cha4.gif" align=left>
+    <table align=center border=0 width=375>
+      <tr>
+        <td width=110><img src="/secs/images/img_cha10.gif" width=110 height=49></td>
+        <td><font class="txt04"><font color=#E10000>請輸入您的證券密碼, 若您"僅"開立期貨帳號<br>請使用您的身分證字號及期貨密碼登錄!</font></font></td>
+      </tr>
+    </table>
+    <font class="txt04"><font color=#4888C7>
+      　　&nbsp;&nbsp;投資人係本帳戶唯一有權使用者,負有妥善保管個人帳號及授權<br>
+      　　&nbsp;&nbsp;密碼之責任,不得任意透露於他人,投資人瞭解並同意依據該有<br>
+      　　&nbsp;&nbsp;效之帳號及授權密碼或其他有效之電子認證方式所為之電子委<br>
+      　　&nbsp;&nbsp;託,均應自負完全之責任!! </font></font>
+  </td></tr>
+  <tr>
+    <td><img src="/secs/images/img_cha11.gif" width=202 height=45></td>
+    <td><img src="/secs/images/img_cha12.gif" width=217 height=45></td>
+  </tr>
+  <tr><td colspan=2><img src="/secs/images/img_cha123.gif" width=419 height=18></td></tr>
+</table>
+</form>
+</body>
+</html>
+

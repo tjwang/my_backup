@@ -1,0 +1,37 @@
+[Project ID]
+Signature=UE Proj: v.1
+[Project Information]
+Use Relative Directory=1
+Relative to Project File=1
+Include Sub Directories=1
+Project Tagfile=
+Project Wordfile=
+Filter=
+Create Tagfile=0
+[Files]
+0=..\F_SocketServer\FiveParser.java
+1=..\TestCodeGen\ftt.rt\FTT_oFactory.java
+2=..\TestCodeGen\ftt.rt\FTT_Pattern.java
+3=..\TestCodeGen\ftt.rt\FTT_sFactory.java
+4=..\TestCodeGen\ftt.rt\FTT_tFinder.java
+5=..\TestCodeGen\ftt.rt\FTT_tStati.java
+6=..\TestCodeGen\ftt.rt\FTT_tUI.java
+7=..\TestCodeGen\ftt.rt\LG_Maker.java
+8=..\TestCodeGen\ftt.rt\snum.txt
+9=..\TestCodeGen\ftt.rt\list.txt
+10=..\TestCodeGen\ftt.rt\TestMain.java
+11=..\TestCodeGen\ftt.rt\d1.txt
+12=..\TestCodeGen\ftt.rt\d2.txt
+13=..\TestCodeGen\ftt.rt\ClassPatternValue.java
+14=..\TestCodeGen\ftt.rt\CulClass_Pattern.java
+15=..\TestCodeGen\ftt.rt\CulMain.java
+16=..\TestCodeGen\ftt.rt\ClassCuler.java
+17=..\TestCodeGen\ftt.rt\AbstractSta_Pattern.java
+18=..\TestCodeGen\ftt.rt\StaReportByPattern.java
+19=..\TestCodeGen\ftt.rt\CulReportByPattern.java
+20=..\TestCodeGen\ftt.rt\ftt_patterns\FTTPrice15M_Pattern.java
+21=..\TestCodeGen\ftt.rt\ftt_patterns\FTTPriceSta15M_Pattern.java
+22=..\TestCodeGen\ftt.rt\ftt_patterns\FTTPriceSta_Pattern.java
+23=..\TestCodeGen\ftt.rt\ftt_patterns\FTTSta_Pattern.java
+24=..\TestCodeGen\ftt.rt\NRec.java
+25=..\TestCodeGen\ftt.rt\FConverter.java

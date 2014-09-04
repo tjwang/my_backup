@@ -1,0 +1,80 @@
+set classpath=%classpath%;./ftt_patterns;.;..
+DROP TABLE IF EXISTS `sta_price`;
+CREATE TABLE `sta_price` (
+  `sa_name` char(8) default NULL,
+  `date` char(10) default NULL,
+  `time` char(10) default NULL,
+  `max_high` float default NULL,
+  `avg_dif` float default NULL,
+  `max_dif` float default NULL,
+  `min_dif` float default NULL,
+  `dif` float default NULL,
+  KEY `ipcdsta_vol` (`date`,`time`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+delete from sta_price;
+java CulReportByPattern 20140801 tx TX084 FTTPrice_Pattern 
+load data infile "X:\\Working\\TS\\TestCodeGen\\ftt.rt\\tx.rpt" into table sta_price FIELDS  TERMINATED by '|';
+
+del  sta_price.feature 
+del  sta_price.ifeature 
+java CulReportFeature max_high sta_price 90500 132500 max_high max_hp 1>> sta_price.feature 2>>sta_price.ifeature
+java CulReportFeature avg_dif sta_price 90500 132500 avg_dif avg_dif 1>> sta_price.feature 2>>sta_price.ifeature
+java CulReportFeature max_dif sta_price 90500 132500 max_dif max_dif 1>> sta_price.feature 2>>sta_price.ifeature
+java CulReportFeature min_dif sta_price 90500 132500 min_dif min_dif 1>> sta_price.feature 2>>sta_price.ifeature
+java CulReportFeature dif sta_price 90500 132500 dif dif 1>> sta_price.feature 2>>sta_price.ifeature
+
+load data infile "X:\\Working\\TS\\TestCodeGen\\ftt.rt\\sta_price.feature" into table feature_value FIELDS  TERMINATED by '|';
+load data infile "X:\\Working\\TS\\TestCodeGen\\ftt.rt\\sta_price.ifeature" into table afeature_value FIELDS  TERMINATED by '|';
+=====================================================================================================================
+delete from sta_price;
+java CulReportByPattern 20140801 tx15 TX084 FTTPrice15M_Pattern 
+load data infile "X:\\Working\\TS\\TestCodeGen\\ftt.rt\\tx15.rpt" into table sta_price FIELDS  TERMINATED by '|';
+
+del  sta_price.feature 
+del  sta_price.ifeature 
+java CulReportFeature max_high sta_price 90500 132500 max_high mhp_15 1>> sta_price.feature 2>>sta_price.ifeature
+java CulReportFeature avg_dif sta_price 90500 132500 avg_dif adif_15 1>> sta_price.feature 2>>sta_price.ifeature
+java CulReportFeature max_dif sta_price 90500 132500 max_dif mdif_15 1>> sta_price.feature 2>>sta_price.ifeature
+java CulReportFeature min_dif sta_price 90500 132500 min_dif ndif_15 1>> sta_price.feature 2>>sta_price.ifeature
+java CulReportFeature dif sta_price 90500 132500 dif dif_15 1>> sta_price.feature 2>>sta_price.ifeature
+
+load data infile "X:\\Working\\TS\\TestCodeGen\\ftt.rt\\sta_price.feature" into table feature_value FIELDS  TERMINATED by '|';
+load data infile "X:\\Working\\TS\\TestCodeGen\\ftt.rt\\sta_price.ifeature" into table afeature_value FIELDS  TERMINATED by '|';
+
+
+==============================================================================================
+delete from sta_vol;
+java CulReportByPattern 20140801 220 220 FTTFD_Pattern 
+load data infile "X:\\Working\\TS\\TestCodeGen\\ftt.rt\\220.rpt" into table sta_vol FIELDS  TERMINATED by '|';
+
+del  220.feature 
+del  220.ifeature 
+java CulReportFeature max_high sta_vol 90500 132500 max_high max_hv 1>> 220.feature 2>> 220.ifeature
+java CulReportFeature avg_vol sta_vol 90500 132500 avg_vol avg_vol 1>> 220.feature  2>> 220.ifeature
+java CulReportFeature max_vol sta_vol 90500 132500 max_vol max_vol 1>> 220.feature  2>> 220.ifeature
+java CulReportFeature min_vol sta_vol 90500 132500 min_vol min_vol 1>> 220.feature  2>> 220.ifeature
+
+load data infile "X:\\Working\\TS\\TestCodeGen\\ftt.rt\\220.feature" into table feature_value FIELDS  TERMINATED by '|';
+load data infile "X:\\Working\\TS\\TestCodeGen\\ftt.rt\\220.ifeature" into table afeature_value FIELDS  TERMINATED by '|';
+
+
+
+java StaReportByPattern 20140801 200_TX FTTSta_Pattern 200  FTTPriceSta_Pattern TX084
+java StaReportByPattern 20140801 200_TX15 FTTSta_Pattern 200  FTTPriceSta15M_Pattern TX084
+java StaReportByPattern 20140801 TX_TX15 FTTPriceSta_Pattern TX084  FTTPriceSta15M_Pattern TX084
+
+delete from sta_raw;
+load data infile "X:\\Working\\TS\\TestCodeGen\\ftt.rt\\200_TX.srpt" into table sta_raw FIELDS  TERMINATED by '|';
+load data infile "X:\\Working\\TS\\TestCodeGen\\ftt.rt\\200_TX15.srpt" into table sta_raw FIELDS  TERMINATED by '|';
+load data infile "X:\\Working\\TS\\TestCodeGen\\ftt.rt\\TX_TX15.srpt" into table sta_raw FIELDS  TERMINATED by '|';
+
+delete from sta_m_raw;
+load data infile "X:\\Working\\TS\\TestCodeGen\\ftt.rt\\200_TX.srpt_2" into table sta_m_raw FIELDS  TERMINATED by '|';
+load data infile "X:\\Working\\TS\\TestCodeGen\\ftt.rt\\200_TX15.srpt_2" into table sta_m_raw FIELDS  TERMINATED by '|';
+load data infile "X:\\Working\\TS\\TestCodeGen\\ftt.rt\\TX_TX15.srpt_2" into table sta_m_raw FIELDS  TERMINATED by '|';
+
+delete from sta_raw_pg;
+INSERT INTO sta_raw_pg (pri_n,sec_n,pri_v,sec_v,vcc) select pri_n,sec_n,pri_v,sec_v,count(*) from sta_raw where time > 90500 and time < 132500 group by pri_n,sec_n,pri_v,sec_v order by pri_n,sec_n;
+delete from sta_m_raw_pg;
+INSERT INTO sta_m_raw_pg (pri_n,sec_n,pri_v,sec_v,vcc) select pri_n,sec_n,pri_v,sec_v,count(*) from sta_m_raw where time > 90500 and time < 132500 group by pri_n,sec_n,pri_v,sec_v order by pri_n,sec_n;

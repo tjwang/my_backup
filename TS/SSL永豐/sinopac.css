@@ -1,0 +1,55 @@
+/* Last_Update:20110616 */
+.txt01 {font-size:9pt; line-height:12pt; color:#333333; font-family:"新細明體", "Times New Roman";}
+.txt02 {font-size:11pt; line-height:26px; color:#E38B13; font-family:"新細明體", "Arial"; letter-spacing:10pt; text-transform:none; font-style:normal; padding:0pt; font-weight:bold; background-color:#FFFFC1;}
+.txt03 {font-size:9pt; color:#FDC502; letter-spacing:4pt;}
+.txt04 {font-size:9pt; line-height:18pt; color:#000000; font-family:"新細明體", "Arial"; word-spacing:normal; letter-spacing:1pt;}
+.txt04a {font-size:9pt; line-height:18px; color:#B67E18; font-family:"新細明體", "Arial"; letter-spacing:1pt;}
+.txt04b {font-size:9pt; line-height:22px; color:#142EA7; font-family:"新細明體", "Arial"; letter-spacing:1pt;}
+.txt04b2 {font-size:9pt; line-height:20px; color:#142EA7; letter-spacing:1pt;}
+.txt04bold {font-size:12pt; line-height:18px; color:#0033CC; font-family:"新細明體", "Arial"; letter-spacing:2pt; font-style:normal; font-weight:bold;}
+.txt04bolds {font-size:9pt; line-height:18px; color:#A47739; font-family:"新細明體", "Arial"; letter-spacing:2pt; font-style:normal; font-weight:bold;}
+.txt04c {font-size:9pt; line-height:18px; color:#004993; font-family:"新細明體", "Arial"; letter-spacing:2pt;}
+.txt05 {font-size:12pt; line-height:22px; color:#327BCD; font-family:"新細明體", "Arial"; letter-spacing:2pt; height:1px; width:1px; font-weight:bold;}
+.txt06 {font-size:13px; line-height:22px; color:#FFFFFF;}
+.txt07 {font-size:9pt; color:#FDC502; letter-spacing:1pt;}
+.txt08 {font-size:9pt;}
+.txt09 {font-size:12pt; line-height:22px; color:#FF0000; font-family:"新細明體", "Arial"; letter-spacing:10pt; text-transform:none; font-style:normal; padding:0pt; font-weight:bold; background-color:#FFFFFF;}
+.mainbg {background-repeat:no-repeat;background-position:right top;}
+.bordertable {border:#000000;}
+.button1 {font-size:9pt;}
+a.link01 {font-size:9pt; color:#000000; text-decoration:none;}
+a.link01:hover {font-size:9pt; color:#FF0000; text-decoration:none}
+a.link02 {font-size:9pt; color:#FFFFFF; text-decoration:none; letter-spacing:2pt;}
+a.link02:hover {font-size:9pt; color:#FF9933; text-decoration:underline}
+a.link02_1 {font-size:9pt; color:#FFFFFF; text-decoration:none; letter-spacing:1pt;}
+a.link02_1:hover {font-size:9pt; color:#FF9933; text-decoration:underline}
+a.link02_2 {font-size:9pt; color:#FFFFFF; text-decoration:none; letter-spacing:2pt; line-height:13pt;}
+a.link02_2:hover {font-size:9pt; color:#FF9933; text-decoration:underline; line-height:13pt;}
+a.link03 {font-size:9pt; color:#FFD733; text-decoration:none;}
+a.link03:hover {font-size:9pt; color:#FFFF00; text-decoration:underline}
+a.link05 {font-size:9pt; color:#FFFFFF; text-decoration:none;}
+a.link05:hover {font-size:9pt; color:#FF0000; text-decoration:underline}
+a.link05red {font-size:13px; color:#FF0000; text-decoration:none;}
+a.link05red:hover {font-size:13px; color:#FF6666; text-decoration:none}
+a.link06 {font-size:9pt; color:#63659C; text-decoration:none;}
+a.link06:hover {font-size:9pt; color:#FF0000; text-decoration:underline}
+a.link07 {font-size:9pt; color:#666666; text-decoration:none;}
+a.link07:hover {font-size:9pt; color:#FF0000; text-decoration:underline}
+a.link08 {font-size:12pt; color:#327BCD; text-decoration:none; clip:rect(auto auto auto auto);}
+a.link08:hover {font-size:9pt; color:#FF0000; text-decoration:underline}
+a.link09 {font-size:13px; color:#FFFFFF; text-decoration:none;}
+a.link09:hover {font-size:13px; color:#FFFFCC; text-decoration:underline}
+.btn {border:#7B9EBD 1px solid; margin:0 0 0 0px; font-family:"Arial, 新細明體";
+      height:22px; padding:2 2 0 2px; font-size:12px; text-align:center; color:black;
+      filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#FFFFFF, EndColorStr=#CECFDE);}
+.btn_over {border:#7B9EBD 1px solid; margin:0 0 0 0px; font-family:"Arial, 新細明體";
+      height:22px; padding:2 2 0 2px; font-size:12px; text-align:center; color:black;
+      filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#BDBECD, EndColorStr=#FFFFFF);}
+.redbtn {border:#7B9EBD 1px solid; margin:0 0 0 0px; font-family:"Arial, 新細明體";
+      height:22px; padding:2 2 0 2px; font-size:12px; text-align:center; color:black;
+      filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#FFFFFF, EndColorStr=#FF8080);}
+.redbtn_over {border:#7B9EBD 1px solid; margin:0 0 0 0px; font-family:"Arial, 新細明體";
+      height:22px; padding:2 2 0 2px; font-size:12px; text-align:center; color:black;
+      filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#FF8080, EndColorStr=#FFFFFF);}
+input.noborder {border:none;}
+

@@ -1,0 +1,148 @@
+
+1.
+ select date,snum,MarginBuy,MarginSell,MarginNow,ShortNow,SetOff from pmargin where snum='3231' and date > '20090701' ;
+ 
+2.
+
+select aa.*,mname from pmname2 as pmname,(select a.*, ds000.sname,a.t/ds000.capital as rr from ds000,( select  snum,mnum,sum(Amount) as t,sum(MoneyAmt) as mt , sum(MoneyAmt)/sum(Amount) as avt,avg(Rate) as avr
+ from pmamountinfo_week2 where date < '20091025'   and snum='1314' group by snum,mnum) as a where ds000.snum=a.snum) as aa
+ where pmname.mnum=aa.mnum order by rr desc;
+
+select aa.*,mname from pmname2 as pmname,(select a.*, ds000.sname,a.t/ds000.capital as rr from ds000,( select  snum,mnum,sum(Amount) as t,sum(MoneyAmt) as mt , sum(MoneyAmt)/sum(Amount) as avt,avg(Rate) as avr
+ from pmamountinfo_week2 where snum='3257' and date > '20130601'  and date < '20141230' group by snum,mnum) as a where ds000.snum=a.snum) as aa
+ where pmname.mnum=aa.mnum order by rr desc;
+
+select aa.snum,max(aa.rr)/min(aa.rr) as rto,pmname.type from pmname2 as pmname,(select a.*, ds000.sname,a.t/ds000.capital as rr from ds000,( select  snum,mnum,sum(Amount) as t,sum(MoneyAmt) as mt , sum(MoneyAmt)/sum(Amount) as avt,avg(Rate) as avr
+ from pmamountinfo_week2 where  date > '20120601'  and date < '2013601' group by snum,mnum) as a where ds000.snum=a.snum and ds000.capital > 200000 and ds000.capital < 600000 ) as aa
+ where pmname.mnum=aa.mnum and pmname.type = 'F' group by snum order by rto;
+
+select * from pmname2, 
+ (select aa.snum,aa.mnum as mn, max(aa.rr)/min(aa.rr) as rto, aa.rr from (select a.*, ds000.sname,a.t/ds000.capital as rr from ds000,( select  snum,mnum,sum(Amount) as t,sum(MoneyAmt) as mt , sum(MoneyAmt)/sum(Amount) as avt,avg(Rate) as avr
+ from pmamountinfo_week2 where  date > '20130901'  and date < '20140601' group by snum,mnum) as a where ds000.snum=a.snum order by snum,rr desc) as aa group by snum) as kk  where kk.mn=pmname2.mnum and pmname2.type='F' and kk.rr > 0.02 order by rto;
+ 
+select a.*, ds000.sname,a.t/ds000.capital as rr from ds000,( select  snum,mnum,sum(Amount) as t,sum(MoneyAmt) as mt , sum(MoneyAmt)/sum(Amount) as avt,avg(Rate) as avr
+ from pmamountinfo_week2 where   date > '20120601'  and date < '20131601' group by snum,mnum) as a where ds000.snum=a.snum order by snum,rr desc;
+ 
+ 
+ 3.	
+select *, a.t/ds000.capital as rr from ds000,( select  snum,mnum,sum(Amount) as t,sum(MoneyAmt) as mt , sum(MoneyAmt)/sum(Amount) as avt,avg(Rate) as avr
+ from pmamountinfo_week2 where date < '20130901'  and date > '20141201' and mnum='1360' group by snum,mnum) as a,pmname2 as pmname where ds000.snum=a.snum and pmname.mnum=a.mnum  and capital > 10000 
+ order by rr desc limit 100;
+
+--碭腹虫坝禦禬ゑ瞯程布..
+
+select *, a.t/ds000.capital as rr from ds000,( select  snum,mnum,sum(Amount) as t,sum(MoneyAmt) as mt , sum(MoneyAmt)/sum(Amount) as avt,avg(Rate) as avr
+ from pmamountinfo_week2 where date > '20140413'  and date < '20140420' group by snum,mnum) as a,pmname2 as pmname where ds000.snum=a.snum and pmname.mnum=a.mnum  and pmname.type = 'F' and capital > 10000 
+ order by rr  desc limit 100;
+--碭腹戈禦禬ゑ瞯程布..
+
+select *, a.t/ds000.capital as rr from ds000,( select  snum,mnum,sum(Amount) as t,sum(MoneyAmt) as mt , sum(MoneyAmt)/sum(Amount) as avt,avg(Rate) as avr
+ from pmamountinfo_week2 where date > '20120301'  and date < '20120701'  group by snum,mnum) as a,pmname2 as pmname where ds000.snum=a.snum and pmname.mnum=a.mnum and capital > 10000 
+ order by rr desc limit 100;
+
+--碭腹禦禬ゑ瞯程布..
+
+4.
+select * from 
+(select snum,mnum,count(*) as f from pmamount2 where date >  '20100101 'and sum > 50 group by snum,mnum order by f desc limit 100) as a,
+pmname2,
+ds000
+where pmname2.mnum = a.mnum and ds000.snum = a.snum order by f
+;
+
+select a.snum,a.mnum,f,f/count(*),ds000.sname,pmname2.mname from pmamount2 as pmamount,
+(select snum,mnum,count(*) as f from pmamount2 as pmamount where date > '20090101' and sum > 20 group by snum,mnum ) as a,
+pmname2,
+ds000
+where pmamount.mnum = a.mnum and pmamount.snum = a.snum and date >  '20090101' and pmname2.mnum = a.mnum and ds000.snum = a.snum  and f > 20 group by snum,mnum order by 4 desc limit 100;
+
+select a.snum,a.mnum,f,f/mf from 
+(select snum,mnum,count(*) as f  from pmamount2 as pmamount where date > '20080101' and sum > 5 group by snum,mnum ) as a,
+(select snum,mnum,count(*) as mf from pmamount2 as pmamount where date > '20080101' group by snum,mnum ) as b
+where b.mnum = a.mnum and b.snum = a.snum and  f > 30 group by snum,mnum order by 4 desc limit 100;
+
+ 5. 
+ select * from pmname as a, pmamountinfo as b where a.mnum=b.mnum and a.type = 'F' and date = '20110214';
+ select date,sum(inAmt)/100000,sum(outAmt)/100000,sum(totalAmt)/100000 from pmname as a, pmamountinfo as b where a.mnum=b.mnum and a.type = 'F' and date >'20110101' group by date;
+ 
+ select aa.date,sumA,sumB,sumA-sumB from
+  (select date, sum(inAmt)/100000 as inA ,sum(outAmt)/100000 as outA ,sum(totalAmt)/100000 as sumA from pmname as a, pmamountinfo as b where a.mnum=b.mnum and a.type = 'F' group by date) as  aa,
+  (select date, inAmount/100000000 as inB , outAmount/100000000 as outB , totalAmount/100000000 as sumB from pinoutsum_official where  type ='F' ) as bb
+  where aa.date= bb.date  order by aa.date;
+
+select date, sum(inAmt)/100000 as inA ,sum(outAmt)/100000 as outA ,sum(totalAmt)/100000 as sumA from pmname as a, pmamountinfo as b where a.mnum=b.mnum 
+           and (a.mnum = '0003' OR a.mnum = '0024' OR a.mnum = '0026' OR a.mnum = '0037' OR a.mnum = '0084' ) group by date;
+
+select aa.date,inA,outA,money, inA-money, outA-money from 
+(select date, sum(inAmt)/100000 as inA ,sum(outAmt)/100000 as outA ,sum(totalAmt)/100000 as sumA from pmname as a, pmamountinfo as b where a.mnum=b.mnum group by date) as aa,
+(select date, money from pldayk where snum='0001') as bb
+where aa.date=bb.date;
+
+
+select sum(rp*ra) from
+(select snum,rp,ra from pamountnew where date='20110214') as a,
+ds000attr as b where a.snum = b.snum and b.tcode='1';
+
+
+ select date,mname,inAmt/100000,outAmt/100000,totalAmt/100000 from pmname2 as a, pmamount2info as b where a.mnum=b.mnum and date ='20110214' and a.type != 'F';
+ select date,sum(inAmt)/100000,sum(outAmt)/100000,sum(totalAmt)/100000 from pmname2 as a, pmamount2info as b where a.mnum=b.mnum and date ='20110214' and a.type = 'F' group by date;
+
+select sum(diff)
+from
+(
+select aa.snum, of_out, my_out, of_out - my_out as diff from 
+(select snum, sum(inM)/100000000 as of_in,sum(outM)/100000000 as of_out,sum(totalM)/100000000 as of_sum from psnuminoutmoney where date='20110214' and type='F' group by snum ) as aa,
+(select a.snum as snum ,sum(b.avg * a.inAmount)/100000 as my_in, sum(b.avg * a.outAmount)/100000  as my_out, sum(b.avg * a.sum)/100000 as my_sum from   
+                 (select snum, pmname2.mnum as mnum, inAmount, outAmount, sum from pmamount2, pmname2 
+                 where date='20110214'  and pmname2.type='F' and pmname2.mnum = pmamount2.mnum ) as a,    
+                 (select * from pamountinfo where date='20110214'  ) as b where a.snum = b.snum  group by snum ) as bb
+where aa.snum = bb.snum order by 4 desc limit 80 
+) as temp
+;
+
+
+select snum, pmname2.mnum as mnum, sum(inAmount), sum(outAmount), sum(sum) from pmamount2, pmname2 
+                 where date='20110214'  and pmname2.type='F' and pmname2.mnum = pmamount2.mnum and snum='2330'  group by snum   ;
+
+select snum, mname, inAmount, outAmount, sum from pmamount2, pmname2 
+                 where date>'20110101'  and pmname2.type!='F' and pmname2.mnum = pmamount2.mnum and snum='2330'  order by  outAmount  ;
+             
+select * from              
+(select snum, date,pmname2.mnum as mnum, sum(inAmount), sum(outAmount), sum(sum) from pmamount2, pmname2 
+                 where date>'20110101'  and pmname2.type!='F'   and pmname2.mnum = pmamount2.mnum and snum='2330'  group by snum,date ) as aa,
+(select snum, date,a.in/1000, a.out/1000, total/1000 from psnuminoutsum as a where snum='2330' and date>'20110101'  and type='F') as bb
+where aa.date = bb.date order by aa.date; 
+
+ 
+select aa.*,mname from pmname2 as pmname,(select a.*, ds000.sname,a.t/ds000.capital as rr from ds000,( select  snum,mnum,sum(BAmount+SAmount) as t,sum(MoneyAmt) as mt , sum(BMoneyAmt+SMoneyAmt)/sum(BAmount+SAmount) as avt,avg(BRate+SRate) as avr
+ from pmamountinfo_week2 where snum='6210' and date > '20080220'  and date < '20120228' group by snum,mnum) as a where ds000.snum=a.snum) as aa
+ where pmname.mnum=aa.mnum order by rr desc;
+ 
+select *, a.t/ds000.capital as rr from ds000,( select  snum,mnum,sum(BAmount+SAmount) as t,sum(BMoneyAmt+SMoneyAmt) as mt , sum(BMoneyAmt+SMoneyAmt)/sum(BAmount+SAmount) as avt,avg(Rate) as avr
+ from pmamountinfo_week2 where date < '20110427'  and date > '20110101'  group by snum,mnum) as a,pmname2 as pmname where ds000.snum=a.snum and pmname.mnum=a.mnum and capital > 10000 
+ order by rr desc limit 100;
+   
+   
+5. 琘らセ痲ゑ
+
+ select a.snum, eps1, close , close/(eps1+eps2+eps3) as r from pamountinfo as a, ds000info as b where a.snum=b.snum and date ='20131121' order by r ;                            
+ 
+ select * from ds000attr as attr ,(select a.snum, close , eps1,eps2,eps3,eps4, (close/(eps1+eps2))/(rawProfit*rate) as r ,rate from pamountinfo as a, ds000info as b where a.snum=b.snum 
+  and date ='20140619' and eps1 > 0 and  eps2 > 0 and eps1/eps2 > 0.7 and eps2/eps1 > 0.7 and eps3/eps2 > 0.7 and eps2/eps3 > 0.7 
+  and rawProfit > 0) as sr where sr.snum=attr.snum and attr.ccode!='11'and attr.ccode!='10' order by r limit 50;                            
+
+(select attr.snum as snum,sname,category,close , eps1,eps2,eps3,eps4, capital,r from ds000attr as attr ,(select a.snum, close , eps1,eps2,eps3,eps4, capital, close/(eps1+eps2+eps3+eps4) as r from pamountinfo as a, ds000info as b where a.snum=b.snum 
+  and date ='20131121' and close/(eps1+eps2+eps3) > 0 and eps1 > 0 and eps2 > 0 and eps3 > 0  and rate > 0.01) as sr 
+ where sr.snum=attr.snum and attr.ccode!='11' order by r limit 100) as aa 
+
+select aa.*, bb.t/aa.capital as rr from  
+ (select attr.snum as snum,sname,category,close , eps1,eps2,eps3,eps4, capital,r from ds000attr as attr ,(select a.snum, close , eps1,eps2,eps3,eps4, capital, close/(eps1+eps2+eps3+eps4) as r from pamountinfo as a, ds000info as b where a.snum=b.snum 
+  and date ='20131209' and close/(eps1+eps2+eps3+eps4) > 0 and eps1 > 0 and eps2 > 0 and eps3 > 0 and eps4 > 0 and rate > 0.01) as sr 
+ where sr.snum=attr.snum and attr.ccode!='11' order by r limit 100) as aa,
+ ( select  snum,mnum,sum(Amount) as t,sum(MoneyAmt) as mt , sum(MoneyAmt)/sum(Amount) as avt,avg(Rate) as avr
+ from pmamountinfo_week2 where date > '20130301'  and date < '20131201' group by snum,mnum) as bb,
+ pmname2 as pmname where aa.snum=bb.snum and pmname.mnum=bb.mnum  and pmname.type = 'F' 
+ order by rr desc limit 100;
+select * from ds000attr as attr ,(select a.snum, close , eps1,eps2,eps3,eps4, close/(eps1+eps2) as r from pamountinfo as a, ds000info as b where a.snum=b.snum 
+  and date ='20131210' and close/(eps1+eps2) > 0 and eps1 + eps2 > eps2 + eps3 ) as sr 
+ where sr.snum=attr.snum and attr.ccode!='11' order by r limit 100;                            

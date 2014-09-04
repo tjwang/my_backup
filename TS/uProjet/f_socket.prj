@@ -1,0 +1,23 @@
+[Project ID]
+Signature=UE Proj: v.1
+[Project Information]
+Use Relative Directory=1
+Relative to Project File=1
+Include Sub Directories=1
+Project Tagfile=
+Project Wordfile=
+Filter=
+Create Tagfile=0
+[Files]
+0=..\F_SocketServer\F_SocketClient.java
+1=..\..\stock\tool\F_SocketClient.java
+2=..\F_SocketServer\F_SocketServer.java
+3=..\F_SocketServer\FiveParser.java
+4=..\..\stock\db\Future_Rec.java
+5=..\§ì¨÷°Ó\GetPage2.java
+6=..\F_SocketServer\GetPageFive.java
+7=..\§ì³Ì¨Î¤­ÀÉ\GetXPage.java
+8=..\..\stock\db\Index_Rec.java
+9=..\..\stock\db\PFFiveRaw_Rec.java
+10=..\..\stock\db\PFiveRaw_Rec.java
+11=..\TestCodeGen\ftt.rt\FTTFD_Pattern.java

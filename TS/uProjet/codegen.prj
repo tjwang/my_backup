@@ -1,0 +1,27 @@
+[Project ID]
+Signature=UE Proj: v.1
+[Project Information]
+Use Relative Directory=1
+Relative to Project File=1
+Include Sub Directories=1
+Project Tagfile=
+Project Wordfile=
+Filter=
+Create Tagfile=0
+Project Directory=X:\Working\TS\uProjet
+[Files]
+0=..\TestCodeGen\BasicWriter.java
+1=..\TestCodeGen\compile.bat
+2=..\TestCodeGen\FactoryTPL.tbl
+3=..\TestCodeGen\FactoryWriter.java
+4=..\TestCodeGen\FinderTPL.tbl
+5=..\TestCodeGen\FinderWriter.java
+6=..\TestCodeGen\LG_Maker.tbl
+7=..\TestCodeGen\LGMakerWriter.java
+8=..\TestCodeGen\PatternTPL.tbl
+9=..\TestCodeGen\PatternWriter.java
+10=..\TestCodeGen\StatiWriter.java
+11=..\TestCodeGen\StaTPL.tbl
+12=..\TestCodeGen\TestCodeGen.java
+13=..\TestCodeGen\UITPL.tbl
+14=..\TestCodeGen\UIWriter.java

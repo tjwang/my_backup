@@ -1,0 +1,14 @@
+[Project ID]
+Signature=UE Proj: v.1
+[Project Information]
+Use Relative Directory=1
+Relative to Project File=1
+[Files]
+0=..\TestCodeGen\abc.rt\ABC_oFactory.java
+1=..\TestCodeGen\abc.rt\ABC_Pattern.java
+2=..\TestCodeGen\abc.rt\ABC_sFactory.java
+3=..\TestCodeGen\abc.rt\ABC_tFinder.java
+4=..\TestCodeGen\abc.rt\ABC_tStati.java
+5=..\TestCodeGen\abc.rt\ABC_tUI.java
+6=..\TestCodeGen\abc.rt\LG_Maker.java
+7=..\TestCodeGen\abc.rt\snum.txt
