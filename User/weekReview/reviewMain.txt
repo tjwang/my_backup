@@ -146,3 +146,6 @@ select aa.*, bb.t/aa.capital as rr from
 select * from ds000attr as attr ,(select a.snum, close , eps1,eps2,eps3,eps4, close/(eps1+eps2) as r from pamountinfo as a, ds000info as b where a.snum=b.snum 
   and date ='20131210' and close/(eps1+eps2) > 0 and eps1 + eps2 > eps2 + eps3 ) as sr 
  where sr.snum=attr.snum and attr.ccode!='11' order by r limit 100;                            
+
+
+commitxxx
