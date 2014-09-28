@@ -12,7 +12,7 @@ static String postData="ctl00_ScriptManager1_HiddenField=%3B%3BAjaxControlToolki
 static String cookieValue = null;
 static String cookie_value = null; 
 static String viewState = null;
-static String[] future_list = {"TX",    "TX094", "TX104","TX114","TX124"};
+static String[] future_list = {"TX", "TX104","TX114","TX124", "TX035"};
 static String[] wcode_list = {"^N225", "^HSI", "000001.SS", "^KS11"};
 static String[] index_list={"1"/*祇︽秖舦基计*/,"2"/*ゼ磕玂繧计*/,"200"/*Θユ肂*/,"201"/*Θユ计秖,Θユ掸计*/,
 	                          "220"/*Θユ肂<布>*/, "221"/*Θユ计秖,Θユ掸计 */,
