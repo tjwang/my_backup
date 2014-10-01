@@ -15,6 +15,7 @@ public class T4_Call {
     //ord_match_flag : 成交類別  0:全部明細 1:未成交 3:委託失敗  5:委託彙總
     public native  String fo_order_qry2(String ord_match_flag);  
 
+    static int test_count = 0;
     public OrderedRec[] queryOrdered()
     {
        OrderedRec[] data_rec = null;
@@ -25,7 +26,6 @@ public class T4_Call {
        try
        {
          respdata = s.getBytes("ISO-8859-1");
- //        System.out.println(new String(respdata,"MS950"));
         } catch(Exception xe)
        {
            respdata = s.getBytes();
@@ -35,6 +35,34 @@ public class T4_Call {
        byte[] record_count = new byte[3];
        System.arraycopy(respdata, 40, record_count, 0, 3);
        int array_len = Integer.parseInt("1"+new String(record_count))%1000;
+/*
+       try{
+       	  java.io.FileOutputStream fo = new java.io.FileOutputStream("tt"+test_count);
+       	  test_count++;
+       	  fo.write(respdata);
+          ssx = new String(respdata, "ISO-8859-1");
+          fo.close();
+       }catch(Exception uee)
+       {
+       }
+       for(int i=0;i<array_len;i++)
+       {
+       	  int pattern_idx = ssx.indexOf("FF0020000664316");
+          String ss2 = ssx.substring(pattern_idx+1);
+          int pattern_idx2 = ss2.indexOf("FF0020000664316");
+          if(pattern_idx2 > 0)
+             lens_array[i] = pattern_idx2 +1;
+          else
+             lens_array[i] = ss2.length()+1;   
+          System.out.println("lens_array["+i+"]: "+lens_array[i]); 
+          try{
+            System.out.println(new String(ssx.substring(pattern_idx,lens_array[i]+pattern_idx).getBytes("ISO-8859-1"),"MS950")); 
+          }catch(Exception e)
+          {
+          }
+          ssx = ss2;  
+       }
+  */
        data_rec = new OrderedRec[array_len];
        for(int i=0;i<array_len;i++)
        {
@@ -206,7 +234,7 @@ public class T4_Call {
 
     static {
        // System.loadLibrary("X:\\Working\\TS\\Test\\TestJNI\\MyJNI.dll");
-        System.load("X:\\Working\\TS\\Test\\TestFuture\\TestJNI\\MyJNI.dll");
+        System.load("X:\\Working\\TS\\F_SocketServer\\MyJNI.dll");
 
     }
     public T4_Call()

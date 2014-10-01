@@ -31,6 +31,8 @@ public class T4_Transaction {
    private int cover_price_setted;
    private int cover_price;
    private float open_price;
+   private int cover_null_warning_count;
+   private boolean need_to_delay;
    public T4_Transaction(int op, int price, String which_code)
    {
        if(_my_t4_call == null)
@@ -54,6 +56,7 @@ public class T4_Transaction {
        status = INITED;
        cover_price_setted = -1;
        cover_price = -1;
+       need_to_delay = false;
    }
    
    public int open()throws Exception
@@ -110,7 +113,8 @@ public class T4_Transaction {
       cover_price = price;
       if((status == COVERING || status == OPEN_COVERING) && cover_price_setted != cover_price)
       {
-          syncCOVERingWithUnSettled();   
+          syncCOVERingWithUnSettled();  
+          cover_null_warning_count = 0; 
           return getStatus();   
       } else  if(status == OPENING || status == OPENED)
       {
@@ -123,6 +127,7 @@ public class T4_Transaction {
             status = COVERING;
          }
          syncCOVERingWithUnSettled(); 
+         cover_null_warning_count = 0; 
          return getStatus();
       }
       return OP_FAIL;
@@ -131,7 +136,17 @@ public class T4_Transaction {
    private void processCOVERing(OrderedRec[] ors)throws Exception
    {
       if(status == COVERING)
-      {
+      {   if(my_ors[COVERING] == null)
+      	  {
+      	     syncCOVERingWithUnSettled();
+      	  }
+      	  if(my_ors[COVERING] == null)
+      	  {
+      	     if(cover_null_warning_count++ > 5)
+      	     {
+                  throw new Exception("cover_null_warning_count > 5");      	    
+      	     }
+      	  }
     	    for(int i=0; i<ors.length; i++)
     	    {
     	      	if(my_ors[COVERING] instanceof OrderRec)
@@ -143,8 +158,14 @@ public class T4_Transaction {
     	              my_ors[COVERING] = ors[i];
     	              if(!ors[i].queryValid())
     	              {
-    	                  status = CLOSED;
-    	                  my_ors[CLOSED] = ors[i];
+    	                  my_ors[COVERING] = null;
+    	                  Thread.currentThread().sleep(2000);
+    	                  syncCOVERingWithUnSettled();
+    	                  if(my_ors[COVERING] == null)
+    	                  {
+    	                     status = CLOSED;
+    	                     my_ors[CLOSED] = ors[i];
+    	                  } 
     	               }
     	            }
     	         } else if(my_ors[COVERING] instanceof OrderedRec)
@@ -156,9 +177,15 @@ public class T4_Transaction {
     	                my_ors[COVERING] = ors[i];
     	                if(!ors[i].queryValid())
     	                {
-    	                   status = CLOSED;
-    	                   my_ors[CLOSED] = ors[i];
-    	                 }
+    	                    my_ors[COVERING] = null;
+    	                    Thread.currentThread().sleep(2000);  
+    	                    syncCOVERingWithUnSettled();
+    	                    if(my_ors[COVERING] == null)
+    	                    {
+    	                       status = CLOSED;
+    	                       my_ors[CLOSED] = ors[i];
+    	                    } 
+    	                }
     	             }
     	         }
     	    }
@@ -167,6 +194,7 @@ public class T4_Transaction {
    
    private void syncCOVERingWithUnSettled()throws Exception
    {
+      System.out.println("syncCOVERingWithUnSettled()");
       if(status == COVERING || status == OPEN_COVERING)
       {
          if(my_ors[status] != null)
@@ -187,6 +215,11 @@ public class T4_Transaction {
    	 	      }
    	 	      Thread.currentThread().sleep(300);
    	 	      my_ors[status] = null;
+         }
+         if(need_to_delay)
+         {
+            Thread.currentThread().sleep(1000);
+            need_to_delay = false;
          }
          UnSettledRec uns_rec=_my_t4_call.queryUnSettled("1","0");
          if(uns_rec != null)
@@ -218,6 +251,38 @@ public class T4_Transaction {
       }
    }
    
+   public float getLossMoney() throws Exception
+   {
+         UnSettledRec uns_rec=_my_t4_call.queryUnSettled("1","0");
+         if(uns_rec != null)
+         {
+//            uns_rec.dump();
+            return uns_rec.loss;
+         }
+         return 0;
+   }
+   public float getLossPoint() throws Exception
+   {
+         UnSettledRec uns_rec=_my_t4_call.queryUnSettled("1","0");
+         if(uns_rec != null)
+         {
+//            uns_rec.dump();
+            if(uns_rec.ord_bs)
+            {
+               return uns_rec.cur_price - uns_rec.avg_price;
+            } else
+            {
+               return uns_rec.avg_price - uns_rec.cur_price;
+            }
+         }
+         return 0;
+   }
+   public UnSettledRec getUnSettled() throws Exception
+   {
+         UnSettledRec uns_rec=_my_t4_call.queryUnSettled("1","0");
+         return uns_rec;
+   }
+   
    public int getStatus()throws Exception
    {
        if(status == OPENING)
@@ -239,10 +304,11 @@ public class T4_Transaction {
     	                my_ors[OPENED] = ors[i];
     	                open_price = Float.parseFloat(mo.price);
     	             }
+    	             ors[i].dump();
     	          }
     	      }
-    	      if(my_ors[OPENING] != null)
-     	       ((OrderedRec)my_ors[OPENING]).dump();
+    	      //if(my_ors[OPENING] != null)
+     	      // ((OrderedRec)my_ors[OPENING]).dump();
            
        } else if(status == CANCELING)
        {
@@ -286,9 +352,13 @@ public class T4_Transaction {
     	    {
     	    	  if(ors[i] != null && ors[i].ord_seq != null && ors[i].ord_seq.equals(mo.seq_no) && ors[i].ord_no != null && ors[i].ord_no.trim().length() > 0)
    	          {
-    	             if(((OrderedRec)my_ors[OPENING]).ord_match_qty != ors[i].ord_match_qty || cover_price_setted != cover_price)
+    	             System.out.println("(OrderedRec)my_ors[OPENING]).ord_match_qty :"+((OrderedRec)my_ors[OPENING]).ord_match_qty);
+    	             System.out.println("ors[i].ord_match_qty :"+ors[i].ord_match_qty);
+    	             System.out.println("cover_price_setted:"+cover_price_setted +" cover_price:"+cover_price);
+    	             if(((OrderedRec)my_ors[OPENING]).ord_match_qty != ors[i].ord_match_qty || (cover_price_setted != cover_price && ors[i].ord_match_qty > 0))
     	             {
     	              	   needToSync = true;
+    	              	   need_to_delay = true;
     	              }
     	              my_ors[OPENING] = ors[i];
     	              if(ors[i].ord_qty == ors[i].cancel_qty)
@@ -298,6 +368,7 @@ public class T4_Transaction {
     	               } else if(ors[i].ord_qty == ors[i].cancel_qty + ors[i].ord_match_qty &&  ors[i].ord_match_qty > 0)
     	               {
     	                  status = COVERING;
+    	                  need_to_delay = true;
     	                  my_ors[COVERING] = my_ors[OPEN_COVERING];
     	               }
     	               break;
@@ -307,7 +378,7 @@ public class T4_Transaction {
     	     {
     	         processCOVERing(ors);
     	     } 
-           if(needToSync)
+           if(needToSync || (my_ors[status] == null && ((OrderedRec)my_ors[OPENING]).ord_match_qty > 0) )
            {
                syncCOVERingWithUnSettled();
            }
@@ -322,10 +393,10 @@ public class T4_Transaction {
    }
 public static void main(String[] args)throws Exception
 {
-     T4_Transaction txc = new T4_Transaction(OP_BUY, 9000, "MXFJ4");
+     T4_Transaction txc = new T4_Transaction(OP_BUY, 8500, "MXFJ4");
      txc.open();
      int status;
-     if(txc.getStatus() == OPENING)
+     while(txc.getStatus() == OPENING)
      {
           System.out.println("cancel ...."+txc.cancel());
      }
