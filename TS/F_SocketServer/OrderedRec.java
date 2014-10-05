@@ -36,7 +36,7 @@ public class OrderedRec {
       if(ord_qty - cancel_qty - ord_match_qty <= 0)
         return false;
         
-       return err_code.substring(0,2).equals("00");
+       return err_code.substring(0,2).equals("00") || err_code.substring(0,2).equals("PR");
    }
    
    public void dump()

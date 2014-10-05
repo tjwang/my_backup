@@ -288,7 +288,7 @@ static 	PLDayk_Rec parseWDKField(String code,String ds,String data)
    {
        if(xtime_i >= 91500)
        {
-          KexLine kx_tx_084 = (KexLine)datapool_m.get("TX094");  
+          KexLine kx_tx_084 = (KexLine)datapool_m.get("TX104");  
           KexLine kx_200 = (KexLine)datapool_m.get("200");  
           FTTSta_Pattern p_200 = new FTTSta_Pattern("");
           FTTPriceSta_Pattern p_tx = new FTTPriceSta_Pattern("");
@@ -441,8 +441,26 @@ static 	PLDayk_Rec parseWDKField(String code,String ds,String data)
  //      makeIndexBySelf(dv,xtime_i);
         makeMaStatisic(dv,xtime_i);
         makeTX_200_pattern_Statisic(dv,xtime_i);
+      /*
+        if(T4_TransactionManager.one_instance == null)
+        {
+           T4_TransactionManager.one_instance =new T4_TransactionManager();
+           T4_TransactionManager.one_instance.start();
+        }
+        T4_TransactionManager.one_instance.open(new TM_Transaction((int)getLastValueByCode("TX104"), 5, "MXFJ4"));
+        T4_TransactionManager.one_instance.setMaxLoss(-10);
+      */
    }
    
+   public  double getLastValueByCode(String code)
+   {
+      KexLine kl_ex = (KexLine)datapool_m.get(code);
+      if(kl_ex!=null &&kl_ex.length()>0)
+      {
+         return kl_ex.valueAt(kl_ex.length()-1).getValue();
+      }
+      return 0;
+   }
    public    FTT_sFactory()
    {
         _snum = "1476";
