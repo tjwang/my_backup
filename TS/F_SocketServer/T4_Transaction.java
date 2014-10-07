@@ -402,6 +402,21 @@ public class T4_Transaction implements Transaction{
       getStatus();
       return my_ors[status];
    }
+   public void dump()
+   {
+       System.out.println("==========T4_Transaction "+this+" dump start======");   
+       if(my_ors[OPENED]!=null && my_ors[OPENED] instanceof OrderedRec)
+       {
+         System.out.println("==========my_ors[OPENED] dump ======");
+         ((OrderedRec)my_ors[OPENED]).dump();
+       }
+       if(my_ors[CLOSED]!=null && my_ors[CLOSED] instanceof OrderedRec)
+       {
+         System.out.println("==========my_ors[CLOSED] dump ======");
+         ((OrderedRec)my_ors[CLOSED]).dump();
+       }
+       System.out.println("==========T4_Transaction "+this+" dump end======");   
+   }
 public static void main(String[] args)throws Exception
 {
      T4_Transaction txc = new T4_Transaction(OP_BUY, 8500, "MXFJ4");

@@ -57,6 +57,7 @@ public class T4_TransactionManager extends Thread{
            UnSettledRec  uns_rec = currentTransaction.getUnSettled();
            if(uns_rec != null)
            {
+           	  uns_rec.dump();
               if(uns_rec.ord_bs)
               {
                  float currentLoss = uns_rec.cur_price - uns_rec.avg_price;
@@ -216,6 +217,7 @@ public class T4_TransactionManager extends Thread{
    	      if(currentTransaction != null)
    	      {
    	          transaction_status = currentTransaction.getStatus();
+              System.out.println("transaction_status->"+transaction_status);   	          
    	          switch(transaction_status)
    	          {
    	             case T4_Transaction.INITED:
@@ -266,6 +268,7 @@ public class T4_TransactionManager extends Thread{
    	             case T4_Transaction.CLOSED:
    	             {
    	               System.out.println("T4_Transaction.CLOSED");
+   	                currentTransaction.dump();
                      synchronized(transaction_locker) {
                        currentTransaction = null;
                     }
@@ -279,6 +282,7 @@ public class T4_TransactionManager extends Thread{
      	  ByteArrayOutputStream bs = new ByteArrayOutputStream();
      	  PrintStream ps = new PrintStream(bs);
      	  e.printStackTrace(ps);
+     	  e.printStackTrace();
      	  try
      	  {
      	  	do
@@ -292,7 +296,6 @@ public class T4_TransactionManager extends Thread{
      	  {
      	     e2.printStackTrace();
      	  }
-     	  e.printStackTrace();
         return ;
      }
    }
@@ -302,7 +305,11 @@ public class T4_TransactionManager extends Thread{
        one_instance = t4_m;
        t4_m.start();
 //       T4_TransactionManager.one_instance.open(new T4_Transaction(op, open_price, code));
-       T4_TransactionManager.one_instance.open(new TM_Transaction(open_price, range, code));
+//       T4_TransactionManager.one_instance.open(new TM_Transaction(open_price, range, code));
+     while(true)
+     {
+       T4_TransactionManager.one_instance.open(new U_TSM_Transaction(open_price, range, code));
+       
        while(T4_TransactionManager.one_instance.getTransactionStatus() < T4_Transaction.OPENING)
        {
           try{
@@ -310,20 +317,19 @@ public class T4_TransactionManager extends Thread{
           }catch(Exception e)
           {
           }
-          System.out.println("1 wait state change");
        } 
 //       System.out.println("cover result:"+T4_TransactionManager.one_instance.cover(cover_price));
        T4_TransactionManager.one_instance.setMaxLoss(maxLoss);
-       while(T4_TransactionManager.one_instance.getTransactionStatus() != T4_Transaction.OPEN_COVERING)
-       {
+       System.out.println("State Changed");
+       while(T4_TransactionManager.one_instance.getTransactionStatus()>0 && 
+          T4_TransactionManager.one_instance.getTransactionStatus()!=T4_Transaction.CLOSED){
           try{
-           Thread.currentThread().sleep(200);
+           Thread.currentThread().sleep(1000);
           }catch(Exception e)
           {
           }
-          System.out.println("2 wait state change");
        }
-       System.out.println("State Changed");
+    }
    //    T4_TransactionManager.one_instance.cancel();
    }
    static void testRun2()

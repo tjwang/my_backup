@@ -441,15 +441,17 @@ static 	PLDayk_Rec parseWDKField(String code,String ds,String data)
  //      makeIndexBySelf(dv,xtime_i);
         makeMaStatisic(dv,xtime_i);
         makeTX_200_pattern_Statisic(dv,xtime_i);
-      /*
         if(T4_TransactionManager.one_instance == null)
         {
            T4_TransactionManager.one_instance =new T4_TransactionManager();
            T4_TransactionManager.one_instance.start();
         }
-        T4_TransactionManager.one_instance.open(new TM_Transaction((int)getLastValueByCode("TX104"), 5, "MXFJ4"));
-        T4_TransactionManager.one_instance.setMaxLoss(-10);
-      */
+        if(T4_TransactionManager.one_instance.getTransactionStatus() < 0 ||T4_TransactionManager.one_instance.getTransactionStatus() == T4_Transaction.CLOSED)
+        {
+//         T4_TransactionManager.one_instance.open(new TM_Transaction((int)getLastValueByCode("TX104"), 5, "MXFJ4"));
+           T4_TransactionManager.one_instance.open(new F_TSM_Transaction(this,(int)getLastValueByCode("TX104"), 5, "MXFJ4"));
+           T4_TransactionManager.one_instance.setMaxLoss(-15);
+        }
    }
    
    public  double getLastValueByCode(String code)

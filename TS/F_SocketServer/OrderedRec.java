@@ -53,5 +53,7 @@ public class OrderedRec {
       System.out.println("octype = "+octype); 
       System.out.println("preorder = "+preorder); 
       System.out.println("err_code = "+err_code); 
+      System.out.println("------order source--------");
+      or_source.dump();
   }
 }

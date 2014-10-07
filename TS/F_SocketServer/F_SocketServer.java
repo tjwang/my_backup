@@ -20,6 +20,7 @@ public class F_SocketServer extends Thread{
      fss2.setFactory(fss_fac);
      fss.start();
      fss2.start();
+     T4_TransactionManager.SkypeRecving();
      for(;;)
      {
      //	  System.out.println("I am sleeping");

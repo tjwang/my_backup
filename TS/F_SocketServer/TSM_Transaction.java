@@ -12,8 +12,7 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-public class TM_Transaction implements Transaction{
-   static T4_Call _my_t4_call = null;
+public abstract class TSM_Transaction implements Transaction{
    public static final int OP_FAIL = Transaction.OP_FAIL;
    public static final int INITED = Transaction.INITED;
    public static final int OPENING = Transaction.OPENING;
@@ -27,6 +26,7 @@ public class TM_Transaction implements Transaction{
    public static final int OP_SELL = Transaction.OP_SELL;
    private    OrderRec my_or_b;
    private    OrderRec my_or_s;
+   private    OrderRec my_or_c;
    private Object[] my_ors;
    private int _op; 
    private int status;
@@ -37,13 +37,8 @@ public class TM_Transaction implements Transaction{
    private boolean need_to_delay;
    private int _range;
    private int _price;
-   public TM_Transaction(int price, int range, String which_code)
+   public void init(int price, int range, String which_code)
    {
-       if(_my_t4_call == null)
-       {
-           _my_t4_call = new T4_Call();
-           T4_Transaction._my_t4_call = _my_t4_call;
-       }
        my_ors = new Object[8];
        for(int i=0;i<8;i++)
        {
@@ -79,27 +74,8 @@ public class TM_Transaction implements Transaction{
    {
    	  if(status == INITED)
    	  {
-   	 	 //  OrderRec mo = (OrderRec)my_ors[INITED];
-   	 	   System.out.println("to open tm transaction");
-   	 	   String result = _my_t4_call.orderFuture(my_or_b);
-   	 	   if(result == null || result.length() != 184)
-   	 	   {
-   	 	      System.out.println(result.length()+":"+result);
-   	 	      throw new Exception("fail at a opening order");
-   	 	   }
-         my_or_b.seq_no = result.substring(55,61);
-         System.out.println(result.length()+":"+my_or_b.seq_no);
-         
-         result = _my_t4_call.orderFuture(my_or_s);
-   	 	   if(result == null || result.length() != 184)
-   	 	   {
-   	 	      System.out.println(result.length()+":"+result);
-   	 	      throw new Exception("fail at a opening order");
-   	 	   }
-         my_or_s.seq_no = result.substring(55,61);
-         System.out.println(result.length()+":"+my_or_s.seq_no);
-         
          status = OPEN_COVERING;
+         getStatus();
          return OPEN_COVERING;
       }
       return OP_FAIL;
@@ -111,36 +87,12 @@ public class TM_Transaction implements Transaction{
       if(status == OPEN_COVERING)
       {
          int sleep_count = 0;
-         while(my_ors[OPENING] == null)
-         {
-         	  if(sleep_count > 10) throw new Exception("can't not get a valid order!!");
-            Thread.currentThread().sleep(500);
-            getStatus();
-            sleep_count ++;
-         }
          my_ors[CANCELING] =  my_ors[OPENING];
-         String result = _my_t4_call.cancelOrdered((OrderedRec)my_ors[CANCELING]);
-   	 	   System.out.println("o cancel r:"+result);
-   	 	   if(result == null || result.length() != 184)
-   	 	   {
-   	 	      System.out.println(result.length()+":"+result);
-   	 	      throw new Exception("fail at a opening cancle");
-   	 	   }
-         while(my_ors[OPEN_COVERING] == null)
-         {
-         	  if(sleep_count > 10) throw new Exception("can't not get a valid order!!");
-            Thread.currentThread().sleep(500);
-            getStatus();
-            sleep_count ++;
-         }
+         OrderedRec odcancle1 = (OrderedRec)my_ors[OPENING];
+         odcancle1.cancel_qty = odcancle1.ord_qty - odcancle1.ord_match_qty;
+         OrderedRec odcancle2 = (OrderedRec)my_ors[OPEN_COVERING];
+         odcancle2.cancel_qty = odcancle2.ord_qty - odcancle2.ord_match_qty;
          my_ors[CANCELING] =  my_ors[OPEN_COVERING];
-         result = _my_t4_call.cancelOrdered((OrderedRec)my_ors[CANCELING]);
-   	 	   System.out.println("c cancel r:"+result);
-   	 	   if(result == null || result.length() != 184)
-   	 	   {
-   	 	      System.out.println(result.length()+":"+result);
-   	 	      throw new Exception("fail at a covering cancle");
-   	 	   }
          status = CANCELING;
          return status;
       }
@@ -181,63 +133,92 @@ public class TM_Transaction implements Transaction{
    
    private void processCOVERing(OrderedRec[] ors)throws Exception
    {
+      System.out.println("processCOVERing");
       if(status == COVERING)
       {   if(my_ors[COVERING] == null)
       	  {
       	     syncCOVERingWithUnSettled();
       	  }
-      	  if(my_ors[COVERING] == null)
-      	  {
-      	     if(cover_null_warning_count++ > 5)
-      	     {
-                //  throw new Exception("cover_null_warning_count > 5");      	    
-      	     }
-      	  }
     	    for(int i=0; i<ors.length; i++)
     	    {
     	      	if(my_ors[COVERING] instanceof OrderRec)
     	      	{
-    	      	   OrderRec mo = (OrderRec)my_ors[COVERING];
-   	             if(ors[i] != null && ors[i].ord_seq != null && ors[i].ord_seq.equals(mo.seq_no) && ors[i].ord_no != null && ors[i].ord_no.trim().length() > 0)
-   	             {
-    	              ors[i].or_source = mo;
-    	              my_ors[COVERING] = ors[i];
-    	              if(!ors[i].queryValid())
-    	              {
-    	                 // my_ors[COVERING] = null;
-    	                  //Thread.currentThread().sleep(2000);
-    	                  //syncCOVERingWithUnSettled();
-    	                 // if(my_ors[COVERING] == null)
-    	                  {
-    	                     status = CLOSED;
-    	                     my_ors[CLOSED] = ors[i];
-    	                  } 
-    	               }
-    	            }
+    	      		 throw new Exception("Wrong State at Covering");
     	         } else if(my_ors[COVERING] instanceof OrderedRec)
     	         {
     	      	     OrderedRec mo = (OrderedRec)my_ors[COVERING];
-   	               if(ors[i] != null && ors[i].ord_seq != null && ors[i].ord_seq.equals(mo.ord_seq) && ors[i].ord_no != null && ors[i].ord_no.trim().length() > 0)
-   	               {
-    	                ors[i].or_source = mo.or_source;
-    	                my_ors[COVERING] = ors[i];
-    	                if(!ors[i].queryValid())
-    	                {
-    	                    //my_ors[COVERING] = null;
-    	                    //Thread.currentThread().sleep(2000);  
-    	                    //syncCOVERingWithUnSettled();
-    	                    //if(my_ors[COVERING] == null)
-    	                    {
-    	                       status = CLOSED;
-    	                       my_ors[CLOSED] = ors[i];
-    	                    } 
-    	                }
+   	               setupOrderedRec(mo);
+    	             if(!mo.queryValid())
+    	             {
+    	                 status = CLOSED;
+    	                 my_ors[CLOSED] = mo;
     	             }
     	         }
     	    }
       }
    }
    
+   abstract public double getCurrentPrice();
+   
+   private void setupOrderedRec(OrderedRec or)
+   {
+       double curP =  getCurrentPrice();
+       double or_p = 0;
+       boolean isBuy = true;
+       if(or.ord_seq.equals("otest"))
+       {
+          or_p = Double.parseDouble(my_or_b.price);
+       } else if(or.ord_seq.equals("stest"))
+       {
+          or_p = Double.parseDouble(my_or_s.price);
+          isBuy = false;
+       }else if(or.ord_seq.equals("covering"))
+       {
+          or_p = Double.parseDouble(my_or_c.price);
+          isBuy = "B".equals(my_or_c.buy_or_sell);
+       }
+          System.out.println("Cur_P:"+curP+" orp:"+or_p+ " isBuy:"+isBuy +" or.ord_match_qty:"+or.ord_match_qty);
+       if(isBuy)
+       { 
+       	  if(curP < or_p)
+       	  {
+       	     or.ord_match_qty =  or.ord_qty - or.cancel_qty;
+       	  }
+       } else
+       {
+       	  if(curP > or_p)
+       	  {
+       	     or.ord_match_qty =  or.ord_qty - or.cancel_qty;
+       	  }
+      
+       } 
+           System.out.println("Cur_P:"+curP+" orp:"+or_p+ " isBuy:"+isBuy +" or.ord_match_qty:"+or.ord_match_qty);
+  }
+   public UnSettledRec getUnSettled() throws Exception
+   {
+         UnSettledRec usr=null;
+       System.out.println("getUnSettled");
+         if( my_ors[OPENED] !=null)
+         {
+         	 OrderedRec ord = (OrderedRec)my_ors[OPENED];
+         	 double curP =  getCurrentPrice();
+           usr = new UnSettledRec();
+           usr.tdate =  ord.add_date;
+           usr.code = ord.stock_id;
+           usr.ord_bs = ord.ord_bs.equals("B");
+           usr.vol = (float)ord.ord_match_qty;
+           if(ord.ord_seq.equals("otest"))
+           {
+              usr.avg_price = Float.parseFloat(my_or_b.price);
+           } else if(ord.ord_seq.equals("stest"))
+           {
+              usr.avg_price = Float.parseFloat(my_or_s.price);
+           }
+           usr.cur_price = (float)curP;
+           usr.loss = (float)(usr.ord_bs ? (curP-usr.avg_price)*50 : (curP-usr.avg_price)*-50) ;
+         }
+         return usr;
+   }
    private void syncCOVERingWithUnSettled()throws Exception
    {
       System.out.println("syncCOVERingWithUnSettled()");
@@ -246,60 +227,36 @@ public class TM_Transaction implements Transaction{
          if(my_ors[status] != null)
          {
          	  int sleep_count = 0;
-         	  while(my_ors[status] instanceof OrderRec)
-         	  {
-         	      getStatus();
-         	      if(sleep_count > 10) throw new Exception("can't not get a valid order at covering cancelining !!");
-                Thread.currentThread().sleep(500);
-                sleep_count ++;
-         	  }
-            String result = _my_t4_call.cancelOrdered((OrderedRec)my_ors[status]);
-   	 	      if(result == null || result.length() != 184)
-   	 	      {
-   	 	         System.out.println(result.length()+":"+result);
-   	 	         throw new Exception("fail at a covering cancle");
-   	 	      }
-   	 	      Thread.currentThread().sleep(300);
    	 	      my_ors[status] = null;
          }
-         if(need_to_delay)
-         {
-            Thread.currentThread().sleep(1000);
-            need_to_delay = false;
-         }
-         UnSettledRec uns_rec=_my_t4_call.queryUnSettled("1","0");
+         UnSettledRec uns_rec=getUnSettled();
          if(uns_rec != null)
          {
             uns_rec.dump();
             open_price = uns_rec.avg_price ;
-            OrderRec my_or = new OrderRec();
+            my_or_c = new OrderRec();
             if(!uns_rec.ord_bs)
             {
-               my_or.buy_or_sell = "B";
-               my_or.price = String.valueOf(cover_price);
+               my_or_c.buy_or_sell = "B";
+               my_or_c.price = String.valueOf(cover_price);
             } else
             {
-               my_or.buy_or_sell = "S";
-               my_or.price = String.valueOf(cover_price);
+               my_or_c.buy_or_sell = "S";
+               my_or_c.price = String.valueOf(cover_price);
             }
-            my_or.code =   uns_rec.code;
-            my_or.amount = String.valueOf((int)uns_rec.vol);
-   	 	      String result = _my_t4_call.orderFuture(my_or);
-   	 	      if(result == null || result.length() != 184)
-   	 	      {
-   	 	         System.out.println(result.length()+":"+result);
-  	 	         throw new Exception("fail at a covering order");
-    	 	    }
+            my_or_c.code =   uns_rec.code;
+            my_or_c.amount = String.valueOf((int)uns_rec.vol);
     	 	    cover_price_setted = cover_price;
-            my_or.seq_no = result.substring(55,61);
-            my_ors[status] = my_or;
+            my_or_c.seq_no = "covering";
+            my_ors[COVERING] = null;
          }
       }
    }
    
    public float getLossMoney() throws Exception
    {
-         UnSettledRec uns_rec=_my_t4_call.queryUnSettled("1","0");
+        System.out.println("getLossMoney");
+        UnSettledRec uns_rec=getUnSettled();
          if(uns_rec != null)
          {
 //            uns_rec.dump();
@@ -309,7 +266,8 @@ public class TM_Transaction implements Transaction{
    }
    public float getLossPoint() throws Exception
    {
-         UnSettledRec uns_rec=_my_t4_call.queryUnSettled("1","0");
+
+         UnSettledRec uns_rec=getUnSettled();
          if(uns_rec != null)
          {
 //            uns_rec.dump();
@@ -323,14 +281,10 @@ public class TM_Transaction implements Transaction{
          }
          return 0;
    }
-   public UnSettledRec getUnSettled() throws Exception
-   {
-         UnSettledRec uns_rec=_my_t4_call.queryUnSettled("1","0");
-         return uns_rec;
-   }
    
    public int getStatus()throws Exception
    {
+       System.out.println("getStatus "+status);
        if(status == OPENING)
        {
            throw new Exception("Worng State at Opening");
@@ -359,19 +313,9 @@ public class TM_Transaction implements Transaction{
            
        } else if(status == CANCELING)
        {
-            OrderedRec[] ors = _my_t4_call.queryOrdered();
+          //  OrderedRec[] ors = _my_t4_call.queryOrdered();
             OrderedRec odcancle1 = (OrderedRec)my_ors[OPENING];
             OrderedRec odcancle2 = (OrderedRec)my_ors[OPEN_COVERING];
-    	      for(int i=0; i<ors.length; i++)
-    	      {
-   	            if(ors[i] != null && ors[i].ord_seq != null && ors[i].ord_seq.equals(odcancle1.ord_seq)&& ors[i].ord_no.trim().length() > 0)
-   	            {
-   	            	 my_ors[OPENING] = ors[i];
-     	          } else if(ors[i] != null && ors[i].ord_seq != null && ors[i].ord_seq.equals(odcancle2.ord_seq)&& ors[i].ord_no.trim().length() > 0)
-     	          {
-     	             my_ors[OPEN_COVERING]= ors[i];
-     	          }
-    	      }
             odcancle1 = (OrderedRec)my_ors[OPENING];
             odcancle2 = (OrderedRec)my_ors[OPEN_COVERING];
             if(odcancle1.ord_match_qty != odcancle2.ord_match_qty)
@@ -403,28 +347,80 @@ public class TM_Transaction implements Transaction{
             }
        }else if(status == COVERING)
        {
-       	  OrderedRec[] ors = _my_t4_call.queryOrdered();
+       	  if(my_ors[COVERING] == null && my_or_c!=null)
+       	  {
+       	  	   java.util.Date d = new java.util.Date();
+    	           OrderedRec or = new OrderedRec();
+    	           or.ord_seq="covering";
+    	           or.ord_no="c1234";
+    	           or.add_date=d.toString();
+    	           or.add_time=d.toString();
+    	           or.match_time="";
+    	           or.stock_id=my_or_c.code;
+    	           or.ord_bs=my_or_c.buy_or_sell;
+    	           or.ord_qty=Integer.parseInt(my_or_c.amount);
+    	           or.cancel_qty=0;
+    	           or.ord_match_qty=0;
+    	           or.octype=" ";
+    	           or.preorder=" ";
+    	           or.err_code="0000";
+    	           or.or_source=my_or_c;
+    	           my_ors[COVERING] = or;
+       	  
+       	   }
+       	  OrderedRec[] ors = new OrderedRec[1];
+       	  ors[0] =  (OrderedRec)my_ors[COVERING]; 
           processCOVERing(ors);
        }else if(status == OPEN_COVERING)
        {
-          OrderedRec[] ors = _my_t4_call.queryOrdered();
-    //      OrderRec mo = (OrderRec)my_ors[INITED];
-    //      boolean needToSync = false;
-    	    for(int i=0; i<ors.length; i++)
-    	    {
-    	    	  if(ors[i] != null && ors[i].ord_seq != null && ors[i].ord_seq.equals(my_or_b.seq_no) && ors[i].ord_no.trim().length() > 0)
-   	          {
-    	              my_ors[OPENING] = ors[i];
-    	              
-    	        } else if(ors[i] != null && ors[i].ord_seq != null && ors[i].ord_seq.equals(my_or_s.seq_no) && ors[i].ord_no.trim().length() > 0)
-   	          {
-    	              my_ors[OPEN_COVERING] = ors[i];
-    	        }  
-    	    }
+    	    //if(ors[i] != null && ors[i].ord_seq != null && ors[i].ord_seq.equals(my_or_b.seq_no) && ors[i].ord_no.trim().length() > 0)
+    	     java.util.Date d = new java.util.Date();
+   	       if(my_ors[OPENING]==null)
+   	       {
+    	           OrderedRec or = new OrderedRec();
+    	           or.ord_seq="otest";
+    	           or.ord_no="o1234";
+    	           or.add_date=d.toString();
+    	           or.add_time=d.toString();
+    	           or.match_time="";
+    	           or.stock_id=my_or_b.code;
+    	           or.ord_bs=my_or_b.buy_or_sell;
+    	           or.ord_qty=Integer.parseInt(my_or_b.amount);
+    	           or.cancel_qty=0;
+    	           or.ord_match_qty=0;
+    	           or.octype=" ";
+    	           or.preorder=" ";
+    	           or.err_code="0000";
+    	           or.or_source=my_or_b;
+    	           my_ors[OPENING] = or;
+    	     }
+    	     // else if(ors[i] != null && ors[i].ord_seq != null && ors[i].ord_seq.equals(my_or_s.seq_no) && ors[i].ord_no.trim().length() > 0)
+   	       {
+    	            
+    	           OrderedRec or = new OrderedRec();
+    	           or.ord_seq="stest";
+    	           or.ord_no="s1234";
+    	           or.add_date=d.toString();
+    	           or.add_time=d.toString();
+    	           or.match_time="";
+    	           or.stock_id=my_or_s.code;
+    	           or.ord_bs=my_or_s.buy_or_sell;
+    	           or.ord_qty=Integer.parseInt(my_or_s.amount);
+    	           or.cancel_qty=0;
+    	           or.ord_match_qty=0;
+    	           or.octype=" ";
+    	           or.preorder=" ";
+    	           or.err_code="0000";
+    	           or.or_source=my_or_s;
+    	           my_ors[OPEN_COVERING] = or;
+    	     }  
            OrderedRec order1 = (OrderedRec)my_ors[OPENING];
            OrderedRec order2 = (OrderedRec)my_ors[OPEN_COVERING];
+           setupOrderedRec(order1);
+           setupOrderedRec(order2);
     	     if((order1 != null && !order1.queryValid()) && ( order2!=null &&!order2.queryValid()))
     	     {
+    	     	System.out.println("xx1");
                if(order1.ord_match_qty != order2.ord_match_qty)
                {
                    if(order1.ord_match_qty > order2.ord_match_qty)
@@ -453,12 +449,14 @@ public class TM_Transaction implements Transaction{
     	    
     	     } else if(order1 != null && !order1.queryValid())
     	     {
+    	     	System.out.println("xx2");
                    status = COVERING;
                    my_ors[OPENED] = my_ors[OPENING];
                    my_ors[COVERING] = my_ors[OPEN_COVERING];
                    cover_price_setted = cover_price = _price + _range;
     	     }else if(order2 != null && !order2.queryValid())
     	     {
+    	     	System.out.println("xx3");
                  status = COVERING;
                  my_ors[OPENED] = my_ors[OPEN_COVERING];
                  my_ors[COVERING] = my_ors[OPENING];
@@ -466,6 +464,9 @@ public class TM_Transaction implements Transaction{
     	     }
     	     if(status == COVERING)
     	     {
+    	     	System.out.println("xx4");
+       	       OrderedRec[] ors = new OrderedRec[1];
+       	       ors[0] =  (OrderedRec)my_ors[COVERING]; 
     	         processCOVERing(ors);
     	     } 
        }
@@ -477,9 +478,10 @@ public class TM_Transaction implements Transaction{
       getStatus();
       return my_ors[status];
    }
+   
    public void dump()
    {
-       System.out.println("==========TM_Transaction "+this+" dump start======");   
+       System.out.println("==========TSM_Transaction "+this+" dump start======");   
        if(my_ors[OPENED]!=null && my_ors[OPENED] instanceof OrderedRec)
        {
          System.out.println("==========my_ors[OPENED] dump ======");
@@ -490,32 +492,7 @@ public class TM_Transaction implements Transaction{
          System.out.println("==========my_ors[CLOSED] dump ======");
          ((OrderedRec)my_ors[CLOSED]).dump();
        }
-       System.out.println("==========TM_Transaction "+this+" dump end======");   
+       System.out.println("==========TSM_Transaction "+this+" dump end======");   
    }
-
-public static void main(String[] args)throws Exception
-{
-     T4_Transaction txc = new T4_Transaction(OP_BUY, 8500, "MXFJ4");
-     txc.open();
-     int status;
-     while(txc.getStatus() == OPENING)
-     {
-          System.out.println("cancel ...."+txc.cancel());
-     }
-     Thread.currentThread().sleep(300);
-     System.out.println(txc.getStatus());
- /*    
-     if(status == OPENED)
-     {
-        txc.cancle();
-     }
-     do
-     {
-       status = txc.getStatus();
-       System.out.println(status);
-     } while(status == CANCEL_SENT);
-     System.out.println(status);
-  */   
-}
 
 }

@@ -41,4 +41,5 @@ public interface Transaction {
    
    public int getOp();
 
+   public void dump();
 }
