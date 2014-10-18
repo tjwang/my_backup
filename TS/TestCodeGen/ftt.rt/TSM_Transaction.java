@@ -37,7 +37,8 @@ public abstract class TSM_Transaction implements Transaction{
    private boolean need_to_delay;
    private int _range;
    private int _price;
-   public void init(int price, int range, String which_code)
+   private boolean _isEasy;
+   public void init(int price, int range, String which_code, boolean isEasy)
    {
        my_ors = new Object[8];
        for(int i=0;i<8;i++)
@@ -68,6 +69,7 @@ public abstract class TSM_Transaction implements Transaction{
        _price = price;
        _range = range;
        _op = -1; 
+       _isEasy = isEasy;
    }
    
    public int open()throws Exception
@@ -159,6 +161,8 @@ public abstract class TSM_Transaction implements Transaction{
    }
    
    abstract public double getCurrentPrice();
+   abstract public String getCurrentDateStr();
+   abstract public String getCurrentTimeStr();
    
    private void setupOrderedRec(OrderedRec or)
    {
@@ -177,27 +181,48 @@ public abstract class TSM_Transaction implements Transaction{
           or_p = Double.parseDouble(my_or_c.price);
           isBuy = "B".equals(my_or_c.buy_or_sell);
        }
-          System.out.println("Cur_P:"+curP+" orp:"+or_p+ " isBuy:"+isBuy +" or.ord_match_qty:"+or.ord_match_qty);
+  //        System.out.println("Cur_P:"+curP+" orp:"+or_p+ " isBuy:"+isBuy +" or.ord_match_qty:"+or.ord_match_qty);
        if(isBuy)
        { 
-       	  if(curP < or_p)
+       	  if(_isEasy)
        	  {
-       	     or.ord_match_qty =  or.ord_qty - or.cancel_qty;
+       	     if(curP <= or_p)
+       	     {
+       	        or.ord_match_qty =  or.ord_qty - or.cancel_qty;
+       	        or.match_time = getCurrentTimeStr();
+       	     }
+       	  } else
+       	  {
+       	     if(curP < or_p)
+       	     {
+       	        or.ord_match_qty =  or.ord_qty - or.cancel_qty;
+       	        or.match_time = getCurrentTimeStr();
+       	     }
        	  }
        } else
        {
-       	  if(curP > or_p)
+       	  if(_isEasy)
        	  {
-       	     or.ord_match_qty =  or.ord_qty - or.cancel_qty;
-       	  }
-      
+          	  if(curP >= or_p)
+              {
+        	       or.ord_match_qty =  or.ord_qty - or.cancel_qty;
+        	       or.match_time = getCurrentTimeStr();
+        	     }
+          } else
+          {
+          	  if(curP > or_p)
+              {
+        	       or.ord_match_qty =  or.ord_qty - or.cancel_qty;
+        	       or.match_time = getCurrentTimeStr();
+       	     }
+          } 
        } 
-           System.out.println("Cur_P:"+curP+" orp:"+or_p+ " isBuy:"+isBuy +" or.ord_match_qty:"+or.ord_match_qty);
+      //     System.out.println("Cur_P:"+curP+" orp:"+or_p+ " isBuy:"+isBuy +" or.ord_match_qty:"+or.ord_match_qty);
   }
    public UnSettledRec getUnSettled() throws Exception
    {
          UnSettledRec usr=null;
-       System.out.println("getUnSettled");
+         System.out.println("getUnSettled -->"+getCurrentTimeStr());
          if( my_ors[OPENED] !=null)
          {
          	 OrderedRec ord = (OrderedRec)my_ors[OPENED];
@@ -349,12 +374,12 @@ public abstract class TSM_Transaction implements Transaction{
        {
        	  if(my_ors[COVERING] == null && my_or_c!=null)
        	  {
-       	  	   java.util.Date d = new java.util.Date();
+//       	  	   java.util.Date d = new java.util.Date();
     	           OrderedRec or = new OrderedRec();
     	           or.ord_seq="covering";
     	           or.ord_no="c1234";
-    	           or.add_date=d.toString();
-    	           or.add_time=d.toString();
+    	           or.add_date=getCurrentDateStr();
+    	           or.add_time=getCurrentTimeStr();
     	           or.match_time="";
     	           or.stock_id=my_or_c.code;
     	           or.ord_bs=my_or_c.buy_or_sell;
@@ -374,14 +399,14 @@ public abstract class TSM_Transaction implements Transaction{
        }else if(status == OPEN_COVERING)
        {
     	    //if(ors[i] != null && ors[i].ord_seq != null && ors[i].ord_seq.equals(my_or_b.seq_no) && ors[i].ord_no.trim().length() > 0)
-    	     java.util.Date d = new java.util.Date();
+//    	     java.util.Date d = new java.util.Date();
    	       if(my_ors[OPENING]==null)
    	       {
     	           OrderedRec or = new OrderedRec();
     	           or.ord_seq="otest";
     	           or.ord_no="o1234";
-    	           or.add_date=d.toString();
-    	           or.add_time=d.toString();
+    	           or.add_date=getCurrentDateStr();
+    	           or.add_time=getCurrentTimeStr();
     	           or.match_time="";
     	           or.stock_id=my_or_b.code;
     	           or.ord_bs=my_or_b.buy_or_sell;
@@ -400,8 +425,8 @@ public abstract class TSM_Transaction implements Transaction{
     	           OrderedRec or = new OrderedRec();
     	           or.ord_seq="stest";
     	           or.ord_no="s1234";
-    	           or.add_date=d.toString();
-    	           or.add_time=d.toString();
+    	           or.add_date=getCurrentDateStr();
+    	           or.add_time=getCurrentTimeStr();
     	           or.match_time="";
     	           or.stock_id=my_or_s.code;
     	           or.ord_bs=my_or_s.buy_or_sell;
@@ -420,7 +445,6 @@ public abstract class TSM_Transaction implements Transaction{
            setupOrderedRec(order2);
     	     if((order1 != null && !order1.queryValid()) && ( order2!=null &&!order2.queryValid()))
     	     {
-    	     	System.out.println("xx1");
                if(order1.ord_match_qty != order2.ord_match_qty)
                {
                    if(order1.ord_match_qty > order2.ord_match_qty)
@@ -449,14 +473,12 @@ public abstract class TSM_Transaction implements Transaction{
     	    
     	     } else if(order1 != null && !order1.queryValid())
     	     {
-    	     	System.out.println("xx2");
                    status = COVERING;
                    my_ors[OPENED] = my_ors[OPENING];
                    my_ors[COVERING] = my_ors[OPEN_COVERING];
                    cover_price_setted = cover_price = _price + _range;
     	     }else if(order2 != null && !order2.queryValid())
     	     {
-    	     	System.out.println("xx3");
                  status = COVERING;
                  my_ors[OPENED] = my_ors[OPEN_COVERING];
                  my_ors[COVERING] = my_ors[OPENING];
@@ -464,7 +486,6 @@ public abstract class TSM_Transaction implements Transaction{
     	     }
     	     if(status == COVERING)
     	     {
-    	     	System.out.println("xx4");
        	       OrderedRec[] ors = new OrderedRec[1];
        	       ors[0] =  (OrderedRec)my_ors[COVERING]; 
     	         processCOVERing(ors);
@@ -481,7 +502,7 @@ public abstract class TSM_Transaction implements Transaction{
    
    public void dump()
    {
-       System.out.println("==========TSM_Transaction "+this+" dump start======"); 
+       System.out.println("=="+getCurrentTimeStr()+"========TSM_Transaction "+this+" price:"+_price+" range:"+_range+" dump start======"); 
        OrderRec ors = null;   
        OrderRec crs = null;   
        if(my_ors[OPENED]!=null && my_ors[OPENED] instanceof OrderedRec)

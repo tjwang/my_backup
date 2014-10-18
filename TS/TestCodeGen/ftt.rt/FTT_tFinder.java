@@ -30,8 +30,15 @@ static public void main(String[] arg)throws Exception{
       double totalgsample = 0;
       if(arg.length > 1)
       {
-         init_check(arg[1]);
+        // init_check(arg[1]);
+        FTT_sFactory.current_TX = arg[1];
       }
+      if(arg.length > 2)
+      {
+        // init_check(arg[1]);
+        FTT_sFactory.current_Method = arg[2];
+      }
+
 //      while(e.hasMoreElements())
       {
 //         ds000r=(Ds000_Rec)e.nextElement();

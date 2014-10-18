@@ -34,11 +34,11 @@ public class CulReportByPattern {
             continue;
          }
          Line l_tx = null;
-         if(arg[2].indexOf("TX0") == 0)
+         if(arg[2].indexOf("TX1") == 0)
          {
-            l_tx = fac1.getLineByCode("TX074",1);
-            if(l_tx == null) l_tx = fac1.getLineByCode("TX084",1);
+            l_tx = fac1.getLineByCode("TX084",1);
             if(l_tx == null) l_tx = fac1.getLineByCode("TX094",1);
+            if(l_tx == null) l_tx = fac1.getLineByCode("TX104",1);
          } else
          {
             l_tx = fac1.getLineByCode(arg[2],1);

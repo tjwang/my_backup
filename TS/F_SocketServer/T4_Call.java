@@ -188,10 +188,28 @@ public class T4_Call {
     public UnSettledRec queryUnSettled(String type_1,String type_2)
     {
           UnSettledRec usr = new UnSettledRec();
-          byte[] respdata = fo_unsettled_qry("1","0").getBytes();
+          byte[] respdata = null;
           int base = 208 + 15;
-          if(respdata == null || respdata.length < base)
-             return null;
+          for(int i = 0; i<6; i++)
+          {
+            respdata = fo_unsettled_qry("1","0").getBytes();
+            if(respdata == null || respdata.length < base)
+            {
+               if(i>=5)
+               {
+                  return null;
+               } else
+               {
+               	  try{
+               	     Thread.currentThread().sleep(150);
+                  }catch(Exception xxe)
+                  {
+                  }
+                  continue;
+               }
+            } 
+            break;
+         }
           byte[] btdate = new byte[8];
           System.arraycopy(respdata, base, btdate, 0, 8);
           usr.tdate = new String(btdate);

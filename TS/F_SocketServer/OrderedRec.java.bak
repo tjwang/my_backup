@@ -54,7 +54,6 @@ public class OrderedRec {
       System.out.println("preorder = "+preorder); 
       System.out.println("err_code = "+err_code); 
       System.out.println("------order source--------");
-      if(or_source!=null)
       or_source.dump();
   }
 }

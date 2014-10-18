@@ -25,8 +25,8 @@ public class TM_Transaction implements Transaction{
    public static final int CLOSED_ERROR = Transaction.CLOSED_ERROR;
    public static final int OP_BUY = Transaction.OP_BUY;
    public static final int OP_SELL = Transaction.OP_SELL;
-   private    OrderRec my_or_b;
-   private    OrderRec my_or_s;
+   protected    OrderRec my_or_b;
+   protected    OrderRec my_or_s;
    private Object[] my_ors;
    private int _op; 
    private int status;
