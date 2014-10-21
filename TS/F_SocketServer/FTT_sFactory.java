@@ -21,6 +21,7 @@ public class FTT_sFactory extends KDataLineFactory{
     boolean realTime = false;
     int fail_count;
     double setValue;
+    TSRunPlan currentPlan;
 double convertUni(String code,double value)
 {
 	try
@@ -440,28 +441,39 @@ static 	PLDayk_Rec parseWDKField(String code,String ds,String data)
    }
    boolean testConditionMAm(String code)// ma3 between ma8~ma13
    {
-        Line kl_ex = (KexLine)datapool_m.get(code);
-        if(kl_ex == null) return false;   
-        int endIdx =  kl_ex.length()-1;
-        if(endIdx < 12) return false;
-//        if(kl_ex.valueAt(endIdx).getTimeValue()>=125900) return false;
-        if(kl_ex.valueAt(endIdx).getTimeValue()<93000) return false;
-        
-        double mav13  = kl_ex.sub(endIdx-12,endIdx).getAvg();
-        double mav8_1   = kl_ex.sub(endIdx-7,endIdx).getAvg();
-        double mav8_0   = kl_ex.sub(endIdx-8,endIdx-1).getAvg();
-        double mav3_1   = kl_ex.sub(endIdx-2,endIdx).getAvg();
-        double mav3_0   = kl_ex.sub(endIdx-3,endIdx-1).getAvg();
-       if(mav13 > mav8_1 && mav8_1 > mav3_1) return false;
-         if(mav13 < mav8_1 && mav8_1 < mav3_1) return false;
-        if((mav3_0-mav8_0)*(mav3_1-mav8_1) < 0)
-        {
-        	 setValue = mav3_1;
-           return true;
-        }         
+//   	
+//        Line kl_ex = (KexLine)datapool_m.get(code);
+//        if(kl_ex == null) return false;   
+//        int endIdx =  kl_ex.length()-1;
+//        if(endIdx < 12) return false;
+////        if(kl_ex.valueAt(endIdx).getTimeValue()>=125900) return false;
+//        if(kl_ex.valueAt(endIdx).getTimeValue()<93000) return false;
+//        
+//        double mav13  = kl_ex.sub(endIdx-12,endIdx).getAvg();
+//        double mav8_1   = kl_ex.sub(endIdx-7,endIdx).getAvg();
+//        double mav8_0   = kl_ex.sub(endIdx-8,endIdx-1).getAvg();
+//        double mav3_1   = kl_ex.sub(endIdx-2,endIdx).getAvg();
+//        double mav3_0   = kl_ex.sub(endIdx-3,endIdx-1).getAvg();
+//       if(mav13 > mav8_1 && mav8_1 > mav3_1) return false;
+//         if(mav13 < mav8_1 && mav8_1 < mav3_1) return false;
+//        if((mav3_0-mav8_0)*(mav3_1-mav8_1) < 0)
+//        {
+//        	 setValue = mav3_1;
+//           return true;
+//        }         
         return false;         
    }
-   
+   TSRunPlan findBestPlan()
+   {
+      if(T4_TransactionManager.one_instance == null)
+      {
+           T4_TransactionManager.one_instance =new T4_TransactionManager();
+           T4_TransactionManager.one_instance.start();
+      }
+
+      TSRunPlan trp = new SimpleTSRunPlan();
+      return  trp;
+   }   
    void statisicStock(DomainValue dv, int xtime_i)
    {
  //      makeIndexBySelf(dv,xtime_i);
@@ -469,23 +481,65 @@ static 	PLDayk_Rec parseWDKField(String code,String ds,String data)
  //       makeTX_200_pattern_Statisic(dv,xtime_i);
 //       if(testConditionMAm("TX104") && testConditionMAm("TX") && testConditionMAm("200") && 
 //          (testConditionMAm("2330") || testConditionMAm("2412") || testConditionMAm("2454")))
-       if(testConditionMAm(current_TX))
-       {   
-           if(T4_TransactionManager.one_instance == null)
+       if(currentPlan != null && currentPlan.checkStatus(this)==TSRunPlan.END)
+       {
+           if(T4_TransactionManager.one_instance != null)
            {
-              T4_TransactionManager.one_instance =new T4_TransactionManager();
-              T4_TransactionManager.one_instance.start();
+              if(T4_TransactionManager.one_instance.getTransactionStatus() == Transaction.CLOSED)
+              {
+                 currentPlan = null;
+              } else 
+              {
+                 T4_TransactionManager.one_instance.cancel();
+              }
+           } else
+           {
+              currentPlan = null;
            }
+       }     
+       
+       if(currentPlan == null)
+       {
+           currentPlan = findBestPlan();
+       }
+  //     if(testConditionMAm(current_TX))
+       if(
+         currentPlan!=null && currentPlan.checkStatus(this)==TSRunPlan.TRANS
+       )
+       {   
            if(T4_TransactionManager.one_instance.getTransactionStatus() < 0 ||T4_TransactionManager.one_instance.getTransactionStatus() == T4_Transaction.CLOSED)
            {
               if(T4_TransactionManager.one_instance.isFail()) fail_count++;
               if(fail_count < 3)
               {
-                 T4_TransactionManager.one_instance.open(new TM_Transaction((int)setValue, 18, "MXFK4"));
+                // T4_TransactionManager.one_instance.open(new TM_Transaction((int)setValue, 18, "MXFK4"));
+                 T4_TransactionManager.one_instance.open(currentPlan.getTransaction());
                  //T4_TransactionManager.one_instance.open(new F_TSM_Transaction(this,(int)getLastValueByCode("TX114"), 5, "MXFJ4"));
-                 T4_TransactionManager.one_instance.setMaxLoss(-12);
-                 T4_TransactionManager.one_instance.setMaxGet(6);
+                 //T4_TransactionManager.one_instance.setMaxLoss(-12);
+                 //T4_TransactionManager.one_instance.setMaxGet(6);
+                
+                 T4_TransactionManager.one_instance.setMaxLoss(currentPlan.getMaxLoss());
+                 if(currentPlan.getMaxGet() != 0)
+                 {
+                   T4_TransactionManager.one_instance.setMaxGet(currentPlan.getMaxGet());
+                 }
+                 T4_TransactionManager.one_instance.setTimeOut(currentPlan.getTimeOut());
               }
+           }else
+           {
+               if(T4_TransactionManager.one_instance.getMaxLoss() != currentPlan.getMaxLoss())
+               {
+                  T4_TransactionManager.one_instance.setMaxLoss(currentPlan.getMaxLoss());
+               }
+               if(T4_TransactionManager.one_instance.getMaxGet() != currentPlan.getMaxGet())
+               {
+                  T4_TransactionManager.one_instance.setMaxGet(currentPlan.getMaxGet());
+               }
+               if(T4_TransactionManager.one_instance.getTimeOut() != currentPlan.getTimeOut())
+               { 
+                  T4_TransactionManager.one_instance.setTimeOut(currentPlan.getTimeOut());
+               }
+          
            }
        }
    }
@@ -505,10 +559,11 @@ static 	PLDayk_Rec parseWDKField(String code,String ds,String data)
         datapool_m = new Hashtable();
         wdataBound = new Hashtable();
         _startdate = GMethod.d2s(new Date());
+        currentPlan = null;
         loadSnumRatio();
         realTime = true;
         fail_count = 0;
-    }
+     }
     
     public    FTT_sFactory(String snum,String stardate) throws Exception
     {
@@ -516,10 +571,13 @@ static 	PLDayk_Rec parseWDKField(String code,String ds,String data)
         datapool_m = new Hashtable();
         wdataBound = new Hashtable();
         _startdate = stardate;
+         fail_count = 0;
+        currentPlan = null;
         loadSnumRatio();
     	  loadKData(snum, stardate);
     	  realTime = false;
-    	   fail_count = 0;
+    	  
+    	   
     }
     
    synchronized void setReadData(byte[] databuf)
@@ -536,7 +594,11 @@ static 	PLDayk_Rec parseWDKField(String code,String ds,String data)
       	        datapool_m.put(code,kl_ex);
       	     }
       	     setFiveRaw(kl_ex,ffrr);
-         }else if(code.equals("1"))/*祇︽秖舦基计*/
+      	     if(code.equals(current_TX) && currentPlan != null)
+      	     {
+                currentPlan.checkStatus(this);
+      	     }         
+      	 }else if(code.equals("1"))/*祇︽秖舦基计*/
          {
              
          }else if(code.equals("2"))/*ゼ磕玂繧计*/
@@ -742,15 +804,15 @@ static 	PLDayk_Rec parseWDKField(String code,String ds,String data)
                  time_i += 4000;
                }
                time_i += 100;
-               if(pr.snum.equals("TX"))
-               {
-  //                kxv.dump();
-                  statisicStock(kxv.getDomainValue(), xtime_i);
-               }
                {
                  if(val < kxv.getLow()) kxv.setLow(val);
                  if(val > kxv.getHigh()) kxv.setHigh(val);
                  kxv.setClose(val);
+               }
+               if(pr.snum.equals(current_TX))
+               {
+  //                kxv.dump();
+                  statisicStock(kxv.getDomainValue(), xtime_i);
                }
                KexValue nkxv = new KexValue(kxv.getName(),kxv.getDateValue(), time_i, 
                               kxv.getClose(), kxv.getClose(), kxv.getClose(), kxv.getClose(), 

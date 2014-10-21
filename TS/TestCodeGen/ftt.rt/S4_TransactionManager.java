@@ -34,6 +34,9 @@ public class S4_TransactionManager {
    int    trans_op;
    int    do_count;
    int    fail_count;
+   int    timeOut;
+   int    open_time;
+   boolean is_ever_covering;
    boolean is_last_fail;
    boolean is_MaxGetSet;
    static public boolean mesg_status;
@@ -53,11 +56,22 @@ public class S4_TransactionManager {
    	    is_last_fail = false;
    	    do_count = 0;
    	    fail_count = 0;
+   	    timeOut = 0;
+   	    open_time = 0;
    	    try{
    	      dump_ps = new PrintStream(ds+".dump.log");
         }catch(FileNotFoundException fe)
         {
         }
+   }
+   
+   int getCurrentTime()
+   {
+      int ti = Integer.parseInt(((TSM_Transaction)currentTransaction).getCurrentTimeStr());
+      int h = ti/10000;
+      int m = (ti/100)%100;
+      int s = ti%100;
+      return 60*60*h+60*m+s;
    }
    
    public void setMaxLoss(float mlos)
@@ -71,6 +85,37 @@ public class S4_TransactionManager {
        is_MaxGetSet = false;
    }
 
+   public void setTimeOut(int TO)
+   {
+       timeOut = TO;
+   }
+   
+
+   public float getMaxLoss()
+   {
+       return max_loss;
+   }
+   
+   public float getMaxGet()
+   {
+      return  max_get;
+   }
+
+   public int getTimeOut()
+   {
+       return timeOut;
+   }
+   
+   void checkTimeOut() 
+   {
+      if(timeOut > 0)
+      {
+         if(getCurrentTime() - open_time > timeOut)
+         {
+            cancel();
+         }
+      }
+   }
    void checkLoss() throws Exception
    {
        if(currentTransaction != null)
@@ -131,6 +176,8 @@ public class S4_TransactionManager {
                    currentTransaction = t;
                    trans_op = t.getOp();
                  	 System.out.println("xxxxx");
+                 	 open_time = getCurrentTime();
+                 	 is_ever_covering = false;
                  //  empty_wait_object.notify();
                 }
                 result = 0;
@@ -231,16 +278,19 @@ public class S4_TransactionManager {
    	             case Transaction.INITED:
    	             {
    	                 currentTransaction.open();
+   	 /*
    	                PrintStream tps = System.out;
    	                System.setOut(dump_ps);
     	              System.out.println("Transaction.INITED");
   	                currentTransaction.dump();
    	                System.setOut(tps);
+   	  */
    	             }
    	             break;
    	             case Transaction.OPENING:
    	             {
    	     //            System.out.println("Transaction.OPENING");
+   	                   checkTimeOut();
    	             }
    	             break;
    	             case Transaction.OPENED:
@@ -264,13 +314,15 @@ public class S4_TransactionManager {
    	             case Transaction.OPEN_COVERING:
    	             {
    	//                 System.out.println("Transaction.OPEN_COVERING");
-   	                 checkLoss();
+    	             checkTimeOut();
+ 	                 checkLoss();
    	             }
    	             break;
    	             case Transaction.COVERING:
    	             {
     	      //         System.out.println("Transaction.COVERING");
    	                 checkLoss();
+   	                 is_ever_covering = true;
    	             }
    	             break;
    	             case Transaction.CLOSED:
@@ -280,11 +332,14 @@ public class S4_TransactionManager {
    	                System.out.println("Transaction.CLOSED");
    	                currentTransaction.dump();
    	                System.setOut(tps);
-   	                do_count ++;
-   	                if(is_last_fail)
+   	                if(is_ever_covering)
    	                {
-   	                   fail_count++;
-   	                }
+   	                	  do_count ++;
+   	                    if(is_last_fail)
+   	                    {
+   	                      fail_count++;
+   	                    }
+   	                 }
                      synchronized(transaction_locker) {
                        currentTransaction = null;
                     }
@@ -299,7 +354,11 @@ public class S4_TransactionManager {
         return ;
      }
    }
-
+   public PrintStream getDumpPs()
+   {
+      return  dump_ps;
+   }
+   
    public static void main(String[] args)
    {
    }

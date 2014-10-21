@@ -309,7 +309,7 @@ public abstract class TSM_Transaction implements Transaction{
    
    public int getStatus()throws Exception
    {
-       System.out.println("getStatus "+status);
+       System.out.println("getStatus "+status+"-->"+getCurrentTimeStr()+"  p:"+getCurrentPrice());
        if(status == OPENING)
        {
            throw new Exception("Worng State at Opening");
@@ -493,6 +493,12 @@ public abstract class TSM_Transaction implements Transaction{
        }
        return status;
    }
+
+   public boolean isEnd()
+   {
+      return status == CLOSED;
+   }
+
 
    public Object getStatusObject()throws Exception
    {

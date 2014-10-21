@@ -42,4 +42,6 @@ public interface Transaction {
    public int getOp();
 
    public void dump();
+   
+   public boolean isEnd();
 }

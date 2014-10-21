@@ -396,6 +396,11 @@ public class T4_Transaction implements Transaction{
        }
        return status;
    }
+   
+   public boolean isEnd()
+   {
+      return status == CLOSED;
+   }
 
    public Object getStatusObject()throws Exception
    {

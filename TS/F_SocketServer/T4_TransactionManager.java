@@ -32,6 +32,9 @@ public class T4_TransactionManager extends Thread{
    float  max_loss;
    float  max_get;
    int    trans_op;
+   int    timeOut;
+   int    open_time;
+   boolean is_ever_covering;
    boolean is_last_fail;
    boolean is_MaxGetSet;
    static public boolean mesg_status;
@@ -48,6 +51,14 @@ public class T4_TransactionManager extends Thread{
    	    max_get = 0;
    	    trans_op = -1;
    	    is_last_fail = false;
+   	    timeOut = 0;
+   	    open_time = 0;
+   }
+   
+   int getCurrentTime()
+   {
+      java.util.Date nowd = new java.util.Date();
+      return (int)(nowd.getTime()/1000);
    }
    
    public void setMaxLoss(float mlos)
@@ -59,6 +70,38 @@ public class T4_TransactionManager extends Thread{
    {
        max_get = mget;
        is_MaxGetSet = false;
+   }
+
+   public void setTimeOut(int TO)
+   {
+       timeOut = TO;
+   }
+   
+
+   public float getMaxLoss()
+   {
+       return max_loss;
+   }
+   
+   public float getMaxGet()
+   {
+      return  max_get;
+   }
+
+   public int getTimeOut()
+   {
+       return timeOut;
+   }
+   
+   void checkTimeOut() 
+   {
+      if(timeOut > 0)
+      {
+         if(getCurrentTime() - open_time > timeOut)
+         {
+            cancel();
+         }
+      }
    }
 
    void checkLoss() throws Exception
@@ -119,6 +162,8 @@ public class T4_TransactionManager extends Thread{
             	  is_last_fail = false;
                 currentTransaction = new T4_Transaction(op, price, which_code);
                 trans_op = op;
+                open_time = getCurrentTime();
+                is_ever_covering = false;
                 synchronized(empty_wait_object) {
                    empty_wait_object.notify();
                 }
@@ -258,6 +303,7 @@ public class T4_TransactionManager extends Thread{
    	             {
    	     //            System.out.println("T4_Transaction.OPENING");
    	                 sleep(1000);
+   	                 checkTimeOut();
    	             }
    	             break;
    	             case T4_Transaction.OPENED:
@@ -283,6 +329,7 @@ public class T4_TransactionManager extends Thread{
    	             case T4_Transaction.OPEN_COVERING:
    	             {
    	//                 System.out.println("T4_Transaction.OPEN_COVERING");
+   	                 checkTimeOut();
    	                 checkLoss();
    	                 sleep(1000);
    	             }
@@ -291,6 +338,7 @@ public class T4_TransactionManager extends Thread{
    	             {
     	      //         System.out.println("T4_Transaction.COVERING");
    	                 checkLoss();
+   	                  is_ever_covering = true;
    	                 sleep(500);
    	             }
    	             break;
