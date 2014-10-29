@@ -22,10 +22,13 @@ public class FTT_sFactory extends KDataLineFactory{
     boolean realTime = false;
     int fail_count;
     int match_count;
+    int _testTime;
     double setValue;
     double setValue1;
     double setValue2;
+    boolean ts_start ;
     TSRunPlan currentPlan;
+    InputStream tis;
 double convertUni(String code,double value)
 {
 	try
@@ -262,187 +265,6 @@ static 	PLDayk_Rec parseWDKField(String code,String ds,String data)
  	     kx_tx_self.add(new KexValue("TX_SELF", Integer.parseInt(_startdate), xtime_i/100 * 100, self_idx, self_idx, self_idx, self_idx, 0 , 0));
    
    }
-   void makeMaStatisic(DomainValue dv, int xtime_i)
-   {
-       int allma_idx = 0;
-       double allma_idx_u = 0;
-       double allma_idx_d = 0;
-      if(realTime)
-       {
-           allma_idx = allmaIndex(null);
-       } else
-       {
-           allma_idx = allmaIndex(dv);
-       }
-       allma_idx_u = allma_idx/1000;
-       allma_idx_d = allma_idx%1000;
-       KexLine kx_ma_self = (KexLine)datapool_m.get("MA_ALL");
-       if(kx_ma_self == null)
-       {
-          kx_ma_self = new KexLine();
-          datapool_m.put("MA_ALL",kx_ma_self);
-       }
-       KexLine kx_mad_self = (KexLine)datapool_m.get("MA_ALL_D");
-       if(kx_mad_self == null)
-       {
-          kx_mad_self = new KexLine();
-          datapool_m.put("MA_ALL_D",kx_mad_self);
-       }
-	     kx_ma_self.add(new KexValue("MA_ALL", Integer.parseInt(_startdate), xtime_i/100 * 100, allma_idx_u, allma_idx_u, allma_idx_u, allma_idx_u, 0 , 0));
-	     kx_mad_self.add(new KexValue("MA_ALL_D", Integer.parseInt(_startdate), xtime_i/100 * 100, allma_idx_d, allma_idx_d, allma_idx_d, allma_idx_d, 0 , 0));
-   
-   }
-   void makeTX_200_pattern_Statisic(DomainValue dv, int xtime_i)
-   {
-       if(xtime_i >= 91500)
-       {
-          KexLine kx_tx_084 = (KexLine)datapool_m.get(current_TX);  
-          KexLine kx_200 = (KexLine)datapool_m.get("200");  
-          FTTSta_Pattern p_200 = new FTTSta_Pattern("");
-          FTTPriceSta_Pattern p_tx = new FTTPriceSta_Pattern("");
-          Line l_200 = kx_200.sub(kx_200.length()-15,kx_200.length()-1);
-          Line l_084 = kx_tx_084.sub(kx_tx_084.length()-15,kx_tx_084.length()-1);
-          Line pl_200 = l_200.pattern(p_200);
-          Line pl_084 = l_084.pattern(p_tx);
-          PatternValue ptv_200 = (PatternValue)pl_200.valueAt(2);
-          PatternValue ptv_084 = (PatternValue)pl_084.valueAt(2);
-          Vector<NRec> pn_200 = p_200.getNameValue(ptv_200);
-          Vector<NRec> pn_084 = p_tx.getNameValue(ptv_084);
-          Enumeration<NRec> e =  pn_200.elements();
-          double p_up = 0;
-          double p_down = 0;
-          while(e.hasMoreElements())
-          {
-             NRec nr = e.nextElement();
-             if(FConverter.getFvofName(nr) != 0)
-             {
-         //      System.out.println(nr + "-->"+FConverter.getFvofName(nr));
-               PRec[] pv = FConverter.getPvofNR(nr,"sta_raw_pg", "dif_15");
-//               FConverter.dumpPRecs(pv);
-               for(int xi=0; xi<pv.length; xi++)
-               {
-                   if(pv[xi].ncase == 1)
-                   {
-                      p_up += pv[xi].pvalue;
-                   }else if(pv[xi].ncase == -1)
-                   {
-                      p_down += pv[xi].pvalue;
-                   }
-               }
-             }
-          }
-          e =  pn_084.elements();
-          while(e.hasMoreElements())
-          {
-             NRec nr = e.nextElement();
-             if(FConverter.getFvofName(nr) != 0)
-             {
-  //             System.out.println(nr + "-->"+FConverter.getFvofName(nr));
-               PRec[] pv = FConverter.getPvofNR(nr,"sta_raw_pg", "dif_15");
- //              FConverter.dumpPRecs(pv);
-               for(int xi=0; xi<pv.length; xi++)
-               {
-                   if(pv[xi].ncase == 1)
-                   {
-                      p_up += pv[xi].pvalue;
-                   }else if(pv[xi].ncase == -1)
-                   {
-                      p_down += pv[xi].pvalue;
-                   }
-               }
-             }
-           }
-          pn_200 = p_200.getNameValue2(ptv_200);
-          pn_084 = p_tx.getNameValue2(ptv_084);
-          e =  pn_200.elements();
-          while(e.hasMoreElements())
-          {
-             NRec nr = e.nextElement();
-             if((int)(nr.value)!= 13)
-             {
-            //   System.out.println(nr);
-               PRec[] pv = FConverter.getPvofNR_NonConvert(nr,"sta_raw_pg", "dif_15");
-             //  FConverter.dumpPRecs(pv);
-               for(int xi=0; xi<pv.length; xi++)
-               {
-                   if(pv[xi].ncase == 1)
-                   {
-                      p_up += pv[xi].pvalue;
-                   }else if(pv[xi].ncase == -1)
-                   {
-                      p_down += pv[xi].pvalue;
-                   }
-               }
-             }
-          }
-          e =  pn_084.elements();
-          while(e.hasMoreElements())
-          {
-             NRec nr = e.nextElement();
-             if((int)(nr.value)!= 13)
-             {
-        //       System.out.println(nr);
-               PRec[] pv = FConverter.getPvofNR_NonConvert(nr,"sta_raw_pg", "dif_15");
-        //       FConverter.dumpPRecs(pv);
-               for(int xi=0; xi<pv.length; xi++)
-               {
-                   if(pv[xi].ncase == 1)
-                   {
-                      p_up += pv[xi].pvalue;
-                   }else if(pv[xi].ncase == -1)
-                   {
-                      p_down += pv[xi].pvalue;
-                   }
-               }
-             }
-          }
-
-//          System.out.println("p_up-->"+p_up+" p_down-->"+p_down);
-          p_up = p_up * 100;
-          KexLine kx_tx_200_up_sta = (KexLine)datapool_m.get("TX_200_Up_Sta");
-          if(kx_tx_200_up_sta == null)
-          {
-             kx_tx_200_up_sta = new KexLine();
-             datapool_m.put("TX_200_Up_Sta",kx_tx_200_up_sta);
-          }
-	        kx_tx_200_up_sta.add(new KexValue("TX_200_Up_Sta", Integer.parseInt(_startdate), xtime_i/100 * 100, p_up, p_up, p_up, p_up, 0 , 0));
-          p_down = p_down * 100;
-          KexLine kx_tx_200_down_sta = (KexLine)datapool_m.get("TX_200_Down_Sta");
-          if(kx_tx_200_down_sta == null)
-          {
-             kx_tx_200_down_sta = new KexLine();
-             datapool_m.put("TX_200_Down_Sta",kx_tx_200_down_sta);
-          }
-	        kx_tx_200_down_sta.add(new KexValue("TX_200_Down_Sta", Integer.parseInt(_startdate), xtime_i/100 * 100, p_down, p_down, p_down, p_down, 0 , 0));
-          int endIdx = kx_tx_200_down_sta.length()-1;
-          if(endIdx >= 7)
-          {
-             double mav3_d   = kx_tx_200_down_sta.sub(endIdx-3,endIdx).getAvg();
-             double mav8_d   = kx_tx_200_down_sta.sub(endIdx-7,endIdx).getAvg();
-             endIdx = kx_tx_200_up_sta.length()-1;
-             double mav3_u   = kx_tx_200_up_sta.sub(endIdx-3,endIdx).getAvg();
-             double mav8_u   = kx_tx_200_up_sta.sub(endIdx-7,endIdx).getAvg();
-             if(mav3_u - mav8_u > 0 && mav3_u > 40)
-             {
-                 System.out.println("To Buy..."+ (xtime_i/100 * 100));
-                 KexLine kx_ma_self = (KexLine)datapool_m.get("MA_ALL");
-                 KexLine kx_mad_self = (KexLine)datapool_m.get("MA_ALL_D");
-                 if(kx_ma_self != null && kx_mad_self != null)
-                 {
-                     Value up_v = kx_ma_self.valueAt(kx_ma_self.length()-1);
-                     Value down_v = kx_mad_self.valueAt(kx_mad_self.length()-1);
-                     System.out.print("up v :");
-                     up_v.dump();
-                     System.out.print("down v :");
-                     down_v.dump();
-                 }
-                 kx_tx_084.valueAt(kx_tx_084.length()-1).dump();
-             }
-          }
-      }
-//       System.out.println("kx_tx_084 : "+kx_tx_084.length()+" -- "+ dv + " "+xtime_i);
-//       System.out.println("kx_200 : "+kx_200.length()+" -- "+ dv + " "+xtime_i);
-   }
    boolean testConditionMAm(String code)// ma3 between ma8~ma13
    {
    	   
@@ -479,7 +301,6 @@ static 	PLDayk_Rec parseWDKField(String code,String ds,String data)
            S4_TransactionManager.one_instance =new S4_TransactionManager(_startdate);
            S4_TransactionManager.one_instance.start();
       }
-
       if(current_Method.equals("not_easy"))
       {
 //          TSRunPlan trp = new S2TSRunPlan(false);
@@ -502,6 +323,15 @@ static 	PLDayk_Rec parseWDKField(String code,String ds,String data)
  //      makeIndexBySelf(dv,xtime_i);
   //      makeMaStatisic(dv,xtime_i);
  //       makeTX_200_pattern_Statisic(dv,xtime_i);
+       Line kl_ex = getLineByCode(FTT_sFactory.current_TX, 0);
+       if(_testTime - xtime_i < 1600 && _testTime - xtime_i > 1400 && tis!=null && currentPlan==null)
+       {
+//       	  System.out.println("tis.mark(10); _testTime:"+_testTime+" xtime_i:"+xtime_i);
+          tis.mark(10);
+       }
+       if(kl_ex.length() < 2) return ;
+       if(!(_testTime - kl_ex.valueAt(kl_ex.length()-2).getTimeValue() < 100 &&  _testTime - kl_ex.valueAt(kl_ex.length()-2).getTimeValue() >= 0)) return ;
+//       System.err.println("test_time:-->"+_startdate+"-"+_testTime);
        if(currentPlan != null && currentPlan.checkStatus(this)==TSRunPlan.END)
        {
            if(S4_TransactionManager.one_instance != null)
@@ -530,6 +360,7 @@ static 	PLDayk_Rec parseWDKField(String code,String ds,String data)
          currentPlan!=null && currentPlan.checkStatus(this)==TSRunPlan.TRANS
        )
        {   
+       	   ts_start = true;
            if(S4_TransactionManager.one_instance.getTransactionStatus() < 0 ||S4_TransactionManager.one_instance.getTransactionStatus() == Transaction.CLOSED)
            {
               if(S4_TransactionManager.one_instance.isFail()) fail_count++;
@@ -608,34 +439,34 @@ static 	PLDayk_Rec parseWDKField(String code,String ds,String data)
       }
       return 0;
    }
-
-   public    FTT_sFactory()
-   {
-        _snum = "1476";
-        datapool_m = new Hashtable();
-        wdataBound = new Hashtable();
-        _startdate = GMethod.d2s(new Date());
-        loadSnumRatio();
-        realTime = true;
-        fail_count = 0;
-        currentPlan = null;
-    }
+    
     
     public    FTT_sFactory(String snum,String stardate) throws Exception
     {
+        this(snum,stardate,90000);
+    }
+    public    FTT_sFactory(String snum,String stardate,int testTime) throws Exception
+    {
+        this(snum,stardate,testTime,null); 
+    }
+    public    FTT_sFactory(String snum,String stardate,int testTime,InputStream is) throws Exception
+    {
         _snum = snum;
+        tis = is;
         datapool_m = new Hashtable();
         wdataBound = new Hashtable();
         _startdate = stardate;
+        _testTime = testTime;
      	   fail_count = 0;
+     	   ts_start = false;
         currentPlan = null;
         loadSnumRatio();
     	  loadKData(snum, stardate);
     	  realTime = false;
     	  if(S4_TransactionManager.one_instance!=null)
     	  {
-    	     System.out.println("fail_count: "+S4_TransactionManager.one_instance.fail_count+ " match_count: "+S4_TransactionManager.one_instance.do_count+" ssesP:"+(1-(float)S4_TransactionManager.one_instance.fail_count/(float)S4_TransactionManager.one_instance.do_count));
-    	     System.err.println("fail_count: "+S4_TransactionManager.one_instance.fail_count+ " match_count: "+S4_TransactionManager.one_instance.do_count+" ssesP:"+(1-(float)S4_TransactionManager.one_instance.fail_count/(float)S4_TransactionManager.one_instance.do_count));
+//    	     System.out.println("fail_count: "+S4_TransactionManager.one_instance.fail_count+ " match_count: "+S4_TransactionManager.one_instance.do_count+" ssesP:"+(1-(float)S4_TransactionManager.one_instance.fail_count/(float)S4_TransactionManager.one_instance.do_count));
+//    	     System.err.println("fail_count: "+S4_TransactionManager.one_instance.fail_count+ " match_count: "+S4_TransactionManager.one_instance.do_count+" ssesP:"+(1-(float)S4_TransactionManager.one_instance.fail_count/(float)S4_TransactionManager.one_instance.do_count));
     	  }
     }
     
@@ -766,21 +597,38 @@ static 	PLDayk_Rec parseWDKField(String code,String ds,String data)
 
     public void loadKData(String snum,String stardate) throws Exception
     {
-         FileInputStream is = new FileInputStream("X:\\Working\\Data\\"+stardate+"\\fss_9999.log."+stardate);
+         InputStream is = null;
+         if(tis ==null)
+         {
+//            is = new FileInputStream("X:\\Working\\Data\\"+stardate+"\\fss_9999.log."+stardate);
+            is = new FileInputStream("X:\\Working\\Data\\"+stardate+"\\fss_8888.log."+stardate);
+         } else
+         {
+            is = tis;
+         }
          byte[] databuf = new byte[512];
          int rlen = 0;
          String s = null;
          int count = 0;
+         /*
          while((rlen = is.read(databuf)) > 0)
          {
              if(rlen != 512) throw new Exception("Error reading in file format");
              setReadData(databuf);
          }
-         is = new FileInputStream("X:\\Working\\Data\\"+stardate+"\\fss_8888.log."+stardate);
+         */
+//         is = new FileInputStream("X:\\Working\\Data\\"+stardate+"\\fss_8888.log."+stardate);
          while((rlen = is.read(databuf)) > 0)
          {
              if(rlen != 512) throw new Exception("Error reading in file format");
              setReadData(databuf);
+             if(ts_start)
+             {
+                if(currentPlan != null && currentPlan.checkStatus(this)==TSRunPlan.END)
+                {
+                    return ;
+                }
+             }
          }
     }
    /* 

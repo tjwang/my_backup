@@ -473,6 +473,7 @@ static 	PLDayk_Rec parseWDKField(String code,String ds,String data)
 
       TSRunPlan trp = new SimpleTSRunPlan();
       return  trp;
+    // return null;
    }   
    void statisicStock(DomainValue dv, int xtime_i)
    {
