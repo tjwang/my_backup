@@ -42,7 +42,7 @@ public class CutOff_Call {
        UnSettledRec uns_rec=t4_c.queryUnSettled("1","0");
        if(uns_rec != null)
        {
-          uns_rec.dump();
+//          uns_rec.dump();
           OrderRec my_or = new OrderRec();
           if(!uns_rec.ord_bs)
           {

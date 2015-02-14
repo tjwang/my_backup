@@ -1,0 +1,194 @@
+create transaction 5-1234 t:94300 case1:8890
+up_p_ma: 1.0 up_p_k:0.6666666865348816
+Transaction.CLOSED
+==94500========TSM_Transaction F_TSM_Transaction@11e0c13 price:9145 range:255 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = otest
+ord_no = o1234
+add_date = 20141107
+add_time = 94300
+match_time = 94300
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFK4
+price = 8890
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141107
+add_time = 94500
+match_time = 94500
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFK4
+price = 8877
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: -13.0
+==========TSM_Transaction F_TSM_Transaction@11e0c13 dump end======
+create transaction 5-1234 t:94600 case1:8872
+up_p_ma: 1.0 up_p_k:0.8333333134651184
+Transaction.CLOSED
+==100400========TSM_Transaction F_TSM_Transaction@ba5c7a price:9136 range:264 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = otest
+ord_no = o1234
+add_date = 20141107
+add_time = 94600
+match_time = 94600
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFK4
+price = 8872
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141107
+add_time = 94600
+match_time = 100400
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFK4
+price = 8882
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 10.0
+==========TSM_Transaction F_TSM_Transaction@ba5c7a dump end======
+create transaction 0325-4 t:101900 case2:8891
+down_p_ma: 1.0 down_p_k:0.75
+Transaction.CLOSED
+==102200========TSM_Transaction F_TSM_Transaction@1589e56 price:8645 range:246 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141107
+add_time = 101900
+match_time = 101900
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFK4
+price = 8891
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141107
+add_time = 102200
+match_time = 102200
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFK4
+price = 8905
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: -14.0
+==========TSM_Transaction F_TSM_Transaction@1589e56 dump end======
+create transaction 0325-4 t:121100 case2:8936
+down_p_ma: 1.0 down_p_k:0.6666666865348816
+Transaction.CLOSED
+==121700========TSM_Transaction F_TSM_Transaction@9c82f4 price:8668 range:268 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141107
+add_time = 121100
+match_time = 121100
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFK4
+price = 8936
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141107
+add_time = 121100
+match_time = 121700
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFK4
+price = 8926
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 10.0
+==========TSM_Transaction F_TSM_Transaction@9c82f4 dump end======
+create transaction 052314 t:125000 case2:8930
+down_p_ma: 0.9230769276618958 down_p_k:1.0

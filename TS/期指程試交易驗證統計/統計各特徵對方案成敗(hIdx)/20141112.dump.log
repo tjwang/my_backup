@@ -1,0 +1,9062 @@
+Transaction.CLOSED
+==93400========TSM_Transaction F_TSM_Transaction@c8a735 price:8593 range:413 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 93100
+match_time = 93100
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 9006
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 93200
+match_time = 93400
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8986
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@c8a735 dump end======
+Transaction.CLOSED
+==93400========TSM_Transaction F_TSM_Transaction@7cfe62 price:8595 range:415 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 93200
+match_time = 93200
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 9010
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 93300
+match_time = 93400
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8990
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@7cfe62 dump end======
+Transaction.CLOSED
+==93400========TSM_Transaction F_TSM_Transaction@4df05 price:8595 range:414 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 93300
+match_time = 93300
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 9009
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 93400
+match_time = 93400
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8989
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@4df05 dump end======
+Transaction.CLOSED
+==93500========TSM_Transaction F_TSM_Transaction@1b76438 price:8579 range:399 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 93400
+match_time = 93400
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8978
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 93500
+match_time = 93500
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8991
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: -13.0
+==========TSM_Transaction F_TSM_Transaction@1b76438 dump end======
+Transaction.CLOSED
+==103700========TSM_Transaction F_TSM_Transaction@1358f20 price:8584 range:403 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 93500
+match_time = 93500
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8987
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 93600
+match_time = 103700
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8967
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@1358f20 dump end======
+Transaction.CLOSED
+==103700========TSM_Transaction F_TSM_Transaction@1c2aa91 price:8581 range:401 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 93600
+match_time = 93600
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8982
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 93700
+match_time = 103700
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8962
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@1c2aa91 dump end======
+Transaction.CLOSED
+==103700========TSM_Transaction F_TSM_Transaction@30804b price:8583 range:402 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 93700
+match_time = 93700
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8985
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 93800
+match_time = 103700
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8965
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@30804b dump end======
+Transaction.CLOSED
+==103700========TSM_Transaction F_TSM_Transaction@19fef90 price:8582 range:401 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 93800
+match_time = 93800
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8983
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 93900
+match_time = 103700
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8963
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@19fef90 dump end======
+Transaction.CLOSED
+==94800========TSM_Transaction F_TSM_Transaction@f03203 price:8576 range:396 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 93900
+match_time = 93900
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8972
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 94800
+match_time = 94800
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8984
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: -12.0
+==========TSM_Transaction F_TSM_Transaction@f03203 dump end======
+Transaction.CLOSED
+==95600========TSM_Transaction F_TSM_Transaction@19e3f23 price:8578 range:397 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 94000
+match_time = 94000
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8975
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 95600
+match_time = 95600
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8987
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: -12.0
+==========TSM_Transaction F_TSM_Transaction@19e3f23 dump end======
+Transaction.CLOSED
+==94600========TSM_Transaction F_TSM_Transaction@14b3db9 price:8575 range:394 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 94100
+match_time = 94100
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8969
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 94600
+match_time = 94600
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8981
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: -12.0
+==========TSM_Transaction F_TSM_Transaction@14b3db9 dump end======
+Transaction.CLOSED
+==95600========TSM_Transaction F_TSM_Transaction@e2ab85 price:8577 range:397 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 94200
+match_time = 94200
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8974
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 95600
+match_time = 95600
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8986
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: -12.0
+==========TSM_Transaction F_TSM_Transaction@e2ab85 dump end======
+Transaction.CLOSED
+==95600========TSM_Transaction F_TSM_Transaction@1f96332 price:8578 range:397 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 94300
+match_time = 94300
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8975
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 95600
+match_time = 95600
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8987
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: -12.0
+==========TSM_Transaction F_TSM_Transaction@1f96332 dump end======
+Transaction.CLOSED
+==95600========TSM_Transaction F_TSM_Transaction@192c0 price:8577 range:396 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 94400
+match_time = 94400
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8973
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 95600
+match_time = 95600
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8985
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: -12.0
+==========TSM_Transaction F_TSM_Transaction@192c0 dump end======
+Transaction.CLOSED
+==95700========TSM_Transaction F_TSM_Transaction@12230ae price:8579 range:399 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 94500
+match_time = 94500
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8978
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 95700
+match_time = 95700
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8990
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: -12.0
+==========TSM_Transaction F_TSM_Transaction@12230ae dump end======
+Transaction.CLOSED
+==95800========TSM_Transaction F_TSM_Transaction@c9704d price:8580 range:399 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 94600
+match_time = 94600
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8979
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 95800
+match_time = 95800
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8991
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: -12.0
+==========TSM_Transaction F_TSM_Transaction@c9704d dump end======
+Transaction.CLOSED
+==95800========TSM_Transaction F_TSM_Transaction@e8f6fc price:8581 range:400 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 94700
+match_time = 94700
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8981
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 95800
+match_time = 95800
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8993
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: -12.0
+==========TSM_Transaction F_TSM_Transaction@e8f6fc dump end======
+Transaction.CLOSED
+==95800========TSM_Transaction F_TSM_Transaction@19b17db price:8580 range:400 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 94800
+match_time = 94800
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8980
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 95800
+match_time = 95800
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8992
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: -12.0
+==========TSM_Transaction F_TSM_Transaction@19b17db dump end======
+Transaction.CLOSED
+==95700========TSM_Transaction F_TSM_Transaction@3de52f price:8579 range:399 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 94900
+match_time = 94900
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8978
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 95700
+match_time = 95700
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8990
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: -12.0
+==========TSM_Transaction F_TSM_Transaction@3de52f dump end======
+Transaction.CLOSED
+==95700========TSM_Transaction F_TSM_Transaction@8e24ca price:8579 range:398 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 95000
+match_time = 95000
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8977
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 95700
+match_time = 95700
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8990
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: -13.0
+==========TSM_Transaction F_TSM_Transaction@8e24ca dump end======
+Transaction.CLOSED
+==95700========TSM_Transaction F_TSM_Transaction@145640e price:8579 range:399 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 95100
+match_time = 95100
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8978
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 95700
+match_time = 95700
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8990
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: -12.0
+==========TSM_Transaction F_TSM_Transaction@145640e dump end======
+Transaction.CLOSED
+==95700========TSM_Transaction F_TSM_Transaction@179b142 price:8578 range:398 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 95200
+match_time = 95200
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8976
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 95700
+match_time = 95700
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8990
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: -14.0
+==========TSM_Transaction F_TSM_Transaction@179b142 dump end======
+Transaction.CLOSED
+==95700========TSM_Transaction F_TSM_Transaction@3aae18 price:8579 range:398 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 95300
+match_time = 95300
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8977
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 95700
+match_time = 95700
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8990
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: -13.0
+==========TSM_Transaction F_TSM_Transaction@3aae18 dump end======
+Transaction.CLOSED
+==95700========TSM_Transaction F_TSM_Transaction@3c15ea price:8579 range:398 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 95400
+match_time = 95400
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8977
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 95700
+match_time = 95700
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8990
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: -13.0
+==========TSM_Transaction F_TSM_Transaction@3c15ea dump end======
+Transaction.CLOSED
+==95800========TSM_Transaction F_TSM_Transaction@1d2eae9 price:8581 range:400 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 95500
+match_time = 95500
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8981
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 95800
+match_time = 95800
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8993
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: -12.0
+==========TSM_Transaction F_TSM_Transaction@1d2eae9 dump end======
+Transaction.CLOSED
+==103700========TSM_Transaction F_TSM_Transaction@904e3a price:8584 range:404 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 95600
+match_time = 95600
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8988
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 95700
+match_time = 103700
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8968
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@904e3a dump end======
+Transaction.CLOSED
+==103700========TSM_Transaction F_TSM_Transaction@fd219 price:8584 range:404 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 95700
+match_time = 95700
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8988
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 95800
+match_time = 103700
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8968
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@fd219 dump end======
+Transaction.CLOSED
+==103700========TSM_Transaction F_TSM_Transaction@9f1481 price:8584 range:404 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 95800
+match_time = 95800
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8988
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 95900
+match_time = 103700
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8968
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@9f1481 dump end======
+Transaction.CLOSED
+==103700========TSM_Transaction F_TSM_Transaction@d3a63 price:8583 range:402 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 95900
+match_time = 95900
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8985
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 100000
+match_time = 103700
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8965
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@d3a63 dump end======
+Transaction.CLOSED
+==103800========TSM_Transaction F_TSM_Transaction@6f0ff1 price:8581 range:400 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 100000
+match_time = 100000
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8981
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 100100
+match_time = 103800
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8961
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@6f0ff1 dump end======
+Transaction.CLOSED
+==103900========TSM_Transaction F_TSM_Transaction@1b685c price:8580 range:400 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 100100
+match_time = 100100
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8980
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 100200
+match_time = 103900
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8960
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@1b685c dump end======
+Transaction.CLOSED
+==103900========TSM_Transaction F_TSM_Transaction@6b73b4 price:8579 range:399 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 100200
+match_time = 100200
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8978
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 100300
+match_time = 103900
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8958
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@6b73b4 dump end======
+Transaction.CLOSED
+==103900========TSM_Transaction F_TSM_Transaction@161a372 price:8578 range:397 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 100300
+match_time = 100300
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8975
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 100400
+match_time = 103900
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8955
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@161a372 dump end======
+Transaction.CLOSED
+==100700========TSM_Transaction F_TSM_Transaction@6bfc93 price:8576 range:395 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 100400
+match_time = 100400
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8971
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 100700
+match_time = 100700
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8983
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: -12.0
+==========TSM_Transaction F_TSM_Transaction@6bfc93 dump end======
+Transaction.CLOSED
+==103900========TSM_Transaction F_TSM_Transaction@19ba539 price:8577 range:397 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 100500
+match_time = 100500
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8974
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 100600
+match_time = 103900
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8954
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@19ba539 dump end======
+Transaction.CLOSED
+==103900========TSM_Transaction F_TSM_Transaction@e6bd90 price:8578 range:398 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 100600
+match_time = 100600
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8976
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 100700
+match_time = 103900
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8956
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@e6bd90 dump end======
+Transaction.CLOSED
+==103900========TSM_Transaction F_TSM_Transaction@13dcf53 price:8580 range:399 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 100700
+match_time = 100700
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8979
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 100800
+match_time = 103900
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8959
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@13dcf53 dump end======
+Transaction.CLOSED
+==103900========TSM_Transaction F_TSM_Transaction@793ad8 price:8580 range:399 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 100800
+match_time = 100800
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8979
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 100900
+match_time = 103900
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8959
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@793ad8 dump end======
+Transaction.CLOSED
+==103900========TSM_Transaction F_TSM_Transaction@196ff4e price:8580 range:400 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 100900
+match_time = 100900
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8980
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 101000
+match_time = 103900
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8960
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@196ff4e dump end======
+Transaction.CLOSED
+==103700========TSM_Transaction F_TSM_Transaction@9da188 price:8581 range:401 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 101000
+match_time = 101000
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8982
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 101100
+match_time = 103700
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8962
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@9da188 dump end======
+Transaction.CLOSED
+==103900========TSM_Transaction F_TSM_Transaction@139319d price:8580 range:400 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 101100
+match_time = 101100
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8980
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 101200
+match_time = 103900
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8960
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@139319d dump end======
+Transaction.CLOSED
+==103900========TSM_Transaction F_TSM_Transaction@f782aa price:8579 range:398 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 101200
+match_time = 101200
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8977
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 101300
+match_time = 103900
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8957
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@f782aa dump end======
+Transaction.CLOSED
+==103900========TSM_Transaction F_TSM_Transaction@1a3837 price:8580 range:399 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 101300
+match_time = 101300
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8979
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 101400
+match_time = 103900
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8959
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@1a3837 dump end======
+Transaction.CLOSED
+==103900========TSM_Transaction F_TSM_Transaction@9a33ce price:8579 range:399 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 101400
+match_time = 101400
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8978
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 101500
+match_time = 103900
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8958
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@9a33ce dump end======
+Transaction.CLOSED
+==103900========TSM_Transaction F_TSM_Transaction@df4c52 price:8580 range:399 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 101500
+match_time = 101500
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8979
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 101600
+match_time = 103900
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8959
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@df4c52 dump end======
+Transaction.CLOSED
+==103800========TSM_Transaction F_TSM_Transaction@4160db price:8581 range:400 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 101600
+match_time = 101600
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8981
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 101700
+match_time = 103800
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8961
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@4160db dump end======
+Transaction.CLOSED
+==103900========TSM_Transaction F_TSM_Transaction@1da40c0 price:8578 range:397 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 101700
+match_time = 101700
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8975
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 101800
+match_time = 103900
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8955
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@1da40c0 dump end======
+Transaction.CLOSED
+==103900========TSM_Transaction F_TSM_Transaction@1afe42d price:8578 range:397 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 101800
+match_time = 101800
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8975
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 101900
+match_time = 103900
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8955
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@1afe42d dump end======
+Transaction.CLOSED
+==102000========TSM_Transaction F_TSM_Transaction@dbf98d price:8576 range:395 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 101900
+match_time = 101900
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8971
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 102000
+match_time = 102000
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8983
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: -12.0
+==========TSM_Transaction F_TSM_Transaction@dbf98d dump end======
+Transaction.CLOSED
+==103900========TSM_Transaction F_TSM_Transaction@1f94e17 price:8580 range:399 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 102000
+match_time = 102000
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8979
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 102100
+match_time = 103900
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8959
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@1f94e17 dump end======
+Transaction.CLOSED
+==103900========TSM_Transaction F_TSM_Transaction@197cef3 price:8579 range:399 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 102100
+match_time = 102100
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8978
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 102200
+match_time = 103900
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8958
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@197cef3 dump end======
+Transaction.CLOSED
+==103900========TSM_Transaction F_TSM_Transaction@1fefefc price:8578 range:397 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 102200
+match_time = 102200
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8975
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 102300
+match_time = 103900
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8955
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@1fefefc dump end======
+Transaction.CLOSED
+==103800========TSM_Transaction F_TSM_Transaction@11f722c price:8581 range:400 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 102300
+match_time = 102300
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8981
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 102400
+match_time = 103800
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8961
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@11f722c dump end======
+Transaction.CLOSED
+==103800========TSM_Transaction F_TSM_Transaction@857f89 price:8581 range:400 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 102400
+match_time = 102400
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8981
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 102500
+match_time = 103800
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8961
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@857f89 dump end======
+Transaction.CLOSED
+==103800========TSM_Transaction F_TSM_Transaction@3d3017 price:8581 range:400 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 102500
+match_time = 102500
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8981
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 102600
+match_time = 103800
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8961
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@3d3017 dump end======
+Transaction.CLOSED
+==103900========TSM_Transaction F_TSM_Transaction@1f65429 price:8580 range:399 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 102600
+match_time = 102600
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8979
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 102700
+match_time = 103900
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8959
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@1f65429 dump end======
+Transaction.CLOSED
+==103900========TSM_Transaction F_TSM_Transaction@1a7c247 price:8578 range:398 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 102700
+match_time = 102700
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8976
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 102800
+match_time = 103900
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8956
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@1a7c247 dump end======
+Transaction.CLOSED
+==103900========TSM_Transaction F_TSM_Transaction@f4f776 price:8577 range:396 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 102800
+match_time = 102800
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8973
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 102900
+match_time = 103900
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8953
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@f4f776 dump end======
+Transaction.CLOSED
+==103900========TSM_Transaction F_TSM_Transaction@3b97a6 price:8578 range:397 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 102900
+match_time = 102900
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8975
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 103000
+match_time = 103900
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8955
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@3b97a6 dump end======
+Transaction.CLOSED
+==103900========TSM_Transaction F_TSM_Transaction@150faf2 price:8577 range:396 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 103000
+match_time = 103000
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8973
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 103100
+match_time = 103900
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8953
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@150faf2 dump end======
+Transaction.CLOSED
+==103900========TSM_Transaction F_TSM_Transaction@dca7c0 price:8577 range:397 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 103100
+match_time = 103100
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8974
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 103200
+match_time = 103900
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8954
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@dca7c0 dump end======
+Transaction.CLOSED
+==103900========TSM_Transaction F_TSM_Transaction@e23049 price:8577 range:396 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 103200
+match_time = 103200
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8973
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 103300
+match_time = 103900
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8953
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@e23049 dump end======
+Transaction.CLOSED
+==103900========TSM_Transaction F_TSM_Transaction@1744ff0 price:8578 range:397 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 103300
+match_time = 103300
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8975
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 103400
+match_time = 103900
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8955
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@1744ff0 dump end======
+Transaction.CLOSED
+==103900========TSM_Transaction F_TSM_Transaction@19ed308 price:8577 range:396 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 103400
+match_time = 103400
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8973
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 103500
+match_time = 103900
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8953
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@19ed308 dump end======
+Transaction.CLOSED
+==103900========TSM_Transaction F_TSM_Transaction@17a7b8a price:8577 range:397 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 103500
+match_time = 103500
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8974
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 103600
+match_time = 103900
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8954
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@17a7b8a dump end======
+Transaction.CLOSED
+==103900========TSM_Transaction F_TSM_Transaction@a60b5e price:8578 range:397 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 103600
+match_time = 103600
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8975
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 103700
+match_time = 103900
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8955
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@a60b5e dump end======
+Transaction.CLOSED
+==113000========TSM_Transaction F_TSM_Transaction@eebdad price:8570 range:390 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 103700
+match_time = 103700
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8960
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 103800
+match_time = 113000
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8940
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@eebdad dump end======
+Transaction.CLOSED
+==112800========TSM_Transaction F_TSM_Transaction@1d4406c price:8571 range:390 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 103800
+match_time = 103800
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8961
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 103900
+match_time = 112800
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8941
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@1d4406c dump end======
+Transaction.CLOSED
+==104800========TSM_Transaction F_TSM_Transaction@8c5fdf price:8565 range:384 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 103900
+match_time = 103900
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8949
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 104800
+match_time = 104800
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8961
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: -12.0
+==========TSM_Transaction F_TSM_Transaction@8c5fdf dump end======
+Transaction.CLOSED
+==115000========TSM_Transaction F_TSM_Transaction@823768 price:8566 range:386 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 104000
+match_time = 104000
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8952
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 104100
+match_time = 115000
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8932
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@823768 dump end======
+Transaction.CLOSED
+==115000========TSM_Transaction F_TSM_Transaction@9e4da price:8568 range:387 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 104100
+match_time = 104100
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8955
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 104200
+match_time = 115000
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8935
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@9e4da dump end======
+Transaction.CLOSED
+==113100========TSM_Transaction F_TSM_Transaction@5456ed price:8568 range:388 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 104200
+match_time = 104200
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8956
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 104300
+match_time = 113100
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8936
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@5456ed dump end======
+Transaction.CLOSED
+==115000========TSM_Transaction F_TSM_Transaction@836c07 price:8567 range:387 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 104300
+match_time = 104300
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8954
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 104400
+match_time = 115000
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8934
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@836c07 dump end======
+Transaction.CLOSED
+==115000========TSM_Transaction F_TSM_Transaction@a74fe8 price:8568 range:387 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 104400
+match_time = 104400
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8955
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 104500
+match_time = 115000
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8935
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@a74fe8 dump end======
+Transaction.CLOSED
+==115000========TSM_Transaction F_TSM_Transaction@1d2c70f price:8567 range:387 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 104500
+match_time = 104500
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8954
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 104600
+match_time = 115000
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8934
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@1d2c70f dump end======
+Transaction.CLOSED
+==113100========TSM_Transaction F_TSM_Transaction@1e3f9f1 price:8568 range:388 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 104600
+match_time = 104600
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8956
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 104700
+match_time = 113100
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8936
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@1e3f9f1 dump end======
+Transaction.CLOSED
+==113000========TSM_Transaction F_TSM_Transaction@1143bf4 price:8570 range:389 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 104700
+match_time = 104700
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8959
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 104800
+match_time = 113000
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8939
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@1143bf4 dump end======
+Transaction.CLOSED
+==113000========TSM_Transaction F_TSM_Transaction@1427af2 price:8570 range:390 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 104800
+match_time = 104800
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8960
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 104900
+match_time = 113000
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8940
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@1427af2 dump end======
+Transaction.CLOSED
+==113000========TSM_Transaction F_TSM_Transaction@c3e965 price:8569 range:388 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 104900
+match_time = 104900
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8957
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 105000
+match_time = 113000
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8937
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@c3e965 dump end======
+Transaction.CLOSED
+==113000========TSM_Transaction F_TSM_Transaction@350105 price:8569 range:389 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 105000
+match_time = 105000
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8958
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 105100
+match_time = 113000
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8938
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@350105 dump end======
+Transaction.CLOSED
+==115000========TSM_Transaction F_TSM_Transaction@1b8b58b price:8568 range:387 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 105100
+match_time = 105100
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8955
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 105200
+match_time = 115000
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8935
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@1b8b58b dump end======
+Transaction.CLOSED
+==115000========TSM_Transaction F_TSM_Transaction@1e80823 price:8568 range:387 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 105200
+match_time = 105200
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8955
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 105300
+match_time = 115000
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8935
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@1e80823 dump end======
+Transaction.CLOSED
+==113000========TSM_Transaction F_TSM_Transaction@b0232c price:8570 range:390 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 105300
+match_time = 105300
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8960
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 105400
+match_time = 113000
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8940
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@b0232c dump end======
+Transaction.CLOSED
+==113000========TSM_Transaction F_TSM_Transaction@10a162b price:8569 range:389 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 105400
+match_time = 105400
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8958
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 105500
+match_time = 113000
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8938
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@10a162b dump end======
+Transaction.CLOSED
+==113100========TSM_Transaction F_TSM_Transaction@12d4f33 price:8568 range:388 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 105500
+match_time = 105500
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8956
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 105600
+match_time = 113100
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8936
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@12d4f33 dump end======
+Transaction.CLOSED
+==113100========TSM_Transaction F_TSM_Transaction@9fce4a price:8568 range:388 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 105600
+match_time = 105600
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8956
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 105700
+match_time = 113100
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8936
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@9fce4a dump end======
+Transaction.CLOSED
+==115100========TSM_Transaction F_TSM_Transaction@1059611 price:8566 range:385 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 105700
+match_time = 105700
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8951
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 105800
+match_time = 115100
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8931
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@1059611 dump end======
+Transaction.CLOSED
+==115000========TSM_Transaction F_TSM_Transaction@1c3892 price:8567 range:386 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 105800
+match_time = 105800
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8953
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 105900
+match_time = 115000
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8933
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@1c3892 dump end======
+Transaction.CLOSED
+==115100========TSM_Transaction F_TSM_Transaction@1d4a385 price:8565 range:384 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 105900
+match_time = 105900
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8949
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 110000
+match_time = 115100
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8929
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@1d4a385 dump end======
+Transaction.CLOSED
+==124700========TSM_Transaction F_TSM_Transaction@17cd2aa price:8561 range:381 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 110000
+match_time = 110000
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8942
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 110100
+match_time = 124700
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8922
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@17cd2aa dump end======
+Transaction.CLOSED
+==124200========TSM_Transaction F_TSM_Transaction@1f25a35 price:8563 range:382 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 110100
+match_time = 110100
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8945
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 110200
+match_time = 124200
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8925
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@1f25a35 dump end======
+Transaction.CLOSED
+==115200========TSM_Transaction F_TSM_Transaction@b5bae7 price:8564 range:383 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 110200
+match_time = 110200
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8947
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 110300
+match_time = 115200
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8927
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@b5bae7 dump end======
+Transaction.CLOSED
+==124100========TSM_Transaction F_TSM_Transaction@d4548e price:8563 range:383 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 110300
+match_time = 110300
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8946
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 110400
+match_time = 124100
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8926
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@d4548e dump end======
+Transaction.CLOSED
+==124200========TSM_Transaction F_TSM_Transaction@1826847 price:8563 range:382 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 110400
+match_time = 110400
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8945
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 110500
+match_time = 124200
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8925
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@1826847 dump end======
+Transaction.CLOSED
+==124700========TSM_Transaction F_TSM_Transaction@1dc4381 price:8561 range:381 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 110500
+match_time = 110500
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8942
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 110600
+match_time = 124700
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8922
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@1dc4381 dump end======
+Transaction.CLOSED
+==115100========TSM_Transaction F_TSM_Transaction@10587a6 price:8565 range:384 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 110600
+match_time = 110600
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8949
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 110700
+match_time = 115100
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8929
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@10587a6 dump end======
+Transaction.CLOSED
+==115100========TSM_Transaction F_TSM_Transaction@1c969b4 price:8565 range:385 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 110700
+match_time = 110700
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8950
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 110800
+match_time = 115100
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8930
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@1c969b4 dump end======
+Transaction.CLOSED
+==115200========TSM_Transaction F_TSM_Transaction@d771ee price:8564 range:383 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 110800
+match_time = 110800
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8947
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 110900
+match_time = 115200
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8927
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@d771ee dump end======
+Transaction.CLOSED
+==115100========TSM_Transaction F_TSM_Transaction@208655 price:8565 range:384 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 110900
+match_time = 110900
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8949
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 111000
+match_time = 115100
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8929
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@208655 dump end======
+Transaction.CLOSED
+==115100========TSM_Transaction F_TSM_Transaction@a2a960 price:8564 range:384 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 111000
+match_time = 111000
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8948
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 111100
+match_time = 115100
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8928
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@a2a960 dump end======
+Transaction.CLOSED
+==115200========TSM_Transaction F_TSM_Transaction@150bbcb price:8564 range:383 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 111100
+match_time = 111100
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8947
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 111200
+match_time = 115200
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8927
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@150bbcb dump end======
+Transaction.CLOSED
+==115100========TSM_Transaction F_TSM_Transaction@3b6b3f price:8564 range:384 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 111200
+match_time = 111200
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8948
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 111300
+match_time = 115100
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8928
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@3b6b3f dump end======
+Transaction.CLOSED
+==115100========TSM_Transaction F_TSM_Transaction@e0da83 price:8564 range:384 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 111300
+match_time = 111300
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8948
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 111400
+match_time = 115100
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8928
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@e0da83 dump end======
+Transaction.CLOSED
+==115100========TSM_Transaction F_TSM_Transaction@4caefd price:8564 range:384 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 111400
+match_time = 111400
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8948
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 111500
+match_time = 115100
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8928
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@4caefd dump end======
+Transaction.CLOSED
+==115100========TSM_Transaction F_TSM_Transaction@1c04b7e price:8564 range:384 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 111500
+match_time = 111500
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8948
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 111600
+match_time = 115100
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8928
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@1c04b7e dump end======
+Transaction.CLOSED
+==115100========TSM_Transaction F_TSM_Transaction@c17724 price:8564 range:384 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 111600
+match_time = 111600
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8948
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 111700
+match_time = 115100
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8928
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@c17724 dump end======
+Transaction.CLOSED
+==124700========TSM_Transaction F_TSM_Transaction@ad5ac5 price:8562 range:381 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 111700
+match_time = 111700
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8943
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 111800
+match_time = 124700
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8923
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@ad5ac5 dump end======
+Transaction.CLOSED
+==124200========TSM_Transaction F_TSM_Transaction@177119d price:8563 range:382 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 111800
+match_time = 111800
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8945
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 111900
+match_time = 124200
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8925
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@177119d dump end======
+Transaction.CLOSED
+==115100========TSM_Transaction F_TSM_Transaction@1245fa price:8564 range:384 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 111900
+match_time = 111900
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8948
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 112000
+match_time = 115100
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8928
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@1245fa dump end======
+Transaction.CLOSED
+==115200========TSM_Transaction F_TSM_Transaction@8327f9 price:8564 range:383 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 112000
+match_time = 112000
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8947
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 112100
+match_time = 115200
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8927
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@8327f9 dump end======
+Transaction.CLOSED
+==115200========TSM_Transaction F_TSM_Transaction@10fcb06 price:8564 range:383 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 112100
+match_time = 112100
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8947
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 112200
+match_time = 115200
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8927
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@10fcb06 dump end======
+Transaction.CLOSED
+==115100========TSM_Transaction F_TSM_Transaction@c33981 price:8565 range:384 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 112200
+match_time = 112200
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8949
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 112300
+match_time = 115100
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8929
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@c33981 dump end======
+Transaction.CLOSED
+==115100========TSM_Transaction F_TSM_Transaction@1c6f111 price:8564 range:384 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 112300
+match_time = 112300
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8948
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 112400
+match_time = 115100
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8928
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@1c6f111 dump end======
+Transaction.CLOSED
+==115100========TSM_Transaction F_TSM_Transaction@1a92ca1 price:8564 range:384 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 112400
+match_time = 112400
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8948
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 112500
+match_time = 115100
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8928
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@1a92ca1 dump end======
+Transaction.CLOSED
+==115100========TSM_Transaction F_TSM_Transaction@9b347a price:8565 range:384 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 112500
+match_time = 112500
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8949
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 112600
+match_time = 115100
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8929
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@9b347a dump end======
+Transaction.CLOSED
+==115100========TSM_Transaction F_TSM_Transaction@1030cee price:8564 range:384 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 112600
+match_time = 112600
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8948
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 112700
+match_time = 115100
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8928
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@1030cee dump end======
+Transaction.CLOSED
+==115100========TSM_Transaction F_TSM_Transaction@a3afb2 price:8564 range:384 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 112700
+match_time = 112700
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8948
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 112800
+match_time = 115100
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8928
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@a3afb2 dump end======
+Transaction.CLOSED
+==124700========TSM_Transaction F_TSM_Transaction@4eea38 price:8561 range:381 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 112800
+match_time = 112800
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8942
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 112900
+match_time = 124700
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8922
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@4eea38 dump end======
+Transaction.CLOSED
+==124700========TSM_Transaction F_TSM_Transaction@14d088e price:8561 range:380 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 112900
+match_time = 112900
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8941
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 113000
+match_time = 124700
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8921
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@14d088e dump end======
+Transaction.CLOSED
+==125000========TSM_Transaction F_TSM_Transaction@19fc7e2 price:8558 range:378 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 113000
+match_time = 113000
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8936
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 113100
+match_time = 125000
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8916
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@19fc7e2 dump end======
+Transaction.CLOSED
+==124800========TSM_Transaction F_TSM_Transaction@198f34e price:8559 range:379 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 113100
+match_time = 113100
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8938
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 113200
+match_time = 124800
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8918
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@198f34e dump end======
+Transaction.CLOSED
+==124700========TSM_Transaction F_TSM_Transaction@27b78e price:8561 range:380 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 113200
+match_time = 113200
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8941
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 113300
+match_time = 124700
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8921
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@27b78e dump end======
+Transaction.CLOSED
+==124800========TSM_Transaction F_TSM_Transaction@cb6831 price:8560 range:380 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 113300
+match_time = 113300
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8940
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 113400
+match_time = 124800
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8920
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@cb6831 dump end======
+Transaction.CLOSED
+==124700========TSM_Transaction F_TSM_Transaction@a00d2a price:8561 range:381 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 113400
+match_time = 113400
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8942
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 113500
+match_time = 124700
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8922
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@a00d2a dump end======
+Transaction.CLOSED
+==124800========TSM_Transaction F_TSM_Transaction@14886ea price:8560 range:379 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 113500
+match_time = 113500
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8939
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 113600
+match_time = 124800
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8919
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@14886ea dump end======
+Transaction.CLOSED
+==124700========TSM_Transaction F_TSM_Transaction@19528ff price:8561 range:381 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 113600
+match_time = 113600
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8942
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 113700
+match_time = 124700
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8922
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@19528ff dump end======
+Transaction.CLOSED
+==124800========TSM_Transaction F_TSM_Transaction@ad35be price:8560 range:380 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 113700
+match_time = 113700
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8940
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 113800
+match_time = 124800
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8920
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@ad35be dump end======
+Transaction.CLOSED
+==124700========TSM_Transaction F_TSM_Transaction@7782ab price:8561 range:381 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 113800
+match_time = 113800
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8942
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 113900
+match_time = 124700
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8922
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@7782ab dump end======
+Transaction.CLOSED
+==124800========TSM_Transaction F_TSM_Transaction@1dc4554 price:8560 range:380 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 113900
+match_time = 113900
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8940
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 114000
+match_time = 124800
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8920
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@1dc4554 dump end======
+Transaction.CLOSED
+==124800========TSM_Transaction F_TSM_Transaction@10e9ebe price:8560 range:379 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 114000
+match_time = 114000
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8939
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 114100
+match_time = 124800
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8919
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@10e9ebe dump end======
+Transaction.CLOSED
+==124700========TSM_Transaction F_TSM_Transaction@1708ac2 price:8562 range:381 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 114100
+match_time = 114100
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8943
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 114200
+match_time = 124700
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8923
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@1708ac2 dump end======
+Transaction.CLOSED
+==124700========TSM_Transaction F_TSM_Transaction@1d2a2ac price:8561 range:381 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 114200
+match_time = 114200
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8942
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 114300
+match_time = 124700
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8922
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@1d2a2ac dump end======
+Transaction.CLOSED
+==124800========TSM_Transaction F_TSM_Transaction@13efb80 price:8560 range:380 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 114300
+match_time = 114300
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8940
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 114400
+match_time = 124800
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8920
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@13efb80 dump end======
+Transaction.CLOSED
+==124700========TSM_Transaction F_TSM_Transaction@167a259 price:8561 range:380 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 114400
+match_time = 114400
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8941
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 114500
+match_time = 124700
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8921
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@167a259 dump end======
+Transaction.CLOSED
+==124700========TSM_Transaction F_TSM_Transaction@984879 price:8561 range:380 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 114500
+match_time = 114500
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8941
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 114600
+match_time = 124700
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8921
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@984879 dump end======
+Transaction.CLOSED
+==124700========TSM_Transaction F_TSM_Transaction@e8a36f price:8561 range:380 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 114600
+match_time = 114600
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8941
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 114700
+match_time = 124700
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8921
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@e8a36f dump end======
+Transaction.CLOSED
+==124700========TSM_Transaction F_TSM_Transaction@270750 price:8561 range:380 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 114700
+match_time = 114700
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8941
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 114800
+match_time = 124700
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8921
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@270750 dump end======
+Transaction.CLOSED
+==124800========TSM_Transaction F_TSM_Transaction@1aa6f0b price:8560 range:379 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 114800
+match_time = 114800
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8939
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 114900
+match_time = 124800
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8919
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@1aa6f0b dump end======
+Transaction.CLOSED
+==124900========TSM_Transaction F_TSM_Transaction@1d354ce price:8559 range:378 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 114900
+match_time = 114900
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8937
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 115000
+match_time = 124900
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8917
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@1d354ce dump end======
+Transaction.CLOSED
+==121800========TSM_Transaction F_TSM_Transaction@26ce7e price:8557 range:376 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 115000
+match_time = 115000
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8933
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 121800
+match_time = 121800
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8945
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: -12.0
+==========TSM_Transaction F_TSM_Transaction@26ce7e dump end======
+Transaction.CLOSED
+==120200========TSM_Transaction F_TSM_Transaction@751ac8 price:8554 range:374 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 115100
+match_time = 115100
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8928
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 120200
+match_time = 120200
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8940
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: -12.0
+==========TSM_Transaction F_TSM_Transaction@751ac8 dump end======
+Transaction.CLOSED
+==120300========TSM_Transaction F_TSM_Transaction@490e9d price:8555 range:374 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 115200
+match_time = 115200
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8929
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 120300
+match_time = 120300
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8941
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: -12.0
+==========TSM_Transaction F_TSM_Transaction@490e9d dump end======
+Transaction.CLOSED
+==120500========TSM_Transaction F_TSM_Transaction@17172ca price:8556 range:375 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 115300
+match_time = 115300
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8931
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 120500
+match_time = 120500
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8943
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: -12.0
+==========TSM_Transaction F_TSM_Transaction@17172ca dump end======
+Transaction.CLOSED
+==120300========TSM_Transaction F_TSM_Transaction@14757fb price:8555 range:374 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 115400
+match_time = 115400
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8929
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 120300
+match_time = 120300
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8941
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: -12.0
+==========TSM_Transaction F_TSM_Transaction@14757fb dump end======
+Transaction.CLOSED
+==120000========TSM_Transaction F_TSM_Transaction@117036c price:8554 range:373 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 115500
+match_time = 115500
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8927
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 120000
+match_time = 120000
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8939
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: -12.0
+==========TSM_Transaction F_TSM_Transaction@117036c dump end======
+Transaction.CLOSED
+==120500========TSM_Transaction F_TSM_Transaction@1068197 price:8556 range:375 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 115600
+match_time = 115600
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8931
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 120500
+match_time = 120500
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8943
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: -12.0
+==========TSM_Transaction F_TSM_Transaction@1068197 dump end======
+Transaction.CLOSED
+==120500========TSM_Transaction F_TSM_Transaction@f5e82 price:8556 range:375 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 115700
+match_time = 115700
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8931
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 120500
+match_time = 120500
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8943
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: -12.0
+==========TSM_Transaction F_TSM_Transaction@f5e82 dump end======
+Transaction.CLOSED
+==125200========TSM_Transaction F_TSM_Transaction@17910f8 price:8557 range:377 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 115800
+match_time = 115800
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8934
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 115900
+match_time = 125200
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8914
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@17910f8 dump end======
+Transaction.CLOSED
+==124900========TSM_Transaction F_TSM_Transaction@1135b89 price:8559 range:378 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 115900
+match_time = 115900
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8937
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 120000
+match_time = 124900
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8917
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@1135b89 dump end======
+Transaction.CLOSED
+==125200========TSM_Transaction F_TSM_Transaction@1d57731 price:8557 range:377 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 120000
+match_time = 120000
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8934
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 120100
+match_time = 125200
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8914
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@1d57731 dump end======
+Transaction.CLOSED
+==125000========TSM_Transaction F_TSM_Transaction@11b7b80 price:8558 range:378 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 120100
+match_time = 120100
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8936
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 120200
+match_time = 125000
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8916
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@11b7b80 dump end======
+Transaction.CLOSED
+==124800========TSM_Transaction F_TSM_Transaction@97d487 price:8559 range:379 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 120200
+match_time = 120200
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8938
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 120300
+match_time = 124800
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8918
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@97d487 dump end======
+Transaction.CLOSED
+==124800========TSM_Transaction F_TSM_Transaction@dbb0b3 price:8559 range:379 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 120300
+match_time = 120300
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8938
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 120400
+match_time = 124800
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8918
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@dbb0b3 dump end======
+Transaction.CLOSED
+==124800========TSM_Transaction F_TSM_Transaction@735e07 price:8559 range:379 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 120400
+match_time = 120400
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8938
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 120500
+match_time = 124800
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8918
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@735e07 dump end======
+Transaction.CLOSED
+==124800========TSM_Transaction F_TSM_Transaction@f33e15 price:8560 range:379 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 120500
+match_time = 120500
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8939
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 120600
+match_time = 124800
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8919
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@f33e15 dump end======
+Transaction.CLOSED
+==124800========TSM_Transaction F_TSM_Transaction@1924ee3 price:8560 range:380 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 120600
+match_time = 120600
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8940
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 120700
+match_time = 124800
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8920
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@1924ee3 dump end======
+Transaction.CLOSED
+==124700========TSM_Transaction F_TSM_Transaction@1480c94 price:8561 range:380 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 120700
+match_time = 120700
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8941
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 120800
+match_time = 124700
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8921
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@1480c94 dump end======
+Transaction.CLOSED
+==124700========TSM_Transaction F_TSM_Transaction@1bc9de price:8561 range:380 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 120800
+match_time = 120800
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8941
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 120900
+match_time = 124700
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8921
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@1bc9de dump end======
+Transaction.CLOSED
+==124800========TSM_Transaction F_TSM_Transaction@5f1a5 price:8560 range:380 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 120900
+match_time = 120900
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8940
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 121000
+match_time = 124800
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8920
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@5f1a5 dump end======
+Transaction.CLOSED
+==124900========TSM_Transaction F_TSM_Transaction@199b770 price:8559 range:378 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 121000
+match_time = 121000
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8937
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 121100
+match_time = 124900
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8917
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@199b770 dump end======
+Transaction.CLOSED
+==124900========TSM_Transaction F_TSM_Transaction@cb2ea4 price:8559 range:378 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 121100
+match_time = 121100
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8937
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 121200
+match_time = 124900
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8917
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@cb2ea4 dump end======
+Transaction.CLOSED
+==124800========TSM_Transaction F_TSM_Transaction@acae86 price:8559 range:379 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 121200
+match_time = 121200
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8938
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 121300
+match_time = 124800
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8918
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@acae86 dump end======
+Transaction.CLOSED
+==124900========TSM_Transaction F_TSM_Transaction@1ca399 price:8559 range:378 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 121300
+match_time = 121300
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8937
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 121400
+match_time = 124900
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8917
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@1ca399 dump end======
+Transaction.CLOSED
+==124900========TSM_Transaction F_TSM_Transaction@9ea44 price:8559 range:378 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 121400
+match_time = 121400
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8937
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 121500
+match_time = 124900
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8917
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@9ea44 dump end======
+Transaction.CLOSED
+==124900========TSM_Transaction F_TSM_Transaction@6ce4da price:8559 range:378 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 121500
+match_time = 121500
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8937
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 121600
+match_time = 124900
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8917
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@6ce4da dump end======
+Transaction.CLOSED
+==124800========TSM_Transaction F_TSM_Transaction@e95172 price:8560 range:379 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 121600
+match_time = 121600
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8939
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 121700
+match_time = 124800
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8919
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@e95172 dump end======
+Transaction.CLOSED
+==124700========TSM_Transaction F_TSM_Transaction@80af6f price:8561 range:380 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 121700
+match_time = 121700
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8941
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 121800
+match_time = 124700
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8921
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@80af6f dump end======
+Transaction.CLOSED
+==124700========TSM_Transaction F_TSM_Transaction@e9b028 price:8561 range:380 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 121800
+match_time = 121800
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8941
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 121900
+match_time = 124700
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8921
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@e9b028 dump end======
+Transaction.CLOSED
+==124700========TSM_Transaction F_TSM_Transaction@12256ec price:8561 range:380 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 121900
+match_time = 121900
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8941
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 122000
+match_time = 124700
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8921
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@12256ec dump end======
+Transaction.CLOSED
+==124700========TSM_Transaction F_TSM_Transaction@1a488ad price:8561 range:381 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 122000
+match_time = 122000
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8942
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 122100
+match_time = 124700
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8922
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@1a488ad dump end======
+Transaction.CLOSED
+==124800========TSM_Transaction F_TSM_Transaction@103ced9 price:8560 range:380 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 122100
+match_time = 122100
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8940
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 122200
+match_time = 124800
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8920
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@103ced9 dump end======
+Transaction.CLOSED
+==124800========TSM_Transaction F_TSM_Transaction@10d7980 price:8559 range:379 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 122200
+match_time = 122200
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8938
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 122300
+match_time = 124800
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8918
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@10d7980 dump end======
+Transaction.CLOSED
+==124900========TSM_Transaction F_TSM_Transaction@1528afe price:8559 range:378 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 122300
+match_time = 122300
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8937
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 122400
+match_time = 124900
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8917
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@1528afe dump end======
+Transaction.CLOSED
+==124900========TSM_Transaction F_TSM_Transaction@1ebd41f price:8559 range:378 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 122400
+match_time = 122400
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8937
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 122500
+match_time = 124900
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8917
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@1ebd41f dump end======
+Transaction.CLOSED
+==124800========TSM_Transaction F_TSM_Transaction@139084 price:8559 range:379 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 122500
+match_time = 122500
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8938
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 122600
+match_time = 124800
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8918
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@139084 dump end======
+Transaction.CLOSED
+==124800========TSM_Transaction F_TSM_Transaction@d5e994 price:8560 range:380 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 122600
+match_time = 122600
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8940
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 122700
+match_time = 124800
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8920
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@d5e994 dump end======
+Transaction.CLOSED
+==125200========TSM_Transaction F_TSM_Transaction@e4cf51 price:8557 range:377 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 122700
+match_time = 122700
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8934
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 122800
+match_time = 125200
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8914
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@e4cf51 dump end======
+Transaction.CLOSED
+==124800========TSM_Transaction F_TSM_Transaction@1773bb3 price:8559 range:379 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 122800
+match_time = 122800
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8938
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 122900
+match_time = 124800
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8918
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@1773bb3 dump end======
+Transaction.CLOSED
+==124800========TSM_Transaction F_TSM_Transaction@7eecdc price:8560 range:379 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 122900
+match_time = 122900
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8939
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 123000
+match_time = 124800
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8919
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@7eecdc dump end======
+Transaction.CLOSED
+==125200========TSM_Transaction F_TSM_Transaction@9b8d16 price:8558 range:377 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 123000
+match_time = 123000
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8935
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 123100
+match_time = 125200
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8915
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@9b8d16 dump end======
+Transaction.CLOSED
+==125200========TSM_Transaction F_TSM_Transaction@de550a price:8558 range:377 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 123100
+match_time = 123100
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8935
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 123200
+match_time = 125200
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8915
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@de550a dump end======
+Transaction.CLOSED
+==125200========TSM_Transaction F_TSM_Transaction@12c79a7 price:8558 range:377 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 123200
+match_time = 123200
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8935
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 123300
+match_time = 125200
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8915
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@12c79a7 dump end======
+Transaction.CLOSED
+==125200========TSM_Transaction F_TSM_Transaction@113cd44 price:8556 range:376 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 123300
+match_time = 123300
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8932
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 123400
+match_time = 125200
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8912
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@113cd44 dump end======
+Transaction.CLOSED
+==125200========TSM_Transaction F_TSM_Transaction@1166c5d price:8557 range:376 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 123400
+match_time = 123400
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8933
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 123500
+match_time = 125200
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8913
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@1166c5d dump end======
+Transaction.CLOSED
+==125500========TSM_Transaction F_TSM_Transaction@13a85a7 price:8554 range:374 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 123500
+match_time = 123500
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8928
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 123600
+match_time = 125500
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8908
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@13a85a7 dump end======
+Transaction.CLOSED
+==125400========TSM_Transaction F_TSM_Transaction@145fd6f price:8556 range:375 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 123600
+match_time = 123600
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8931
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 123700
+match_time = 125400
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8911
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@145fd6f dump end======
+Transaction.CLOSED
+==125400========TSM_Transaction F_TSM_Transaction@d0be54 price:8556 range:375 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 123700
+match_time = 123700
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8931
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 123800
+match_time = 125400
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8911
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@d0be54 dump end======
+Transaction.CLOSED
+==125200========TSM_Transaction F_TSM_Transaction@112022d price:8556 range:376 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 123800
+match_time = 123800
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8932
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 123900
+match_time = 125200
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8912
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@112022d dump end======
+Transaction.CLOSED
+==125200========TSM_Transaction F_TSM_Transaction@1e43b36 price:8558 range:377 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 123900
+match_time = 123900
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8935
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 124000
+match_time = 125200
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8915
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@1e43b36 dump end======
+Transaction.CLOSED
+==125200========TSM_Transaction F_TSM_Transaction@148086d price:8556 range:376 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 124000
+match_time = 124000
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8932
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 124100
+match_time = 125200
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8912
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@148086d dump end======
+Transaction.CLOSED
+==125600========TSM_Transaction F_TSM_Transaction@140bd2e price:8553 range:372 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 124100
+match_time = 124100
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8925
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 124200
+match_time = 125600
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8905
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@140bd2e dump end======
+Transaction.CLOSED
+==125600========TSM_Transaction F_TSM_Transaction@db996b price:8553 range:372 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 124200
+match_time = 124200
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8925
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 124300
+match_time = 125600
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8905
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@db996b dump end======
+Transaction.CLOSED
+==125500========TSM_Transaction F_TSM_Transaction@17a2981 price:8555 range:375 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 124300
+match_time = 124300
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8930
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 124400
+match_time = 125500
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8910
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@17a2981 dump end======
+Transaction.CLOSED
+==125500========TSM_Transaction F_TSM_Transaction@174d813 price:8553 range:373 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 124400
+match_time = 124400
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8926
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 124500
+match_time = 125500
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8906
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@174d813 dump end======
+Transaction.CLOSED
+==125500========TSM_Transaction F_TSM_Transaction@97e5e4 price:8554 range:373 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 124500
+match_time = 124500
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8927
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 124600
+match_time = 125500
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8907
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@97e5e4 dump end======
+Transaction.CLOSED
+==125500========TSM_Transaction F_TSM_Transaction@d15244 price:8553 range:373 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 124600
+match_time = 124600
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8926
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 124700
+match_time = 125500
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8906
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@d15244 dump end======
+Transaction.CLOSED
+==125700========TSM_Transaction F_TSM_Transaction@1c01708 price:8551 range:371 dump start======
+==========my_ors[OPENED] dump ======
+ord_seq = stest
+ord_no = s1234
+add_date = 20141112
+add_time = 124700
+match_time = 124700
+ord_bs = S
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = S
+code = MXFJ4
+price = 8922
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+==========my_ors[CLOSED] dump ======
+ord_seq = covering
+ord_no = c1234
+add_date = 20141112
+add_time = 124800
+match_time = 125700
+ord_bs = B
+ord_qty = 1
+cancel_qty = 0
+ord_match_qty = 1
+octype =  
+preorder =  
+err_code = 0000
+------order source--------
+buy_or_sell = B
+code = MXFJ4
+price = 8902
+amount = 1
+price_type = LMT
+ordtype = ROD
+octtype =  
+TSM_Transaction Diff: 20.0
+==========TSM_Transaction F_TSM_Transaction@1c01708 dump end======

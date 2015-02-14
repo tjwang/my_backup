@@ -12,7 +12,7 @@ public class FTT_sFactory extends KDataLineFactory{
     String  _sqlStr;
     String  _snum;
     String  _startdate;
-    final static public String  current_TX = "TX114";
+    final static public String  current_TX = "TX025";
     Hashtable datapool_m;
     Hashtable wdataBound ;
     Hashtable<String,SRec> _g100snums;  
@@ -471,9 +471,9 @@ static 	PLDayk_Rec parseWDKField(String code,String ds,String data)
            T4_TransactionManager.one_instance.start();
       }
 
-      TSRunPlan trp = new SimpleTSRunPlan();
-      return  trp;
-    // return null;
+//      TSRunPlan trp = new SimpleTSRunPlan();
+//      return  trp;
+     return null;
    }   
    void statisicStock(DomainValue dv, int xtime_i)
    {
@@ -510,8 +510,9 @@ static 	PLDayk_Rec parseWDKField(String code,String ds,String data)
        {   
            if(T4_TransactionManager.one_instance.getTransactionStatus() < 0 ||T4_TransactionManager.one_instance.getTransactionStatus() == T4_Transaction.CLOSED)
            {
-              if(T4_TransactionManager.one_instance.isFail()) fail_count++;
-              if(fail_count < 3)
+//              if(T4_TransactionManager.one_instance.isFail()) fail_count++;
+              if(T4_TransactionManager.one_instance.getTransactionStatus() == T4_Transaction.CLOSED) fail_count++;
+              if(fail_count < 1)
               {
                 // T4_TransactionManager.one_instance.open(new TM_Transaction((int)setValue, 18, "MXFK4"));
                  T4_TransactionManager.one_instance.open(currentPlan.getTransaction());
@@ -782,19 +783,19 @@ static 	PLDayk_Rec parseWDKField(String code,String ds,String data)
      	      if(pr.snum.equals("TX"))
      	      {
      	     //    System.out.println("pr.s_lclose -->"+pr.s_lclose);
-               if(tx_last_close < 0)
-               {
-                  tx_last_close = Float.parseFloat(pr.s_lclose);
-                  Enumeration e = _g100snums.keys();
-                  while(e.hasMoreElements())
-                  {
-                       String skey = (String)e.nextElement();
-                       SRec sr =_g100snums.get(skey);;
-                       sr.ratio =  sr.ratio * tx_last_close;
-//                       System.out.println( sr.snum+"("+sr.lastc+") --> "+  sr.ratio);
-                  }
+           //    if(tx_last_close < 0)
+           //    {
+           //       tx_last_close = Float.parseFloat(pr.s_lclose);
+           //       Enumeration e = _g100snums.keys();
+           //       while(e.hasMoreElements())
+           //       {
+           //            String skey = (String)e.nextElement();
+           //            SRec sr =_g100snums.get(skey);;
+           //            sr.ratio =  sr.ratio * tx_last_close;
+//         //              System.out.println( sr.snum+"("+sr.lastc+") --> "+  sr.ratio);
+           //       }
          //         System.out.println("tx_last_close:"+tx_last_close+"  "+selfIndex(kxv.getDomainValue(),true));
-               }
+           //    }
      	      }
             int time_i = kxv.getTimeValue();
             double val = Double.parseDouble(pr.s_rp);

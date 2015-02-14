@@ -37,13 +37,17 @@ public class TM_Transaction implements Transaction{
    private boolean need_to_delay;
    private int _range;
    private int _price;
-   public TM_Transaction(int price, int range, String which_code)
+   private UnSettledRec last_unsettled_rec;
+   FTT_sFactory fc;
+   public TM_Transaction(FTT_sFactory ffc, int price, int range, String which_code)
    {
        if(_my_t4_call == null)
        {
            _my_t4_call = new T4_Call();
            T4_Transaction._my_t4_call = _my_t4_call;
        }
+       fc  = ffc;
+       last_unsettled_rec = null;
        my_ors = new Object[8];
        for(int i=0;i<8;i++)
        {
@@ -154,6 +158,7 @@ public class TM_Transaction implements Transaction{
       cover_price = price;
       if((status == COVERING || status == OPEN_COVERING) && cover_price_setted != cover_price)
       {
+          System.out.println("1 covering syncCOVERingWithUnSettled()");
           syncCOVERingWithUnSettled();  
           cover_null_warning_count = 0; 
           return getStatus();   
@@ -167,6 +172,7 @@ public class TM_Transaction implements Transaction{
          {
             status = COVERING;
          }
+         System.out.println("2 covering syncCOVERingWithUnSettled()");
          syncCOVERingWithUnSettled(); 
          cover_null_warning_count = 0; 
          return getStatus();
@@ -184,6 +190,7 @@ public class TM_Transaction implements Transaction{
       if(status == COVERING)
       {   if(my_ors[COVERING] == null)
       	  {
+            System.out.println("processCOVERing syncCOVERingWithUnSettled()");
       	     syncCOVERingWithUnSettled();
       	  }
       	  if(my_ors[COVERING] == null)
@@ -211,6 +218,7 @@ public class TM_Transaction implements Transaction{
     	                  {
     	                     status = CLOSED;
     	                     my_ors[CLOSED] = ors[i];
+    	                     last_unsettled_rec = null;
     	                  } 
     	               }
     	            }
@@ -229,6 +237,7 @@ public class TM_Transaction implements Transaction{
     	                    //if(my_ors[COVERING] == null)
     	                    {
     	                       status = CLOSED;
+    	                       last_unsettled_rec = null;
     	                       my_ors[CLOSED] = ors[i];
     	                    } 
     	                }
@@ -243,6 +252,8 @@ public class TM_Transaction implements Transaction{
       System.out.println("syncCOVERingWithUnSettled()");
       if(status == COVERING || status == OPEN_COVERING)
       {
+         UnSettledRec uns_rec=_getUnSettled();//_my_t4_call.queryUnSettled("1","0");
+         if(uns_rec == null) return ;
          if(my_ors[status] != null)
          {
          	  int sleep_count = 0;
@@ -267,8 +278,7 @@ public class TM_Transaction implements Transaction{
             Thread.currentThread().sleep(1000);
             need_to_delay = false;
          }
-         UnSettledRec uns_rec=_my_t4_call.queryUnSettled("1","0");
-         if(uns_rec != null)
+          if(uns_rec != null)
          {
             uns_rec.dump();
             open_price = uns_rec.avg_price ;
@@ -299,7 +309,7 @@ public class TM_Transaction implements Transaction{
    
    public float getLossMoney() throws Exception
    {
-         UnSettledRec uns_rec=_my_t4_call.queryUnSettled("1","0");
+         UnSettledRec uns_rec=_getUnSettled();//_my_t4_call.queryUnSettled("1","0");
          if(uns_rec != null)
          {
 //            uns_rec.dump();
@@ -309,7 +319,7 @@ public class TM_Transaction implements Transaction{
    }
    public float getLossPoint() throws Exception
    {
-         UnSettledRec uns_rec=_my_t4_call.queryUnSettled("1","0");
+         UnSettledRec uns_rec=_getUnSettled();//_my_t4_call.queryUnSettled("1","0");
          if(uns_rec != null)
          {
 //            uns_rec.dump();
@@ -323,9 +333,53 @@ public class TM_Transaction implements Transaction{
          }
          return 0;
    }
+   private UnSettledRec _getUnSettled() throws Exception
+   {
+         if(last_unsettled_rec != null && fc !=null)
+         {
+    	       last_unsettled_rec.cur_price = (float)fc.getLastValueByCode(fc.current_TX);;
+    	     /*  
+         	   OrderedRec[] ors = _my_t4_call.queryOrdered();
+      	     OrderedRec mo = (OrderedRec)my_ors[COVERING];
+        	   if(ors != null)
+        	   {
+                 for(int i=0;i<ors.length; i++)
+                 {
+   	                if(ors[i] != null && ors[i].ord_seq != null && ors[i].ord_seq.equals(mo.ord_seq) && ors[i].ord_no != null && ors[i].ord_no.trim().length() > 0)
+   	                {
+    	                   ors[i].or_source = mo.or_source;
+    	                   mo = ors[i];
+    	                   if(last_unsettled_rec.vol < mo.ord_match_qty)
+    	                   {
+    	                   	  float pre_vol = last_unsettled_rec.vol;
+    	                      last_unsettled_rec.vol = mo.ord_match_qty;
+    	                      last_unsettled_rec.avg_price = (last_unsettled_rec.avg_price * pre_vol + cur_price * (last_unsettled_rec.vol-pre_vol))/(last_unsettled_rec.vol);
+    	                   }
+    	                   break;
+    	                }
+    	            }
+    	       }
+    	      */ 
+    	       if(last_unsettled_rec.ord_bs)
+    	       {
+    	           last_unsettled_rec.loss = last_unsettled_rec.vol * (last_unsettled_rec.cur_price - last_unsettled_rec.avg_price);
+             } else
+             {
+    	           last_unsettled_rec.loss = last_unsettled_rec.vol * (last_unsettled_rec.avg_price - last_unsettled_rec.cur_price);
+             }
+             return last_unsettled_rec;
+         }
+         UnSettledRec uns_rec=_my_t4_call.queryUnSettled("1","0");
+         if(uns_rec != null) 
+         {
+            last_unsettled_rec = uns_rec;
+            return uns_rec;
+         }
+         return null;         
+   }
    public UnSettledRec getUnSettled() throws Exception
    {
-         UnSettledRec uns_rec=_my_t4_call.queryUnSettled("1","0");
+         UnSettledRec uns_rec=_getUnSettled();//_my_t4_call.queryUnSettled("1","0");
          return uns_rec;
    }
    
@@ -399,6 +453,7 @@ public class TM_Transaction implements Transaction{
                odcancle1.cancel_qty+odcancle1.ord_match_qty == odcancle1.ord_qty)
             {
     	             status = CLOSED;
+    	             last_unsettled_rec = null;
     	             my_ors[CLOSED] = odcancle2;
             }
        }else if(status == COVERING)
@@ -444,10 +499,12 @@ public class TM_Transaction implements Transaction{
                    }
                    status = COVERING;
                    my_ors[COVERING] = null;
+                   System.out.println("xxxx covering syncCOVERingWithUnSettled()");
                    syncCOVERingWithUnSettled();
                } else 
                {
     	                status = CLOSED;
+    	                last_unsettled_rec = null;
     	                my_ors[CLOSED] = order2;
                }
     	    

@@ -190,12 +190,22 @@ public class T4_Call {
           UnSettledRec usr = new UnSettledRec();
           byte[] respdata = null;
           int base = 208 + 15;
-          for(int i = 0; i<6; i++)
+          for(int i = 0; i<3; i++)
           {
-            respdata = fo_unsettled_qry("1","0").getBytes();
+            //respdata = fo_unsettled_qry("1","0").getBytes();
+            String s = fo_unsettled_qry("0","0");  
+            try
+            {
+               respdata = s.getBytes("ISO-8859-1");
+               System.out.println("1 queryUnSettled-->"+(new String(respdata)));
+             } catch(Exception xe)
+            {
+                respdata = s.getBytes();
+                System.out.println("2 queryUnSettled-->"+new String(respdata));
+             }
             if(respdata == null || respdata.length < base)
             {
-               if(i>=5)
+               if(i>=2)
                {
                   return null;
                } else

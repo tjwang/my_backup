@@ -736,6 +736,7 @@ static 	PLDayk_Rec parseWDKField(String code,String ds,String data)
   
          }else if(code.equals("^HSI")||code.equals("^N225")||code.equals("000001.SS")||code.equals("^KS11"))
          {
+/*
      	       String data= (new String(databuf,12,500)).trim();
      	       PLDayk_Rec plk = parseWDKField(code, _startdate, data);
       	     KexLine kl_ex = (KexLine)datapool_m.get(code);
@@ -745,6 +746,7 @@ static 	PLDayk_Rec parseWDKField(String code,String ds,String data)
       	        datapool_m.put(code,kl_ex);
       	     }
       	      setWDKField(kl_ex,plk);
+*/
          }else
          {
          	 try

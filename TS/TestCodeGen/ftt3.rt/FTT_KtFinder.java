@@ -54,19 +54,28 @@ static public void main(String[] arg)throws Exception{
         FTT_sFactory.current_Method = arg[2];
       }
       Hashtable<String,byte[]> iht = new Hashtable<String,byte[]> ();
+    for(int xxi = SimpleTSRunPlan.UP; xxi < SimpleTSRunPlan.tMode_NUM; xxi++)
+     for(int pmode = SimpleTSRunPlan.PATTEN_MA; pmode < SimpleTSRunPlan.tpMode_NUM; pmode++)
       for(int txRange = 0; txRange < 1 ; txRange++)
-       for(int txGet = 6; txGet < 7 ; txGet++)
+       for(int txGet = 10; txGet < 11 ; txGet++)
         for(int txLoss = -10; txLoss > -11 ; txLoss--)
       {  
        
          SimpleTSRunPlan.tRange = txRange;
          SimpleTSRunPlan.tMaxGet = txGet;
          SimpleTSRunPlan.tMaxLoss = txLoss;
-         SimpleTSRunPlan.tMode = SimpleTSRunPlan.DOWN;
+         SimpleTSRunPlan.tMode = xxi;//SimpleTSRunPlan.UP;
+         SimpleTSRunPlan.tpMode = pmode;
          S4_TransactionManager.one_instance = null;
 //         Runtime.exec(
          Date sDate = GMethod.s2d(arg[0]);
          Date eDate = new Date();
+         if(arg.length > 3)
+         {
+            eDate = GMethod.s2d(arg[3]);
+            System.out.println(arg[3]+" "+eDate.getTime()+" "+sDate.getTime());
+         }
+         
          Date xxStartDate = new Date();
          while(sDate.getTime() <= eDate.getTime())
          {
@@ -86,15 +95,48 @@ static public void main(String[] arg)throws Exception{
                 mis.mark(10);
             	  for(int i=930;i<=1325;i++)
             	  {
+            	  	System.out.println("i-->"+i);
                  if(i%100 < 60)
                  {
                    mis.reset();
                    FTT_sFactory   fac1 = new FTT_sFactory("test",GMethod.d2s(sDate),i*100,mis);
                  }
-               }
+                }
+                FeatureIdxHash fis = stock.tool.TimeIdxHash.gSumAll();
+                fis.dump(); 
+                String tMode_str = null;
+                String tpMode_str = null;
+                switch(xxi)
+                {
+                   case SimpleTSRunPlan.UP:
+                        tMode_str ="UP";
+                        break;
+                   case SimpleTSRunPlan.DOWN:
+                        tMode_str ="DOWN";
+                        break;
+                }
+                switch(pmode)
+                {
+                   case SimpleTSRunPlan.PATTEN_MA:
+                        tpMode_str = "MA";
+                        break;
+                   case SimpleTSRunPlan.PATTEN_K:
+                        tpMode_str = "K";
+                        break;
+                   case SimpleTSRunPlan.PATTEN_KD:
+                        tpMode_str = "KD";
+                        break;
+                   case SimpleTSRunPlan.PATTEN_V:
+                        tpMode_str = "V";
+                        break;
+                }
+                FileOutputStream fos = new FileOutputStream("Fis-"+tMode_str+"-"+tpMode_str+"."+GMethod.d2s(sDate)+".idxh");
+                ObjectOutputStream oos = new ObjectOutputStream(fos);
+                oos.writeObject(fis);
+                stock.tool.TimeIdxHash.gClean();
             }catch(Exception xe)
             {
-             //   xe.printStackTrace();
+                xe.printStackTrace();
             }
             sDate = new Date(sDate.getTime()+86400000);
          }
@@ -106,8 +148,7 @@ static public void main(String[] arg)throws Exception{
             +" Gain:"+(txGet * (S4_TransactionManager.one_instance.do_count - S4_TransactionManager.one_instance.fail_count) + 
                        txLoss * S4_TransactionManager.one_instance.fail_count)
             );
-        FeatureIdxHash fis = stock.tool.TimeIdxHash.gSumAll();
-        fis.dump();    
+/*
         PrintStream ps = S4_TransactionManager.one_instance.getDumpPs();
         if(ps != null)
         {
@@ -116,6 +157,7 @@ static public void main(String[] arg)throws Exception{
             File f2 = new File(arg[0]+"-"+txRange+"-"+txGet+"x"+txLoss+".dump.log");
             f1.renameTo(f2);
         }
+*/        
       }
 }
 

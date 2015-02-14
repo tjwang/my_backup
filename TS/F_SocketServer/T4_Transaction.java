@@ -204,7 +204,7 @@ public class T4_Transaction implements Transaction{
    
    private void syncCOVERingWithUnSettled()throws Exception
    {
-      System.out.println("syncCOVERingWithUnSettled()");
+//      System.out.println("syncCOVERingWithUnSettled()");
       if(status == COVERING || status == OPEN_COVERING)
       {
          if(my_ors[status] != null)
@@ -234,7 +234,7 @@ public class T4_Transaction implements Transaction{
          UnSettledRec uns_rec=_my_t4_call.queryUnSettled("1","0");
          if(uns_rec != null)
          {
-            uns_rec.dump();
+//            uns_rec.dump();
             open_price = uns_rec.avg_price ;
             OrderRec my_or = new OrderRec();
             if(!uns_rec.ord_bs)
@@ -424,7 +424,7 @@ public class T4_Transaction implements Transaction{
    }
 public static void main(String[] args)throws Exception
 {
-     T4_Transaction txc = new T4_Transaction(OP_BUY, 8500, "MXFJ4");
+     T4_Transaction txc = new T4_Transaction(OP_BUY, 8700, "MXFA5");
      txc.open();
      int status;
      while(txc.getStatus() == OPENING)

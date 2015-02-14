@@ -12,7 +12,7 @@ static String postData="ctl00_ScriptManager1_HiddenField=%3B%3BAjaxControlToolki
 static String cookieValue = null;
 static String cookie_value = null; 
 static String viewState = null;
-static String[] future_list = {"TX", "TX114","TX124", "TX035","TX065"};
+static String[] future_list = {"TX", "TX025", "TX035", "TX065", "TX095"};
 static String[] wcode_list = {"^N225", "^HSI", "000001.SS", "^KS11"};
 static String[] index_list={"1"/*祇︽秖舦基计*/,"2"/*ゼ磕玂繧计*/,"200"/*Θユ肂*/,"201"/*Θユ计秖,Θユ掸计*/,
 	                          "220"/*Θユ肂<布>*/, "221"/*Θユ计秖,Θユ掸计 */,
@@ -838,15 +838,15 @@ static public void main(String[] arg)throws Exception{
     boolean startflag = false;
     boolean trflag = false;
     int count = 0;
-    URL u = new URL(u1,"https://tw.stock.yahoo.com/us/q?s="+num);
+    URL u = new URL("https://tw.stock.yahoo.com/us/q?stock_id="+num);
     URLConnection conn = u.openConnection(); 
     conn.setRequestProperty("Accept", "*/*"); 
-    conn.setRequestProperty("Referer", "http://tw.stock.yahoo.com/us/q?s="+num); 
+    conn.setRequestProperty("Referer", "https://tw.stock.yahoo.com/us/q?stock_id="+num); 
     conn.setRequestProperty("Accept-Language", "zh-tw"); 
     //conn.setRequestProperty("Accept-Encoding", "gzip, deflate"); 
-    conn.setRequestProperty("User-Agent", "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)"); 
+    conn.setRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36"); 
     conn.setRequestProperty("Host", "tw.stock.yahoo.com"); 
-    conn.setRequestProperty("Connection", "Keep-Alive"); 
+//    conn.setRequestProperty("Connection", "Keep-Alive"); 
     //conn.setRequestProperty("Cookie", "B=fftihip43671r&b=3&s=0s;"); 
     conn.setRequestProperty("Cookie", cookieValue); 
     conn.setReadTimeout(19000);

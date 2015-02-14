@@ -24,11 +24,11 @@ public class F_SocketServer extends Thread{
      for(;;)
      {
      //	  System.out.println("I am sleeping");
-        Thread.currentThread().sleep(3000);
-     /*
+        Thread.currentThread().sleep(3600000);
         Date xdate = new Date();
         if((xdate).getHours() > 14 || (xdate).getHours() < 5)
         {
+        	/*
         	try{
            fss_fac.dump();
            fss2_fac.dump();
@@ -36,9 +36,10 @@ public class F_SocketServer extends Thread{
           {
              xe.printStackTrace();
           } 
+          */
+          System.exit(0);
           return ;
         }
-        */
      }
     
  }

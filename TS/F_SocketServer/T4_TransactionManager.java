@@ -38,6 +38,7 @@ public class T4_TransactionManager extends Thread{
    boolean is_last_fail;
    boolean is_MaxGetSet;
    static public boolean mesg_status;
+   static boolean toBeContinue;
    public T4_TransactionManager()
    {
    	    historyPool = new Vector<Transaction>();
@@ -111,7 +112,13 @@ public class T4_TransactionManager extends Thread{
            UnSettledRec  uns_rec = currentTransaction.getUnSettled();
            if(uns_rec != null)
            {
-           	  uns_rec.dump();
+//           	  uns_rec.dump();
+              int count = 0;
+              while(currentTransaction.getStatus() != T4_Transaction.COVERING && count < 12)
+              {
+                  sleep(500);
+              }
+              
               if(uns_rec.ord_bs)
               {
                  float currentLoss = uns_rec.cur_price - uns_rec.avg_price;
@@ -273,107 +280,114 @@ public class T4_TransactionManager extends Thread{
       return result;
      
    }
+   public void reset()
+   {
+      currentTransaction = null;
+      transaction_status = Transaction.CLOSED;
+   }
    
    public void run() {
-   	 try
-   	 {
-   	 	 while(true)
-   	 	 {
-   	     synchronized(empty_wait_object) {
-   	         if(currentTransaction == null)
-   	         {
-   	         	 System.out.println("start waiting a new transaction");
-   	           empty_wait_object.wait();
-  	         	 System.out.println("a new transaction in");
-   	         }
-   	      }
-   	      if(!op_status) throw new Exception(op_status_error_msg);
-   	      if(currentTransaction != null)
-   	      {
-   	          transaction_status = currentTransaction.getStatus();
-       //       System.out.println("transaction_status->"+transaction_status);   	          
-   	          switch(transaction_status)
-   	          {
-   	             case T4_Transaction.INITED:
-   	             {
-   	                 currentTransaction.open();
-   	             }
-   	             break;
-   	             case T4_Transaction.OPENING:
-   	             {
-   	     //            System.out.println("T4_Transaction.OPENING");
-   	                 sleep(1000);
-   	                 checkTimeOut();
-   	             }
-   	             break;
-   	             case T4_Transaction.OPENED:
-   	             {
-   	             	/*
-   	                synchronized(opened_wait_object) {
-    	         	      System.out.println("start waiting  transaction to covering");
-  	                  opened_wait_object.wait();
-    	         	      System.out.println("transaction to covering");
-   	                }
-   	                */
-   	  //               System.out.println("T4_Transaction.OPENED");
-   	                checkLoss();
-   	                sleep(1000);
-   	             }
-   	             break;
-   	             case T4_Transaction.CANCELING:
-   	             {
-   	//                 System.out.println("T4_Transaction.CANCELING");
-   	                 sleep(1000);
-   	             }
-   	             break;
-   	             case T4_Transaction.OPEN_COVERING:
-   	             {
-   	//                 System.out.println("T4_Transaction.OPEN_COVERING");
-   	                 checkTimeOut();
-   	                 checkLoss();
-   	                 sleep(1000);
-   	             }
-   	             break;
-   	             case T4_Transaction.COVERING:
-   	             {
-    	      //         System.out.println("T4_Transaction.COVERING");
-   	                 checkLoss();
-   	                  is_ever_covering = true;
-   	                 sleep(500);
-   	             }
-   	             break;
-   	             case T4_Transaction.CLOSED:
-   	             {
-   	        //       System.out.println("T4_Transaction.CLOSED");
-   	                currentTransaction.dump();
-                     synchronized(transaction_locker) {
-                       currentTransaction = null;
-                    }
-   	             }
-   	             break;
-   	          }
-   	      }
-   	   }
-     }catch(Exception e)
-     {
-     	  ByteArrayOutputStream bs = new ByteArrayOutputStream();
-     	  PrintStream ps = new PrintStream(bs);
-     	  e.printStackTrace(ps);
-     	  e.printStackTrace();
-     	  try
-     	  {
-     	  	do
-     	  	{
-     	  	  mesg_status = false;
-     	      Skype.chat("wang.tajeng").send(e.getMessage()+"\r\nStack Trace:\r\n"+bs.toString());
-    	      sleep(5000);
-    	    } while(mesg_status == false);
-    	//     Skype.chat("peiludai").send(e.getMessage()+"\r\nStack Trace:\r\n"+bs.toString());
-     	  }catch(Exception e2)
-     	  {
-     	     e2.printStackTrace();
-     	  }
-        return ;
+      while(true)
+      {
+      	 try
+      	 {
+      	     synchronized(empty_wait_object) {
+      	         if(currentTransaction == null)
+      	         {
+      	         	 System.out.println("start waiting a new transaction");
+      	           empty_wait_object.wait();
+  	            	 System.out.println("a new transaction in");
+      	         }
+      	      }
+      	      if(!op_status) throw new Exception(op_status_error_msg);
+      	      if(currentTransaction != null)
+      	      {
+      	          transaction_status = currentTransaction.getStatus();
+          //       System.out.println("transaction_status->"+transaction_status);   	          
+      	          switch(transaction_status)
+      	          {
+      	             case T4_Transaction.INITED:
+      	             {
+      	                 currentTransaction.open();
+      	             }
+      	             break;
+      	             case T4_Transaction.OPENING:
+      	             {
+      	     //            System.out.println("T4_Transaction.OPENING");
+      	                 sleep(1000);
+      	                 checkTimeOut();
+      	             }
+      	             break;
+      	             case T4_Transaction.OPENED:
+      	             {
+      	             	/*
+      	                synchronized(opened_wait_object) {
+       	         	      System.out.println("start waiting  transaction to covering");
+  	                     opened_wait_object.wait();
+       	         	      System.out.println("transaction to covering");
+      	                }
+      	                */
+      	  //               System.out.println("T4_Transaction.OPENED");
+      	                checkLoss();
+      	                sleep(1000);
+      	             }
+      	             break;
+      	             case T4_Transaction.CANCELING:
+      	             {
+      	//                 System.out.println("T4_Transaction.CANCELING");
+      	                 sleep(1000);
+      	             }
+      	             break;
+      	             case T4_Transaction.OPEN_COVERING:
+      	             {
+      	//                 System.out.println("T4_Transaction.OPEN_COVERING");
+      	                 checkTimeOut();
+      	                 checkLoss();
+      	                 sleep(1000);
+      	             }
+      	             break;
+      	             case T4_Transaction.COVERING:
+      	             {
+       	      //         System.out.println("T4_Transaction.COVERING");
+      	                 checkLoss();
+      	                  is_ever_covering = true;
+      	                 sleep(500);
+      	             }
+      	             break;
+      	             case T4_Transaction.CLOSED:
+      	             {
+      	        //       System.out.println("T4_Transaction.CLOSED");
+      	                currentTransaction.dump();
+                        synchronized(transaction_locker) {
+                          currentTransaction = null;
+                       }
+      	             }
+      	             break;
+      	          }
+      	      }
+         }catch(Exception e)
+         {
+        	  ByteArrayOutputStream bs = new ByteArrayOutputStream();
+        	  PrintStream ps = new PrintStream(bs);
+        	  e.printStackTrace(ps);
+        	  e.printStackTrace();
+        	  try
+        	  {
+        	  	do
+        	  	{
+        	  	   mesg_status = false;
+        	       Skype.chat("wang.tajeng").send(e.getMessage()+"\r\nStack Trace:\r\n"+bs.toString());
+       	         sleep(30000);
+       	      } while(mesg_status == false);
+       	      if(toBeContinue)
+                 continue;
+       	//     Skype.chat("peiludai").send(e.getMessage()+"\r\nStack Trace:\r\n"+bs.toString());
+        	  }catch(Exception e2)
+        	  {
+        	     e2.printStackTrace();
+        	  }
+            return ;
+        }
      }
    }
    static void testRun1(int op,int open_price,int range,int maxLoss, String code)
@@ -385,7 +399,7 @@ public class T4_TransactionManager extends Thread{
 //     while(true)
      {
 //       T4_TransactionManager.one_instance.open(new U_TSM_Transaction(open_price, range, code));
-       T4_TransactionManager.one_instance.open(new TM_Transaction(open_price, range, code));
+       T4_TransactionManager.one_instance.open(new TM_Transaction(null, open_price, range, code));
        
        while(T4_TransactionManager.one_instance.getTransactionStatus() < T4_Transaction.OPENING)
        {
@@ -475,7 +489,16 @@ public class T4_TransactionManager extends Thread{
                 	   System.out.println("wang.tajeng:"+content);
                 	   if(content.indexOf("ok")==0)
                 	   {
+                	       if(T4_TransactionManager.one_instance != null)
+                	       {
+                	           T4_TransactionManager.one_instance.reset();
+                	       }
+                	       toBeContinue = true;
                 	   	   T4_TransactionManager.mesg_status = true;
+                	   } else if(content.indexOf("stop")==0)
+                	   { 
+                	   	   T4_TransactionManager.mesg_status = true;
+                	       toBeContinue = false;
                 	   }
                  }
                }

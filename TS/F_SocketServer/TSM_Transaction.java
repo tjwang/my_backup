@@ -221,7 +221,7 @@ public abstract class TSM_Transaction implements Transaction{
    }
    private void syncCOVERingWithUnSettled()throws Exception
    {
-      System.out.println("syncCOVERingWithUnSettled()");
+//      System.out.println("syncCOVERingWithUnSettled()");
       if(status == COVERING || status == OPEN_COVERING)
       {
          if(my_ors[status] != null)
